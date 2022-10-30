@@ -50,7 +50,7 @@ body {
         filter: brightness(0.5) blur(1.5px);
 
     @include sm6 {
-        background: url('../../public/images/A.jpg') no-repeat 50% 50%;
+        background: url(../../public/images/background/screen_1920x1080_2022-10-30_17-00-11.png) no-repeat 50% 50%;
         height: 100%;
         width: 100%;
         top: 0;
@@ -60,7 +60,7 @@ body {
     }
 
     .glitch__item {
-        background: url('../../public/images/A.jpg') no-repeat 50% 50%/cover;
+        background: url(../../public/images/background/screen_1920x1080_2022-10-30_17-00-11.png) no-repeat 50% 50%/cover;
         height: 100%;
         width: 100%;
         top: 0;

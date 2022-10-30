@@ -4,10 +4,10 @@ import "aos/dist/aos.css";
 import "../scss/team.scss";
 import { team } from "../assests/data";
 import { AiOutlineTwitter, AiFillTwitterSquare } from "react-icons/ai";
-import { FaLinkedinIn, FaTwitterSquare } from 'react-icons/fa'
+import { FaLinkedinIn, FaTwitterSquare } from "react-icons/fa";
 import { CgInstagram } from "react-icons/cg";
-import { ImLinkedin } from 'react-icons/im'
-import { IoLogoLinkedin } from 'react-icons/io'
+import { ImLinkedin } from "react-icons/im";
+import { IoLogoLinkedin } from "react-icons/io";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 const Teams = () => {
@@ -104,38 +104,38 @@ const Teams = () => {
               <h3
                 className="name"
                 style={{
-                  fontWeight: '500',
-                  textTransform: 'capitalize',
-                  fontSize: '2.2rem',
-                  textAlign: 'start',
-                  fontFamily: '\'relative\'',
-                  marginBottom: '7px',
-                  marginRight: '12px'
+                  fontWeight: "500",
+                  textTransform: "capitalize",
+                  fontSize: "2.2rem",
+                  textAlign: "start",
+
+                  marginBottom: "7px",
+                  marginRight: "12px",
                 }}
               >
                 {presentTeam?.name}
               </h3>
               <h4
                 style={{
-                  textTransform: 'capitalize',
-                  marginTop: '5px',
-                  textAlign: 'start',
-                  fontSize: '18px',
-                  fontFamily: '\'outfit-medium\'',
-                  fontWeight: '600',
-                  opacity: '.5'
+                  textTransform: "capitalize",
+                  marginTop: "5px",
+                  textAlign: "start",
+                  fontSize: "18px",
+
+                  fontWeight: "600",
+                  opacity: ".5",
                 }}
               >
                 {presentTeam?.position}
               </h4>
               <p
                 style={{
-                  fontSize: '18px',
-                  marginTop: '10px',
-                  textAlign: 'start',
-                  lineHeight: '1.3',
-                  fontFamily: '\'outfit-medium\'',
-                  fontWeight: '100'
+                  fontSize: "18px",
+                  marginTop: "10px",
+                  textAlign: "start",
+                  lineHeight: "1.3",
+
+                  fontWeight: "100",
                 }}
               >
                 {presentTeam?.desc}
@@ -163,11 +163,11 @@ const Teams = () => {
                     onClick={() => teamModal(ite)}
                   >
                     <div className="inner">
-                      <div
-                        className="img"
-
-                      >
-                        <img src={'https://robotera.io/img/team-2.75ffda88.png'} alt="" />
+                      <div className="img">
+                        <img
+                          src={"https://robotera.io/img/team-2.75ffda88.png"}
+                          alt=""
+                        />
                       </div>
                       <div className="detail">
                         <div>
@@ -184,36 +184,26 @@ const Teams = () => {
                           </h3>
                           <h4
                             style={{
-                              fontWeight: '200',
-                              textTransform: 'capitalize',
-                              marginTop: '5px',
-                              opacity: '.8'
+                              fontWeight: "200",
+                              textTransform: "capitalize",
+                              marginTop: "5px",
+                              opacity: ".8",
                             }}
                           >
                             {ite.position}
                           </h4>
                         </div>
                         <div className="btns">
-
-
-
-
-                          {
-                            ite.twitter && <a className="twitter" href={ite.twitter}>
-                              <FaTwitterSquare
-
-                              />
+                          {ite.twitter && (
+                            <a className="twitter" href={ite.twitter}>
+                              <FaTwitterSquare />
                             </a>
-                          }
-                          {
-                            ite.linkedin && <a className="linkedin" href={ite.linkedin}>
-                              <IoLogoLinkedin
-
-                              />
+                          )}
+                          {ite.linkedin && (
+                            <a className="linkedin" href={ite.linkedin}>
+                              <IoLogoLinkedin />
                             </a>
-                          }
-
-
+                          )}
                         </div>
                       </div>
                     </div>
@@ -222,7 +212,6 @@ const Teams = () => {
               );
             })}
           </div>
-
         </div>
       </section>
     </>

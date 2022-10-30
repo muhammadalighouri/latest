@@ -42,10 +42,10 @@ const Banner = ({ timeline, ease }) => {
             <div className="btn__container">
               <div>
                 <button>
-                  <span>View Trailer</span>
+                  <span>Buy Now!</span>
                 </button>
                 <button>
-                  <span>Mint!</span>
+                  <span>Opensea!</span>
                 </button>
               </div>
             </div>

@@ -4,7 +4,7 @@ import { AiOutlineTwitter } from "react-icons/ai";
 import { FaRedditAlien } from "react-icons/fa";
 export const nav = [
   {
-    name: "About Us",
+    name: "About",
     path: "#about",
     ref: "nav2",
   },
@@ -15,12 +15,12 @@ export const nav = [
   },
 
   {
-    name: "Collection",
-    path: "#collection",
+    name: "FAQs",
+    path: "#faq",
     ref: "nav4",
   },
   {
-    name: "Our Team",
+    name: "Team",
     path: "#team",
     ref: "nav3",
   },
@@ -105,12 +105,7 @@ export const Nfts = [
 ];
 
 export const FAQ = [
-  {
-    q: "What Is Cai$hen Finance?",
-    ans: [
-      "Cai$hen Finance is a NFT Raffle Project. Our goal is to help those who want to enter the DeFi world without the big risk behind it.",
-    ],
-  },
+
 
   {
     q: " What Are The Benefits?",

@@ -15,9 +15,11 @@ const Home = () => {
             <Navigation />
             <Banner />
             <AboutNft />
-            <Roadmap />
-            <div className="bottom__bg">
+            <div className="top__bg">
+                <Roadmap />
                 <Teams />
+            </div>
+            <div className="bottom__bg">
                 <Faq />
                 <Footer />
             </div>

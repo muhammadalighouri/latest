@@ -75,27 +75,28 @@ body {
   background: #000!important;
   overflow-x: hidden;
 }
-.bottom__bg{
+.bottom__bg,
+.top__bg{
 position: relative;
 
 }
 .bottom__bg::before{
-      content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 60%;
-        background: url(../../public/images/background/sr5-bg.236f121c.jpg) no-repeat center bottom/cover;
-        filter: brightness(0.5) hue-rotate(327deg);
-        background-size: 130%;
-        z-index: -2;
+          content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url(http://localhost:3000/static/media/sr5-bg.236f121c.944089f4d15261b712ab.jpg) no-repeat center bottom/cover;
+            filter: brightness(0.5) hue-rotate(327deg);
+            background-size: cover;
+            z-index: -2;
 }
  .bottom__bg::after {
         position: absolute;
           content: '';
           left: 0;
-          top: 45%;
+          top: 0%;
           width: 100%;
           background: linear-gradient(0deg, transparent, #000);
           z-index: -1;
@@ -103,7 +104,20 @@ position: relative;
           height: 20%;
  }
 
-
+.top__bg::before{
+        content: "";
+        background: url(../../public/images/background/land-bg.4e7c74f0.jpg) no-repeat center center;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-size: cover;
+        filter: hue-rotate(317deg) brightness(1);
+        opacity: 0.9;
+    
+}
 .swiper {
   margin-left: auto;
   margin-right: auto;

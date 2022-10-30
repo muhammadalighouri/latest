@@ -2,7 +2,7 @@
 @import "./media.scss";
 
 header {
-top: 0;
+  top: 0;
   left: 0;
   width: 100%;
   z-index: 1001;
@@ -77,7 +77,7 @@ top: 0;
               justify-content: center;
             }
 
-            >li {
+            > li {
               padding: 0 5px;
               margin-right: 5px;
               position: relative;
@@ -85,21 +85,21 @@ top: 0;
               font-size: 18px;
               transition: 0.1s all;
               position: relative;
-&::before{
-  content: '';
-  background: #fff;
-  height: 3px;
-  width: 0%;
-  position: absolute;
-  bottom: -3%;
-  left: 50%;
-  transform: translateX(-50%);
-transition: .3s all;
-}
-&:hover::before{
-width: 80%;
-}
-              >a {
+              &::before {
+                content: "";
+                background: #fff;
+                height: 3px;
+                width: 0%;
+                position: absolute;
+                bottom: -3%;
+                left: 50%;
+                transform: translateX(-50%);
+                transition: 0.3s all;
+              }
+              &:hover::before {
+                width: 80%;
+              }
+              > a {
                 transition: 0.2s all;
                 line-height: 1.5em;
                 position: relative;
@@ -116,8 +116,6 @@ width: 80%;
                 text-transform: uppercase;
                 // font-family: "Barlow-medium";
 
-               
-
                 @include lg {
                   font-size: clamp(3em, 11vw, 4em);
                   font-weight: 900;
@@ -128,12 +126,12 @@ width: 80%;
           }
         }
 
-        >.nav__btns {
+        > .nav__btns {
           justify-self: end;
-            display: flex;
-            align-items: center;
-            gap:3px;
-            margin: 10px 0;
+          display: flex;
+          align-items: center;
+          gap: 13px;
+          margin: 10px 0;
 
           a:nth-child(1) {
             svg {
@@ -198,29 +196,30 @@ width: 80%;
                 fill: #141b22;
               }
 
-              &:hover {}
+              &:hover {
+              }
             }
           }
 
           a:nth-child(5) {
-            margin-left: 10px;
+           
 
             .btn {
-                color: #000000;
-                  padding: 16px 44px;
-                  border-radius: 15px;
-                  font-size: 18px;
-                  font-weight: 600;
-                  border: none;
-                  cursor: pointer;
-                  position: relative;
-                  background: #0085ff;
-                  overflow: hidden;
-                  z-index: 111;
-                  transition: color 0.25s 0.1s, transform 0.2s;
-                  width: auto;
-                  pointer-events: auto;
-            display: none;
+              color: #000000;
+              padding: 16px 44px;
+              border-radius: 15px;
+              font-size: 18px;
+              font-weight: 600;
+              border: none;
+              cursor: pointer;
+              position: relative;
+              background: #0085ff;
+              overflow: hidden;
+              z-index: 111;
+              transition: color 0.25s 0.1s, transform 0.2s;
+              width: auto;
+              pointer-events: auto;
+              display: none;
 
               &:hover {
                 &::before {
@@ -256,12 +255,13 @@ width: 80%;
                 margin-right: 50px;
               }
 
-              &:hover {}
+              &:hover {
+              }
             }
           }
 
           a {
-            margin-right: 12px;
+     
 
             svg {
               height: 40px;
@@ -308,7 +308,7 @@ width: 80%;
 
   box-shadow: 0 0 10px #00000080;
 
-  >svg {
+  > svg {
     position: fixed;
     cursor: pointer;
     top: 20px;
@@ -388,7 +388,7 @@ width: 80%;
   z-index: 1001;
   transform: scale(0);
 
-  >svg {
+  > svg {
     width: 50px;
     background: #fff;
     height: 50px;
@@ -408,7 +408,7 @@ width: 80%;
   header {
     .nav__grid {
       .nav__btns {
-        >i {
+        > i {
           display: none;
         }
       }
@@ -421,7 +421,8 @@ width: 80%;
     .nav__grid {
       grid-template-columns: 1fr 1.5fr !important;
 
-      .logo {}
+      .logo {
+      }
 
       nav {
         position: absolute;
@@ -450,7 +451,7 @@ width: 80%;
       }
 
       .nav__btns {
-        >div {
+        > div {
           cursor: pointer;
           height: 48px;
           position: absolute;
@@ -464,7 +465,7 @@ width: 80%;
           z-index: 1111;
           top: 23%;
 
-          >span {
+          > span {
             &:nth-child(1) {
               background: #fff;
               height: 4px;

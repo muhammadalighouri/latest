@@ -9,6 +9,7 @@ import AboutNft from "../components/AboutNft";
 import Info from "../components/Info";
 import Banner from "../components/Banner";
 import Marchendise from "../components/Marchendise";
+import Partners from "../components/Partners";
 const Home = () => {
     return (
         <>
@@ -20,6 +21,7 @@ const Home = () => {
                 <Teams />
             </div>
             <div className="bottom__bg">
+                <Partners />
                 <Faq />
                 <Footer />
             </div>

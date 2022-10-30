@@ -107,9 +107,9 @@ const Navigation = () => {
           <div className="container">
             <div className="nav__grid">
               <div className="logo">
-                <a href="https://twitter.com/Caish3n" target={"_blank"}>
+                <Link to='/'>
                   <img src="/images/logo/01-05.png" alt="" />
-                </a>
+                </Link>
               </div>
               <nav style={{ right: navToggler ? 0 : "-100%" }}>
                 <ul>
@@ -170,7 +170,7 @@ const Navigation = () => {
                 >
                   <div className="btn">
                     {/* <FaDiscord /> */}
-                    BUY NOW!
+                    WHITEPAPER!
                   </div>
                 </a>
                 <div onClick={() => barBtn()}>

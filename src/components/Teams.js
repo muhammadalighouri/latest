@@ -78,12 +78,13 @@ const Teams = () => {
           <div
             className="item"
             style={{
-              maxWidth: "550px",
-              background: "rgb(20, 27, 34)",
-              padding: "50px 25px",
-              textAlign: "center",
-              margin: "0px 10px",
-              boxShadow: "rgba(0, 0, 0, 0.19) 0px 0px 10px",
+              maxWidth: '550px',
+              background: 'rgb(4 17 29)',
+              padding: '50px 25px',
+              textAlign: 'center',
+              margin: '0px 10px',
+              boxShadow: 'rgba(0, 0, 0, 0.19) 0px 0px 10px',
+              borderRadius: '32px'
             }}
           >
             {/* <div className="img" style={{ textAlign: "center" }}>

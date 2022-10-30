@@ -392,11 +392,14 @@ export const Partners_1 = [
   '/images/partners/partner-5.png',
   '/images/partners/partner-6.png',
 ]
-export const Partners_2 = [
-  '/images/partners/partner-7.png',
-  '/images/partners/partner-8.png',
-  '/images/partners/partner-9.png',
-  '/images/partners/partner-10.png',
-  '/images/partners/partner-11.png',
-  '/images/partners/partner-12.png',
+export const partners = [
+  'https://ryber.io/assets/images/partners/logo-ow.png',
+  'https://ryber.io/assets/images/partners/logo-tidex.png',
+  'https://ryber.io/assets/images/partners/logo-profit.png',
+  'https://ryber.io/assets/images/partners/logo-dfg.png',
+  'https://ryber.io/assets/images/partners/logo-btcu.png',
+  'https://ryber.io/assets/images/partners/logo-emiratex.png',
+  "https://ryber.io/assets/images/partners/logo-emiratex.png",
+  "https://ryber.io/assets/images/partners/logo-dax.png",
+
 ]

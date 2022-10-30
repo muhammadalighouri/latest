@@ -468,17 +468,17 @@ header {
       .nav__btns {
         > div {
           cursor: pointer;
-          height: 48px;
-          position: absolute;
-          transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s;
-          -webkit-user-select: none;
-          user-select: none;
-          width: 48px;
-          outline: none;
-          transform: none;
-          right: 3.5%;
-          z-index: 1111;
-          top: 23%;
+            height: 48px;
+            position: absolute;
+            transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s;
+            -webkit-user-select: none;
+            user-select: none;
+            width: 48px;
+            outline: none;
+            transform: none;
+            right: 2.1%;
+            z-index: 1111;
+            top: 14%;
 
           > span {
             &:nth-child(1) {

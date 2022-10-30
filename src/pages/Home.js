@@ -22,8 +22,10 @@ const Home = () => {
                 <Token />
                 <Teams />
             </div>
+            <Partners />
+            <Marchendise />
             <div className="bottom__bg">
-                <Partners />
+
                 <Faq />
                 <Footer />
             </div>

@@ -53,7 +53,7 @@
   overflow: hidden;
   // background: #120d328a;
   height: 100vh;
-  &::before {
+  &::after {
     position: absolute;
     content: "";
     left: 0;
@@ -64,8 +64,21 @@
     right: 0;
     height: 20%;
   }
+   
   @include md {
-    margin-top: 20px;
+    // margin-top: 20px;
+      &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: url(../../public/images/background/screen_1920x1080_2022-10-30_17-00-11.png) no-repeat center center;
+          background-size: cover;
+          z-index: -1;
+          filter: brightness(0.5) blur(1.5px);
+        }
   }
 
   .container {
@@ -82,6 +95,9 @@
       margin: auto;
       text-align: center;
       flex-direction: column;
+      @include md{
+        width: 90%;
+      }
       h2 {
         font-size: 7rem;
         margin-bottom: 10px;
@@ -96,6 +112,7 @@
       p {
         width: 90%;
         font-size: 18px;
+        text-transform: capitalize;
         @include md {
           width: 100%;
         }
@@ -107,7 +124,9 @@
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 3;
-
+@include md{
+  top: 50%;
+}
       .btn__container {
         position: relative;
         display: flex;

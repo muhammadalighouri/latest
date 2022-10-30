@@ -99,7 +99,7 @@ const Navigation = () => {
       <header
         style={{
           top: !target ? "0" : "-100px",
-          // background: navColor ? '#171d21' : ''
+          background: navColor ? '#17161b' : ''
         }}
         className={navColor ? "nav__active" : ""}
       >
@@ -170,7 +170,7 @@ const Navigation = () => {
                 >
                   <div className="btn">
                     {/* <FaDiscord /> */}
-                    MINT
+                    BUY NOW!
                   </div>
                 </a>
                 <div onClick={() => barBtn()}>

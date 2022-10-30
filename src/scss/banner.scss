@@ -148,14 +148,14 @@
           justify-content: center;
 
           > button {
-            font-size: 1em;
+          font-size: 1em;
             text-transform: uppercase;
             width: 260px;
             margin: 0.5em 1em;
             min-height: 50px;
             cursor: pointer;
             transition: 0.3s all;
-            clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
+            clip-path: polygon(5% 0%, 100% 0, 100% 70%, 95% 100%, 0 100%, 0 30%);
             color: black;
             border: 0;
             font-weight: 900;
@@ -174,8 +174,7 @@
           }
 
           > button:nth-child(1) {
-            // border: 3px solid #0085ff;
-            background: #fff;
+            background: #f2f3f5;
             color: #000;
             span{
               color: black;
@@ -187,11 +186,14 @@
 
           > button:nth-child(2) {
             background-color: #0085ff;
-
-            // border: 2px solid #0085ff;
             font-weight: 100;
             &:hover {
-              background: #fff;
+              background: #f2f3f5;
+              font-weight: 700;
+             span{
+              color: black !important;
+              // padding: ;
+             }
             }
           }
         }

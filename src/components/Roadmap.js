@@ -33,7 +33,7 @@ const Roadmap = () => {
       <section id="roadmap" className="roadmap" ref={sec}>
         <div className="heading" style={{ overflow: 'hidden' }}>
           <h1 data-aos="fade-down" class="aos-init aos-animate">
-            THE ROADMAP
+            ROADMAP
           </h1>
           <p
             data-aos="fade-up"

@@ -10,6 +10,7 @@ import Info from "../components/Info";
 import Banner from "../components/Banner";
 import Marchendise from "../components/Marchendise";
 import Partners from "../components/Partners";
+import Token from "../components/Token";
 const Home = () => {
     return (
         <>
@@ -18,6 +19,7 @@ const Home = () => {
             <AboutNft />
             <div className="top__bg">
                 <Roadmap />
+                <Token />
                 <Teams />
             </div>
             <div className="bottom__bg">

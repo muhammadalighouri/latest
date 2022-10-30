@@ -384,3 +384,19 @@ export const collection = [
     ],
   },
 ];
+export const Partners_1 = [
+  '/images/partners/partner-1.png',
+  '/images/partners/partner-2.png',
+  '/images/partners/partner-3.png',
+  '/images/partners/partner-4.png',
+  '/images/partners/partner-5.png',
+  '/images/partners/partner-6.png',
+]
+export const Partners_2 = [
+  '/images/partners/partner-7.png',
+  '/images/partners/partner-8.png',
+  '/images/partners/partner-9.png',
+  '/images/partners/partner-10.png',
+  '/images/partners/partner-11.png',
+  '/images/partners/partner-12.png',
+]

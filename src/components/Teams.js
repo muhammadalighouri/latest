@@ -147,7 +147,7 @@ const Teams = () => {
         <div className="container">
           <div className="heading">
             <h1 data-aos="fade-down" className="aos-init aos-animate">
-              Meet The Team
+              Team
             </h1>
             {/* <p>The ones who are making everything happen.</p> */}
           </div>

@@ -51,7 +51,7 @@ const Main = () => {
                                 ></span>
                             </div>
                         </div>
-                        <h2>DOGERUSH!</h2>
+                        <h2><img src="/images/logo/01-03.png" alt="" /></h2>
                         <div className={`nav__top ${navToggler ? "nav___active" : null}`}>
                             <div className="div">
                                 <ul>

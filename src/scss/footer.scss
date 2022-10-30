@@ -35,8 +35,7 @@ footer {
         cursor: pointer;
 
         img {
-          height: 60px;
-          transform: rotate(343deg) skewY(17deg);
+          height: 80px;
           @include sm6 {
             height: unset;
             width: 90%;

@@ -99,7 +99,7 @@ const Navigation = () => {
       <header
         style={{
           top: !target ? "0" : "-100px",
-          background: navColor ? '#17161b' : ''
+          background: navColor ? '#04111d' : ''
         }}
         className={navColor ? "nav__active" : ""}
       >
@@ -108,7 +108,7 @@ const Navigation = () => {
             <div className="nav__grid">
               <div className="logo">
                 <a href="https://twitter.com/Caish3n" target={"_blank"}>
-                  {/* <img src="/images/nav-logo.png" alt="" /> */}
+                  <img src="/images/logo/01-05.png" alt="" />
                 </a>
               </div>
               <nav style={{ right: navToggler ? 0 : "-100%" }}>

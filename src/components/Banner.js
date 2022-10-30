@@ -32,7 +32,7 @@ const Banner = ({ timeline, ease }) => {
         <div className="container">
           <div className="hero__content">
             <div className="text__container">
-              <h2>DOGERUSH!</h2>
+              <h2><img src="/images/logo/01-03.png" alt="" /></h2>
               <p>
                 OWN YOUR PIECE OF LAND IN THE MOST ANTICIPATED BYOVERSE OPEN
                 WORLD GAME. YOUR LAND WILL GROW RESOURCES NECESSARY FOR PLAYERS

@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="grid">
           <div className="logo">
             <a href="">
-              <h2>DogeRush</h2>
+              <img src="/images/logo/01-05.png" alt="" />
             </a>
           </div>
           <p>

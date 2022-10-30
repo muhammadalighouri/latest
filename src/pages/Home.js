@@ -23,7 +23,7 @@ const Home = () => {
                 <Teams />
             </div>
             <Partners />
-            <Marchendise />
+
             <div className="bottom__bg">
 
                 <Faq />

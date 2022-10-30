@@ -5,18 +5,20 @@ import { FaDiscord } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { FiGlobe } from "react-icons/fi";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer>
       <div className="container">
         <div className="grid">
           <div className="logo">
-            <a href="">
+            <Link to='/'>
               <img src="/images/logo/01-05.png" alt="" />
-            </a>
+            </Link>
+
           </div>
           <p>
-            <h6> WWW.DogeRush.IO</h6>
+            <h6> www.dogerush.com</h6>
             <div>All rights Reserved</div>
           </p>
         </div>

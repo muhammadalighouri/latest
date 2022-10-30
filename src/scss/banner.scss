@@ -54,15 +54,15 @@
   background: #120d328a;
   height: 100vh;
   &::before {
-      position: absolute;
-        content: '';
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background: linear-gradient(0deg, #000, transparent);
-        z-index: 1;
-        right: 0;
-        height: 20%;
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(0deg, #000, transparent);
+    z-index: 1;
+    right: 0;
+    height: 20%;
   }
   @include md {
     margin-top: 20px;
@@ -86,13 +86,12 @@
         font-size: 7rem;
         margin-bottom: 20px;
       }
-      p{
-width: 90%;
-font-size: 18px;
-@include md{
-  width: 100%;
-
-}
+      p {
+        width: 90%;
+        font-size: 18px;
+        @include md {
+          width: 100%;
+        }
       }
     }
     .hero__content {
@@ -149,16 +148,18 @@ font-size: 18px;
           justify-content: center;
 
           > button {
-
             font-size: 1em;
             text-transform: uppercase;
-            color: #fff;
-            border-radius: 100px;
             width: 260px;
             margin: 0.5em 1em;
             min-height: 50px;
             cursor: pointer;
-            transition: .3s all;
+            transition: 0.3s all;
+            clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
+            color: black;
+            border: 0;
+            font-weight: 900;
+            font-family: "Play-Bold" !important;
 
             @include sm6 {
               width: 160px;
@@ -173,20 +174,25 @@ font-size: 18px;
           }
 
           > button:nth-child(1) {
-            border: 3px solid #0085ff;
-              background: rgba(4, 17, 29, 0.4);
-              &:hover{
-                background: #0085ff;
-              }
+            // border: 3px solid #0085ff;
+            background: #fff;
+            color: #000;
+            span{
+              color: black;
+            }
+            &:hover {
+              background: #0085ff;
+            }
           }
 
           > button:nth-child(2) {
             background-color: #0085ff;
-          
-            border: 2px solid #0085ff;
+
+            // border: 2px solid #0085ff;
+            font-weight: 100;
             &:hover {
-                background: rgba(4, 17, 29, 0.4);
-              }
+              background: #fff;
+            }
           }
         }
       }

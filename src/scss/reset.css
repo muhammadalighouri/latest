@@ -80,25 +80,27 @@ position: relative;
 
 }
 .bottom__bg::before{
-    content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 60%;
-      background: url(http://localhost:3000/static/media/companion-bg.2c17497b.7b250ab5a2b32f1555be.jpg) no-repeat center bottom/cover;
-      filter: brightness(0.5) hue-rotate(327deg);
+      content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 60%;
+        background: url(../../public/images/background/sr5-bg.236f121c.jpg) no-repeat center bottom/cover;
+        filter: brightness(0.5) hue-rotate(327deg);
+        background-size: 130%;
+        z-index: -2;
 }
  .bottom__bg::after {
-      position: absolute;
-        content: '';
-        left: 0;
-        top: 40%;
-        width: 100%;
-        background: linear-gradient(0deg, transparent, #000);
-        z-index: 1;
-        right: 0;
-        height: 20%;
+        position: absolute;
+          content: '';
+          left: 0;
+          top: 45%;
+          width: 100%;
+          background: linear-gradient(0deg, transparent, #000);
+          z-index: -1;
+          right: 0;
+          height: 20%;
  }
 
 

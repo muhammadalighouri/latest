@@ -46,39 +46,18 @@ const Roadmap = () => {
         </div>
         <div className="container">
           <div className="roadmap__grid">
-            <div className="end">
-              {roadmap.map((item, i) => {
-                return (
-                  <div className="item" data-aos='fade-up'>
-                    <h2>Phase {item.id}</h2>
-                    <ul>
-                      {item.points.map((item, i) => {
-                        return <li key={i}>{item}</li>;
-                      })}
-                    </ul>
-                  </div>
-                );
-              })}
-            </div>
-            <div className="start">
-              <div className="img">
-                <img
-                  src="https://images.unsplash.com/photo-1637166185518-058f5896a2e9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80"
-                  width="100%"
-                  alt=""
-
-                />
-              </div>
-              {/* <div className="img">
-                <img
-                  data-aos="zoom-out-up"
-                  data-aos-easing="ease-out"
-                  src="/images/characters/add_character.png"
-                  width="100%"
-                  alt=""
-                />
-              </div> */}
-            </div>
+            {roadmap.map((item, i) => {
+              return (
+                <div className={`item no${i + 1}`} data-aos='fade-up'>
+                  <h2>Phase {i + 1}</h2>
+                  <ul>
+                    {item.points.map((item, i) => {
+                      return <li key={i}>{item}</li>;
+                    })}
+                  </ul>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

@@ -32,46 +32,63 @@ export const roadmap = [
     id: "01",
     points: [
       "Launch discord and twitter",
-      "Building community and establishing whitelist (see #how-to-whitelist in discord)",
-      "Explore collaborations/partnerships with other projects in the Cardano/CNFT Ecosystem.",
+      "Building community and establishing whitelist ",
+      "Explore collaborations/partnerships ",
       "Launch Finished Website.",
-      "Launch the collection of 5,100 Kangaroos onto the web: October 2022.",
+
     ],
     date: "2022",
     img: "/images/roadmap/1.png",
   },
   {
-    id: "02",
+    id: "01",
     points: [
-      "We believe in Cardano and its ever-expanding ecosystem and have the utmost respect for the projects who are seriously building some spectacular things and have stuck around through turbulent times. Instead of making our own native coin we will be investing in other well established projects native coins. We at KFS believe this will not only benefit our holders with exposure to other established projects, but also benefit the other projects as well because we will be adding liquidity to their native tokens/assets. ",
-      "We will be rewarding holders with exclusive airdrops of these native coins/assets that are purchased. This can be done in a variety of methods such as: Raffles, Giveaways, Games, Holder (delisted) air drops, etc.",
-      "Official Quality KFS Merchandise.",
-      "Begin development of our game (more info to come).",
+      "Launch discord and twitter",
+      "Building community and establishing whitelist ",
+      "Explore collaborations/partnerships ",
+      "Launch Finished Website.",
+
     ],
     date: "2022",
     img: "/images/roadmap/1.png",
   },
   {
-    id: "03",
+    id: "01",
     points: [
-      "Make our first official donation to a charitable cause (kangaroo wildlife/martial arts related) using a portion of royalties collected from secondary market sales. ",
-      "Create partnerships and sponsorships with athletes, and martial arts clubs around the world. ",
-      "Continue our investing into more established Cardano native projects to help provide liquidity for projects and reward and distribute to KFS holders.     ",
-      "Acquire land/assets in Cardano native metaverse projects in order to support and build a homebase for our Kangaroo Fight Club Society members to socialize and partake in all the events and challenges the metaverse has to offer. ",
-      "Development of our second KFS branded collection (more info TBA)    ",
+      "Launch discord and twitter",
+      "Building community and establishing whitelist ",
+      "Explore collaborations/partnerships ",
+      "Launch Finished Website.",
+
     ],
     date: "2022",
     img: "/images/roadmap/1.png",
   },
   {
-    id: "04",
+    id: "01",
     points: [
-      "Beta Test and launch game",
-      "TBA- We have some very cool ideas in store for phase 4 and beyond. ",
+      "Launch discord and twitter",
+      "Building community and establishing whitelist ",
+      "Explore collaborations/partnerships ",
+      "Launch Finished Website.",
+
     ],
     date: "2022",
     img: "/images/roadmap/1.png",
   },
+  {
+    id: "01",
+    points: [
+      "Launch discord and twitter",
+      "Building community and establishing whitelist ",
+      "Explore collaborations/partnerships ",
+      "Launch Finished Website.",
+
+    ],
+    date: "2022",
+    img: "/images/roadmap/1.png",
+  },
+
 ];
 
 export const Nfts = [

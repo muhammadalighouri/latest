@@ -5,6 +5,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Main from "./pages/Main";
 import Navigation from "./components/Navigation";
+import Mint from "./pages/Mint";
 
 var Spinner = require("react-spinkit");
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Main />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/Mint" element={<Mint />} />
         </Routes>
       </main>
     </>

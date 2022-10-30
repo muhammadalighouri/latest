@@ -47,7 +47,7 @@ body {
         align-items: center;
         overflow: hidden;
         z-index: -1;
-        filter: brightness(0.5) blur(1.5px);
+        filter: brightness(0.5) blur(0px);
 
     @include sm6 {
         background: url(../../public/images/background/screen_1920x1080_2022-10-30_17-00-11.png) no-repeat 100% 100%;

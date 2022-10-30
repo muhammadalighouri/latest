@@ -10,6 +10,7 @@ import { FaRedditAlien } from "react-icons/fa";
 import { links } from "../assests/data";
 import { FaInstagram } from "react-icons/fa";
 import { DiscFullRounded, Instagram, Twitter } from "@material-ui/icons";
+import NavigationSec from "../components/NavigationSec";
 const Main = () => {
     const [navToggler, setNavToggler] = useState(false);
     function barBtn() {
@@ -26,56 +27,7 @@ const Main = () => {
                     <div className="glitch__item"></div>
                     <div className="glitch__item"></div>
                 </div>
-                <div className="header">
-                    <div className="container">
-                        <div className="icon">
-                            <div onClick={() => barBtn()}>
-                                <span
-                                    style={{
-                                        transform: navToggler
-                                            ? "translateY(15px) rotate(45deg)"
-                                            : "unset",
-                                    }}
-                                ></span>
-                                <span
-                                    style={{
-                                        display: navToggler ? "none " : "unset",
-                                    }}
-                                ></span>
-                                <span
-                                    style={{
-                                        transform: navToggler
-                                            ? "translateY(-6px) rotate(-45deg) "
-                                            : "unset",
-                                    }}
-                                ></span>
-                            </div>
-                        </div>
-                        <h2><img src="/images/logo/01-03.png" alt="" /></h2>
-                        <div className={`nav__top ${navToggler ? "nav___active" : null}`}>
-                            <div className="div">
-                                <ul>
-                                    {nav.map((item, i) => {
-                                        return <li>{item.name}</li>;
-                                    })}
-                                </ul>
-                                <div className="icons">
-                                    <a href="" target={"_blank"}>
-                                        <Twitter />
-                                    </a>
-                                    <a href="" target={"_blank"}>
-                                        <Instagram />
-                                    </a>
-                                    <a href="" target={"_blank"}>
-                                        <FaDiscord />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <button>JOIN NOW!</button>
-                    </div>
-                </div>
+                <NavigationSec />
                 <div className="container">
                     <div className="grid">
                         <div className="btns__container">

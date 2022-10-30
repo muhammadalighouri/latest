@@ -8,7 +8,7 @@ import Navigation from "./Navigation";
 import { BannerImages } from "../assests/data";
 import { gsap } from "gsap";
 import { TimelineLite, Power4 } from "gsap/gsap-core";
-
+import { useNavigate } from "react-router-dom";
 const Banner = ({ timeline, ease }) => {
   useEffect(() => {
     AOS.init({});
@@ -19,6 +19,7 @@ const Banner = ({ timeline, ease }) => {
     return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
   }
   const caps = str.split(" ").map(capitalize).join(" ");
+  const navigate = useNavigate();
   return (
     <>
       <section className="banner">
@@ -41,11 +42,11 @@ const Banner = ({ timeline, ease }) => {
             </div>
             <div className="btn__container">
               <div>
-                <button>
+                <button onClick={() => navigate("/Mint")}>
                   <span>Buy Now!</span>
                 </button>
                 <button>
-                  <span>Opensea!</span>
+                  <span onClick={() => navigate("/home")}>Opensea!</span>
                 </button>
               </div>
             </div>

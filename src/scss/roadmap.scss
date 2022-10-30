@@ -61,7 +61,10 @@
       grid-row-gap: 2rem;
       grid-column-gap: 8rem;
       margin-top: 50px;
-
+@include md{
+  grid-template-columns: 1fr ;
+  padding: 0;
+}
       &::before {
         content: "";
         position: absolute;
@@ -85,55 +88,31 @@
         // background: linear-gradient(180deg, #2196f333 0%, #03a9f41a 100%);
         width: 100%;
         height: max-content;
-        &:nth-child(even) {
+       
+        @include md{
+          padding: 15px;
+        }
+     @include -md{
+      &:nth-child(even) {
           justify-self: start;
           margin-top: 100px;
         }
         &:nth-child(odd) {
-          justify-self: end;
-          h2 {
-            text-align: end;
-          }
-          ul {
-            li {
+            justify-self: end;
+        
+            h2 {
               text-align: end;
             }
+        
+            ul {
+              li {
+                text-align: end;
+              }
+            }
           }
-        }
-        &::after {
-          // content: "";
-          position: absolute;
-          top: 50%;
-          left: 18px;
-          width: 25px;
-          height: 25px;
-          background: #031723;
-          transform: translateX(-25px) translateY(-50%) rotate(45deg);
-          border-radius: 2px;
-        }
+     }
 
-        span:nth-child(1) {
-          position: absolute;
-          right: 11%;
-          top: 3px;
-          font-size: 5rem;
-          font-weight: 900;
-          opacity: 0.3;
-          z-index: 1;
-          color: #170029;
-        }
-
-        span:nth-child(2) {
-          position: absolute;
-          right: 11%;
-          top: 12px;
-          font-size: 4rem;
-          font-weight: 900;
-          opacity: 1;
-          color: #a076f6bd;
-
-          z-index: 2;
-        }
+      
 
         h2 {
             line-height: 30px;
@@ -203,21 +182,27 @@
           }
         }
       }
-      .no2{
-        transform: translateY(40px);
-      }
-      .no1{
-        transform: translateY(10px);
-      }
-      .no3{
-        transform: translateY(-20px);
-      }
-      .no4{
-        transform: translateY(5px);
-      }
-      .no5{
-        transform: translateY(-50px);
-      }
+    @include -md{
+        .no2 {
+            transform: translateY(40px);
+          }
+        
+          .no1 {
+            transform: translateY(10px);
+          }
+        
+          .no3 {
+            transform: translateY(-20px);
+          }
+        
+          .no4 {
+            transform: translateY(5px);
+          }
+        
+          .no5 {
+            transform: translateY(-50px);
+          }
+    }
     }
   }
 }

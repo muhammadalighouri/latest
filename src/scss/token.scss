@@ -52,7 +52,7 @@
         line-height: 1.2;
 @include md {
     font-size: 16px;
-    width: 80%;
+    width: 90%;
   }
       }
     }
@@ -106,11 +106,14 @@
 
           p {
             color: #ffffff;
-            font-family: "Montserrat", sans-serif;
-            font-size: 16px;
+        
+            font-size: 18px;
             font-weight: 500;
             line-height: 24px;
             margin: 0px 0px 10px 0px;
+            @include md{
+              font-size: 16px;
+            }
           }
 
           .line {

@@ -108,7 +108,7 @@ const Navigation = () => {
             <div className="nav__grid">
               <div className="logo">
                 <a href="https://twitter.com/Caish3n" target={"_blank"}>
-                  <img src="/images/nav-logo.png" alt="" />
+                  {/* <img src="/images/nav-logo.png" alt="" /> */}
                 </a>
               </div>
               <nav style={{ right: navToggler ? 0 : "-100%" }}>

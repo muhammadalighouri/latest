@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import "../scss/steps.scss";
 const Steps = () => {
     const info = [
@@ -21,32 +21,48 @@ const Steps = () => {
     return (
         <section className="steps">
             <div className="heading">
-                <h1>
-                    How to buy
-
-                </h1>
+                <h1>How to buy</h1>
             </div>
             <div className="container">
-                <div className="grid">
-                    {
-                        info.map((item, ind) => {
+                <div className="first">
+                    <div className="start">
+                        <h2>Step 1/3</h2>
+                        <p>
+                            To begin, make sure you have a MetaMask wallet installed on your
+                            browser, or use one of the wallets supported by Wallet Connect (we
+                            recommend Trust Wallet). Purchasing on a desktop browser will give
+                            you a smoother purchasing experience. For this we recommend
+                            Metamask. If you are purchasing on mobile, we recommend using
+                            Trust Wallet and connecting through the in built browser
+                        </p>
+                    </div>
+                    <div className="end">
+                        <figure>
+                            <img src="/images/Dog Run/side.png" alt="" />
+                        </figure>
+                    </div>
+                    <div className="end"></div>
+                </div>
+                <div className="second">
+                    <h2>Step 2/3</h2>
+                    <p>Once you have your preferred wallet provider ready, click “Connect Wallet” and select the appropriate option. For mobile wallet apps you will need to select “Wallet Connect”.   </p>
+                    <div className="grid">
+                        {info.map((item, ind) => {
                             return (
                                 <div className="item">
                                     <div className="top">
                                         <img src={item.img} alt="" />
                                         <span>{item.name}</span>
                                     </div>
-                                    <p>
-                                        {item.desc}
-                                    </p>
+                                    <p>{item.desc}</p>
                                 </div>
-                            )
-                        })
-                    }
+                            );
+                        })}
+                    </div>
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default Steps
+export default Steps;

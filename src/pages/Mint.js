@@ -8,7 +8,6 @@ const Mint = () => {
             <section className="mint">
                 <div className="container">
                     <div className="about__grid">
-
                         <div data-aos="fade-up" className="aos-init aos-animate details">
                             <div>
                                 <div className="payment__header">
@@ -51,19 +50,19 @@ const Mint = () => {
                                 >
                                     <img
                                         style={{
-                                            width: '200px',
-                                            height: '200px'
+                                            width: "200px",
+                                            height: "200px",
                                         }}
                                         src="https://mint.monkainft.com/static/media/aura.4f891d18.gif"
                                         alt=""
                                     />
                                     <div class="payment-info-text">
-                                        <p>Price Per Monkai NFT</p>
+                                        <p>Price Per  NFT</p>
                                         <h5>0.08 ETH</h5>
                                         <p>LIVE NOW!</p>
                                     </div>
                                 </div>
-                                <div className="price" >
+                                <div className="price">
                                     <div id="ape-total">
                                         <p>PRICE</p>
                                         <h5>0.08 ETH</h5>
@@ -72,12 +71,16 @@ const Mint = () => {
                                 <div className="btns">
                                     <button>CONNECT WALLET!</button>
                                 </div>
-                                <p style={{
-                                    color: 'rgb(201, 210, 215)',
-                                    fontWeight: '400',
-                                    fontSize: '19px',
-                                    marginTop: '10px'
-                                }}>Connect To Ethereum Wallet</p>
+                                <p
+                                    style={{
+                                        color: "rgb(201, 210, 215)",
+                                        fontWeight: "400",
+                                        fontSize: "19px",
+                                        marginTop: "10px",
+                                    }}
+                                >
+                                    Connect To Ethereum Wallet
+                                </p>
                             </div>
                         </div>
                     </div>

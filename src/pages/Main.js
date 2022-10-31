@@ -27,7 +27,7 @@ const Main = () => {
                     <div className="glitch__item"></div>
                     <div className="glitch__item"></div>
                 </div>
-                <NavigationSec />
+                <NavigationSec text={'JOIN NOW!'} />
                 <div className="container">
                     <div className="grid">
                         <div className="btns__container">

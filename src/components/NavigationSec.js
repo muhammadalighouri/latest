@@ -9,7 +9,7 @@ import { FaInstagram } from "react-icons/fa";
 import { DiscFullRounded, Instagram, Twitter } from "@material-ui/icons";
 import { nav } from "../assests/data"
 import "../scss/navsec.scss"
-const NavigationSec = () => {
+const NavigationSec = ({ text }) => {
     const [navToggler, setNavToggler] = useState(false);
     function barBtn() {
         setNavToggler(!navToggler);
@@ -63,7 +63,7 @@ const NavigationSec = () => {
                     </div>
                 </div>
 
-                <button>JOIN NOW!</button>
+                <button>{text}</button>
             </div>
         </div>
     )

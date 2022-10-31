@@ -47,6 +47,10 @@ font-family: 'VT323', monospace; */
   font-family: "Play-Regular";
   src: url("./font/Play-Regular.ttf");
 }
+@font-face {
+  font-family: "Barlow-medium";
+  src: url(./font/BarlowCondensed-Medium.ttf);
+}
 h1,
 h2 {
   font-family: "Play-Bold" !important;

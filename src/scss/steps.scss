@@ -1,0 +1,53 @@
+@import "./variable.scss";
+@import "./media.scss";
+
+.steps {
+    padding: 40px 10px;
+    position: relative;
+    z-index: 5;
+
+    .container {
+        max-width: 1300px;
+        padding: 10px;
+        margin: auto;
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 1rem;
+
+            .item {
+                padding: 35px 35px 25px 35px;
+                background: #04111d;
+
+                .top {
+                    align-items: center;
+                    margin-bottom: 10px;
+                    display: grid;
+                    grid-template-columns: 50px auto;
+                    grid-gap: 8px;
+
+                    img {
+                        width: 45px;
+                        height: 45px;
+                    }
+
+                    span {
+                        color: white;
+                            font-size: 22px;
+                            font-family: "BakbakOneRegular";
+                            font-family: 'Barlow-medium';
+                    }
+                }
+
+                p {
+                    font-size: 18px;
+
+                    line-height: 1.5;
+                    font-weight: 300;
+                    color: #c2c3c5;
+                }
+            }
+        }
+    }
+}

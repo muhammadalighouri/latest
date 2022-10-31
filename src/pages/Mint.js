@@ -1,6 +1,11 @@
 import React from "react";
+import AboutNft from "../components/AboutNft";
 import NavigationSec from "../components/NavigationSec";
+import Marchendise from "../components/Marchendise";
+import Footer from "../components/Footer";
 import "../scss/mint.scss";
+import Steps from "../components/Steps";
+import Holder from "../components/Holder";
 const Mint = () => {
     return (
         <>
@@ -57,7 +62,7 @@ const Mint = () => {
                                         alt=""
                                     />
                                     <div class="payment-info-text">
-                                        <p>Price Per  NFT</p>
+                                        <p>Price Per NFT</p>
                                         <h5>0.08 ETH</h5>
                                         <p>LIVE NOW!</p>
                                     </div>
@@ -86,6 +91,11 @@ const Mint = () => {
                     </div>
                 </div>
             </section>
+            <Steps />
+            <AboutNft />
+            <Holder/>
+            <Marchendise />
+            <Footer />
         </>
     );
 };

@@ -48,7 +48,7 @@ const AboutNft = () => {
               data-aos-delay="400"
             >
               <img
-                src="https://metawin.xyz/wp-content/themes/metawin/img/roulette-high.png"
+                src="/images/sections/A.jpg"
                 alt=""
               />
             </div>
@@ -73,15 +73,7 @@ const AboutNft = () => {
                   around to help with anything regardless of how ridiculous the
                   request.
                 </span>
-                <span>
-                  Around the year 2066 the AI reached sophistication to the
-                  level where it could reproduce it’s physical form (robots) on
-                  its own. More and more robots were formed using bolts.
-                  Initially, the humans saw this as a blessing. It allowed them
-                  to be even more lazy sinking further into gluttony and greed.
-                  Plus, the AI robots promised they were still "frenly" and
-                  continued making the lives of their human companions.
-                </span>
+
               </p>
               <div className="btns">
                 <a
@@ -112,7 +104,7 @@ const AboutNft = () => {
               data-aos-delay="400"
             >
               <img
-                src="https://metawin.xyz/wp-content/themes/metawin/img/metro-ape-o.jpeg"
+                src="/images/sections/B.jpg"
                 alt=""
               />
             </div>
@@ -137,15 +129,7 @@ const AboutNft = () => {
                   around to help with anything regardless of how ridiculous the
                   request.
                 </span>
-                <span>
-                  Around the year 2066 the AI reached sophistication to the
-                  level where it could reproduce it’s physical form (robots) on
-                  its own. More and more robots were formed using bolts.
-                  Initially, the humans saw this as a blessing. It allowed them
-                  to be even more lazy sinking further into gluttony and greed.
-                  Plus, the AI robots promised they were still "frenly" and
-                  continued making the lives of their human companions.
-                </span>
+
               </p>
               <div className="btns">
                 <a
@@ -176,7 +160,7 @@ const AboutNft = () => {
               data-aos-delay="400"
             >
               <img
-                src="https://images.unsplash.com/photo-1637166185518-058f5896a2e9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80"
+                src="/images/sections/C.jpg"
                 alt=""
               />
             </div>
@@ -201,15 +185,7 @@ const AboutNft = () => {
                   around to help with anything regardless of how ridiculous the
                   request.
                 </span>
-                <span>
-                  Around the year 2066 the AI reached sophistication to the
-                  level where it could reproduce it’s physical form (robots) on
-                  its own. More and more robots were formed using bolts.
-                  Initially, the humans saw this as a blessing. It allowed them
-                  to be even more lazy sinking further into gluttony and greed.
-                  Plus, the AI robots promised they were still "frenly" and
-                  continued making the lives of their human companions.
-                </span>
+
               </p>
               <div className="btns">
                 <a

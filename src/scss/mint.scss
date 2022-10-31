@@ -23,6 +23,17 @@
     z-index: -1;
     filter: brightness(0.5) blur(0px);
   }
+     &::after {
+       position: absolute;
+       content: "";
+       left: 0;
+       bottom: 0;
+       width: 100%;
+       background: linear-gradient(0deg, #000, transparent);
+       z-index: 1;
+       right: 0;
+       height: 20%;
+     }
 
   > .container {
     margin: auto;

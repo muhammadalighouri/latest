@@ -8,18 +8,26 @@ const Steps = () => {
             img: "https://bithu.uigaint.com/wp-content/uploads/2022/06/aboutus_card_icon1-min.png",
         },
         {
-            name: "Gamming NFTs",
+            name: "Play & Earn",
             desc: "Latin professor at Hampden-Sydney her College in Virginia, looked up one of the more obscure.",
             img: "https://bithu.uigaint.com/wp-content/uploads/2022/06/aboutus_card_icon2-min.png",
         },
         {
-            name: "Gamming NFTs",
+            name: "Buy ETH or BNB",
             desc: "Latin professor at Hampden-Sydney her College in Virginia, looked up one of the more obscure.",
             img: "https://bithu.uigaint.com/wp-content/uploads/2022/06/aboutus_card_icon3-min.png",
         },
     ];
     return (
         <section className="steps">
+            <div className="heading">
+                <h1>
+                    How to buy
+                    <span style={{ color: "#fff", fontFamily: "inherit" }}>
+                        DogeRush!
+                    </span>
+                </h1>
+            </div>
             <div className="container">
                 <div className="grid">
                     {

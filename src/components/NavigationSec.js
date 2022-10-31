@@ -6,7 +6,7 @@ import { AiOutlineTwitter } from "react-icons/ai";
 import { FaRedditAlien } from "react-icons/fa";
 import { links } from "../assests/data";
 import { FaInstagram } from "react-icons/fa";
-import { DiscFullRounded, Instagram, Twitter } from "@material-ui/icons";
+import { DiscFullRounded, Instagram, Telegram, Twitter, YouTube } from "@material-ui/icons";
 import { nav } from "../assests/data"
 import "../scss/navsec.scss"
 const NavigationSec = ({ text }) => {
@@ -51,13 +51,16 @@ const NavigationSec = ({ text }) => {
                         </ul>
                         <div className="icons">
                             <a href="" target={"_blank"}>
-                                <Twitter />
+                                <YouTube />
                             </a>
                             <a href="" target={"_blank"}>
                                 <Instagram />
                             </a>
                             <a href="" target={"_blank"}>
-                                <FaDiscord />
+                                <Telegram />
+                            </a>
+                            <a href="" target={"_blank"}>
+                                <Twitter />
                             </a>
                         </div>
                     </div>

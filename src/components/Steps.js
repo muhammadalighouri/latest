@@ -20,20 +20,26 @@ const Steps = () => {
     ];
     return (
         <section className="steps">
-            <div className="heading">
-                <h1>How to buy</h1>
-            </div>
             <div className="container">
+                <div className="heading">
+                    <h1>How to buy</h1>
+                </div>
                 <div className="first">
                     <div className="start">
                         <h2>Step 1/3</h2>
                         <p>
-                            To begin, make sure you have a MetaMask wallet installed on your
-                            browser, or use one of the wallets supported by Wallet Connect (we
-                            recommend Trust Wallet). Purchasing on a desktop browser will give
-                            you a smoother purchasing experience. For this we recommend
-                            Metamask. If you are purchasing on mobile, we recommend using
-                            Trust Wallet and connecting through the in built browser
+                            <span>
+                                {" "}
+                                To begin, make sure you have a MetaMask wallet installed on your
+                                browser, or use one of the wallets supported by Wallet Connect
+                                (we recommend Trust Wallet).
+                            </span>{" "}
+                            <span>
+                                Purchasing on a desktop browser will give you a smoother
+                                purchasing experience. For this we recommend Metamask. If you
+                                are purchasing on mobile, we recommend using Trust Wallet and
+                                connecting through the in built browser
+                            </span>
                         </p>
                     </div>
                     <div className="end">
@@ -41,11 +47,16 @@ const Steps = () => {
                             <img src="/images/Dog Run/side.png" alt="" />
                         </figure>
                     </div>
-                    <div className="end"></div>
                 </div>
                 <div className="second">
                     <h2>Step 2/3</h2>
-                    <p>Once you have your preferred wallet provider ready, click “Connect Wallet” and select the appropriate option. For mobile wallet apps you will need to select “Wallet Connect”.   </p>
+                    <p>
+                        <span>
+                            Once you have your preferred wallet provider ready, click “Connect
+                            Wallet” and select the appropriate option. For mobile wallet apps
+                            you will need to select “Wallet Connect”.{" "}
+                        </span>{" "}
+                    </p>
                     <div className="grid">
                         {info.map((item, ind) => {
                             return (
@@ -58,6 +69,30 @@ const Steps = () => {
                                 </div>
                             );
                         })}
+                    </div>
+                </div>
+                <div className="third">
+                    <div className="start">
+                        <h2>Step 3/3</h2>
+                        <p>
+                            <span>
+                                {" "}
+                                To begin, make sure you have a MetaMask wallet installed on your
+                                browser, or use one of the wallets supported by Wallet Connect
+                                (we recommend Trust Wallet).
+                            </span>{" "}
+                            <span>
+                                Purchasing on a desktop browser will give you a smoother
+                                purchasing experience. For this we recommend Metamask. If you
+                                are purchasing on mobile, we recommend using Trust Wallet and
+                                connecting through the in built browser
+                            </span>
+                        </p>
+                    </div>
+                    <div className="end">
+                        <figure>
+                            <img src="/images/Dog Run/front.png" alt="" />
+                        </figure>
                     </div>
                 </div>
             </div>

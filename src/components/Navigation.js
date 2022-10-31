@@ -13,6 +13,7 @@ import { BsChevronUp } from "react-icons/bs";
 import gsap from "gsap";
 import { Power4, Back, Expo } from "gsap";
 import { Timeline } from "gsap/gsap-core";
+import { Instagram, Telegram, YouTube } from "@material-ui/icons";
 const Navigation = () => {
   const [navToggler, setNavToggler] = useState(false);
   const [navColor, setNavColor] = useState(false);
@@ -127,16 +128,22 @@ const Navigation = () => {
 "
                       target="_blank"
                     >
-                      <FaDiscord />
+                      <YouTube />
                     </a>
                     <a href="https://twitter.com/blkstarlabz " target="_blank">
-                      <AiOutlineTwitter />
+                      <Instagram />
                     </a>
                     <a
                       href="https://www.instagram.com/blkstarlabz/"
                       target="_blank"
                     >
-                      <FaInstagram />
+                      <Telegram />
+                    </a>
+                    <a
+                      href="https://www.instagram.com/blkstarlabz/"
+                      target="_blank"
+                    >
+                      <FaTiktok />
                     </a>
                   </li>
                 </ul>
@@ -147,16 +154,22 @@ const Navigation = () => {
 "
                   target="_blank"
                 >
-                  <FaDiscord />
+                  <YouTube />
                 </a>
-                <a href="https://twitter.com/blkstarlabz" target="_blank">
-                  <AiOutlineTwitter />
+                <a href="https://twitter.com/blkstarlabz " target="_blank">
+                  <Instagram />
                 </a>
                 <a
                   href="https://www.instagram.com/blkstarlabz/"
                   target="_blank"
                 >
-                  <FaInstagram />
+                  <Telegram />
+                </a>
+                <a
+                  href="https://www.instagram.com/blkstarlabz/"
+                  target="_blank"
+                >
+                  <Telegram />
                 </a>
                 <a href="https://twitter.com/adoptablebabes" target={"_blank"}>
                   <div className="btn">

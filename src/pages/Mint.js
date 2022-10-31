@@ -63,7 +63,6 @@ const Mint = () => {
             <NavigationSec text="CONNECT WALLET" />
             <MintContainer />
             <Steps />
-
             {/* <Holder/> */}
             <Marchendise />
             <Footer />

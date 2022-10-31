@@ -2,73 +2,200 @@
 @import "./media.scss";
 
 .steps {
-    padding: 100px 10px;
-    position: relative;
-    z-index: 5;
-    margin-top: 130px;
-.heading {
-        h1 {
-            position: relative;
-            font-size: 4rem;
-            font-weight: 100;
-            color: #ffff;
-            text-transform: uppercase;
+  padding: 100px 10px;
+  position: relative;
+  z-index: 5;
+  margin-top: 130px;
+&::before {
+        content: "";
+        background: url(../../public/images/background/land-bg.4e7c74f0.jpg) no-repeat center center;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-size: cover;
+        filter: hue-rotate(317deg) brightness(1);
+        opacity: 0.9;
+    }
+         &::after {
+             position: absolute;
+             content: "";
+             left: 0;
+             top: 0;
+             width: 100%;
+             background: linear-gradient(0deg, transparent, #000);
+             z-index: -1;
+             right: 0;
+             height: 20%;
+         }
+  .container {
+    max-width: 1200px;
+    padding: 70px 50px;
+    margin: auto;
+    background: linear-gradient(180deg, #2196f333 0%, #03a9f41a 100%);
+    border: 1px solid #0085ff2e;
+    border-radius: 32px;
+    .heading {
+      margin-bottom: 80px;
+      h1 {
+        position: relative;
+        font-size: 4rem;
+        font-weight: 100;
+        color: #ffff;
+        text-transform: uppercase;
+        display: block;
+        line-height: 1;
+        padding: 0;
+        margin: 0 auto 40px;
+        text-align: center;
+        font-size: clamp(4rem, 5vw, 5rem);
+      }
+    }
+
+    .first {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2rem;
+      margin-bottom: 50px;
+      background: linear-gradient(180deg, #2196f333 0%, #03a9f41a 100%);
+      padding: 20px 30px;
+      border-radius: 32px;
+      align-items: center;
+      .start {
+        h2 {
+          font-size: 2rem;
+          margin: 10px 0;
+        }
+        p {
+          span {
             display: block;
-            line-height: 1;
-            padding: 0;
-            margin: 0 auto 40px;
-            text-align: center;
-                font-size: clamp(4rem, 6vw, 6rem);
+            margin-bottom: 5px;
+            line-height: 1.3;
+            opacity: 0.8;
+          }
         }
+      }
+      .end {
+        text-align: end;
+        figure {
+          width: 80%;
+          margin-left: auto;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
     }
-    .container {
-        max-width: 1200px;
-        padding: 10px;
-        margin: auto;
+    .second {
+      background: linear-gradient(180deg, #2196f333 0%, #03a9f41a 100%);
+      padding: 20px 30px;
+      border-radius: 32px;
+      > h2 {
+        font-size: 2rem;
+        margin: 10px 0;
+      }
 
-        .grid {
+      > p {
+        margin-bottom: 30px;
+        width: 80%;
+        span {
+          display: block;
+          margin-bottom: 5px;
+          opacity: 0.8;
+          line-height: 1.3;
+        }
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 1rem;
+
+        .item {
+          padding: 35px 35px 25px 35px;
+          background: linear-gradient(180deg, #2196f333 0%, #03a9f41a 100%);
+          border-radius: 12px;
+          border: 1px solid #0085ff2e;
+          transition: 0.3s all;
+          cursor: pointer;
+
+          &:hover {
+            box-shadow: 0 0 5px #0085ffa1;
+          }
+
+          .top {
+            align-items: center;
+            margin-bottom: 10px;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            grid-gap: 1rem;
+            grid-template-columns: 50px auto;
+            grid-gap: 8px;
 
-            .item {
-                padding: 35px 35px 25px 35px;
-                    background: linear-gradient(180deg, #2196f333 0%, #03a9f41a 100%);
-                    border-radius: 12px;
-                    border: 1px solid #0085ff2e;
-                    transition: .3s all;
-                    cursor: pointer;
-                    &:hover{
-                        box-shadow: 0 0 5px #0085ffa1;
-                    }
-                .top {
-                    align-items: center;
-                    margin-bottom: 10px;
-                    display: grid;
-                    grid-template-columns: 50px auto;
-                    grid-gap: 8px;
-
-                    img {
-                        width: 45px;
-                        height: 45px;
-                    }
-
-                    span {
-                        color: white;
-                            font-size: 22px;
-                            font-family: "BakbakOneRegular";
-                            font-family: 'Barlow-medium';
-                    }
-                }
-
-                p {
-                    font-size: 18px;
-
-                    line-height: 1.5;
-                    font-weight: 300;
-                    color: #c2c3c5;
-                }
+            img {
+              width: 45px;
+              height: 45px;
             }
+
+            span {
+              color: white;
+              font-size: 22px;
+              font-family: "BakbakOneRegular";
+              font-family: "Barlow-medium";
+            }
+          }
+
+          p {
+            font-size: 18px;
+
+            line-height: 1.5;
+            font-weight: 300;
+            color: #c2c3c5;
+          }
         }
+      }
     }
+         .third {
+             display: grid;
+             grid-template-columns: 1fr 1fr;
+             grid-gap: 2rem;
+             margin-bottom: 50px;
+             background: linear-gradient(180deg, #2196f333 0%, #03a9f41a 100%);
+             padding: 20px 30px;
+             border-radius: 32px;
+             align-items: center;
+    margin-top: 50px;
+             .start {
+                 h2 {
+                     font-size: 2rem;
+                     margin: 10px 0;
+                 }
+    
+                 p {
+                     span {
+                         display: block;
+                         margin-bottom: 5px;
+                         line-height: 1.3;
+                         opacity: 0.8;
+                     }
+                 }
+             }
+    
+             .end {
+                 text-align: end;
+    
+                 figure {
+                     width: 80%;
+                     margin-left: auto;
+    
+                     img {
+                         width: 100%;
+                         height: 300px;
+                         object-fit: contain;
+                     }
+                 }
+             }
+         }
+ 
+  }
 }

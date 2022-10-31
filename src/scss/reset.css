@@ -71,6 +71,12 @@ h2 {
   width: 100%;
   height: 100%;
 }
+button{
+  font-family: "Barlow-medium" !important;
+
+  font-size: 18px !important;
+  font-weight: 500 !important;
+}
 body {
   background: #000 !important;
   overflow-x: hidden;

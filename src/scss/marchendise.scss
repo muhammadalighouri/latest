@@ -22,7 +22,7 @@ display: grid;
       background: url(../../public/images/background/5.jpg) no-repeat center center;
       background-size: cover;
       z-index: -1;
-      filter: brightness(.3) hue-rotate(29deg);
+      filter: brightness(.3) hue-rotate(9deg);
     }
     &::after {
       position: absolute;

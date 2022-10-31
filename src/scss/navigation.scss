@@ -33,8 +33,8 @@ header {
 
       .nav__grid {
         display: grid;
-          grid-template-columns: 70px 3fr 1.6fr;
-          align-items: center;
+        grid-template-columns: 70px 3fr 1.6fr;
+        align-items: center;
         @include mobile {
           padding: 18px 0px;
         }
@@ -46,13 +46,13 @@ header {
         .logo {
           justify-self: start;
 
-       a{
-        display: flex;
-          img {
+          a {
+            display: flex;
+            img {
               padding: 10px 0;
               max-width: 55px;
             }
-       }
+          }
         }
 
         nav {
@@ -208,7 +208,7 @@ header {
               color: #000000;
               padding: 0;
               border-radius: 0;
-              font-size: 18px;
+              font-size: 19px;
               font-weight: 400;
               border: none;
               cursor: pointer;
@@ -234,6 +234,7 @@ header {
               justify-content: center;
               width: 200px;
               color: #000;
+              font-family: "Barlow-medium";
               &:hover {
                 color: #fff;
                 &::before {
@@ -441,15 +442,15 @@ header {
 
       nav {
         position: absolute;
-          top: 0;
-          width: 100%;
-          z-index: 100;
-          height: 100vh;
-          right: -100%;
-          overflow: hidden;
-          justify-content: center !important;
-          background: rgb(4, 17, 29);
-          transition: all 400ms ease 0s;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+        height: 100vh;
+        right: -100%;
+        overflow: hidden;
+        justify-content: center !important;
+        background: rgb(4, 17, 29);
+        transition: all 400ms ease 0s;
 
         ul {
           flex-direction: column;
@@ -467,17 +468,17 @@ header {
       .nav__btns {
         > div {
           cursor: pointer;
-            height: 48px;
-            position: absolute;
-            transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s;
-            -webkit-user-select: none;
-            user-select: none;
-            width: 48px;
-            outline: none;
-            transform: none;
-            right: 2.1%;
-            z-index: 1111;
-            top: 14%;
+          height: 48px;
+          position: absolute;
+          transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s;
+          -webkit-user-select: none;
+          user-select: none;
+          width: 48px;
+          outline: none;
+          transform: none;
+          right: 2.1%;
+          z-index: 1111;
+          top: 14%;
 
           > span {
             &:nth-child(1) {

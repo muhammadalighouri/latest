@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { FaDiscord } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa";
 import { AiOutlineTwitter } from "react-icons/ai";
@@ -45,9 +45,9 @@ const NavigationSec = ({ text }) => {
                 <div className={`nav__top ${navToggler ? "nav___active" : null}`}>
                     <div className="div">
                         <ul>
-                            {nav.map((item, i) => {
-                                return <li>{item.name}</li>;
-                            })}
+                            <li><Link to={'/'}>DogeRush!</Link></li>
+                            <li><Link to={'/home'}>Home</Link></li>
+                            <li><Link to={'/mint'}>Buy</Link></li>
                         </ul>
                         <div className="icons">
                             <a href="" target={"_blank"}>

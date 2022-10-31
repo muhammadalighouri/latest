@@ -93,7 +93,7 @@ const Mint = () => {
             </section>
             <Steps />
             <AboutNft />
-            <Holder/>
+            {/* <Holder/> */}
             <Marchendise />
             <Footer />
         </>

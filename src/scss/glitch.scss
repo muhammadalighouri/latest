@@ -62,13 +62,14 @@ body {
     display: none;
 }
     .glitch__item {
-        background: url(../../public/images/background/screen_1920x1080_2022-10-30_17-00-11.png) no-repeat 50% 50%/cover;
+        background: url(../../public/images/background/screen_1920x1080_2022-10-30_17-00-11.png) no-repeat center top/cover;
         height: 100%;
         width: 100%;
         top: 0;
         left: 0;
         position: absolute;
         background-size: 100%;
+
     }
 
     .glitch__item:nth-child(n+2) {

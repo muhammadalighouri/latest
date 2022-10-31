@@ -169,14 +169,9 @@ const Navigation = () => {
                   href="https://www.instagram.com/blkstarlabz/"
                   target="_blank"
                 >
-                  <Telegram />
+                  <FaTiktok />
                 </a>
-                <a href="https://twitter.com/adoptablebabes" target={"_blank"}>
-                  <div className="btn">
-                    <AiOutlineTwitter />
-                    TWITTER
-                  </div>
-                </a>
+
                 <a
                   href={"https://discord.com/invite/DcrwzT9WnD"}
                   target={"_blank"}

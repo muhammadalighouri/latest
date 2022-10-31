@@ -6,12 +6,25 @@ import Footer from "../components/Footer";
 import "../scss/mint.scss";
 import Steps from "../components/Steps";
 import Holder from "../components/Holder";
+import Talk from "../Talk";
 
 const MintContainer = () => {
     return (
         <section className="mint">
             <div className="container">
+
+            </div>
+        </section>
+    );
+};
+const MintGrid = () => {
+    return (
+        <section className="mint__grid">
+            <div className="container">
                 <div className="about__grid">
+                    <div className="img">
+                        <img src="/images/Characters Move/Run/side.png" alt="" />
+                    </div>
                     <div data-aos="fade-up" className="aos-init aos-animate details">
                         <div>
                             <div className="payment__header">
@@ -62,7 +75,9 @@ const Mint = () => {
         <>
             <NavigationSec text="CONNECT WALLET" />
             <MintContainer />
-            <Steps />
+
+            <Steps MintGrid={MintGrid} />
+            {/* <Talk /> */}
             {/* <Holder/> */}
             <Marchendise />
             <Footer />

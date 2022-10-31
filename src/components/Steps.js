@@ -1,6 +1,6 @@
 import React from "react";
 import "../scss/steps.scss";
-const Steps = () => {
+const Steps = ({ MintGrid }) => {
     const info = [
         {
             name: "Gamming NFTs",
@@ -20,7 +20,10 @@ const Steps = () => {
     ];
     return (
         <section className="steps">
+            <span></span>
+
             <div className="container">
+                <MintGrid />
                 <div className="heading">
                     <h1>How to buy</h1>
                 </div>
@@ -93,6 +96,47 @@ const Steps = () => {
                         <figure>
                             <img src="/images/Dog Run/front.png" alt="" />
                         </figure>
+                    </div>
+                </div>
+                <div className="fourth">
+                    <div className="heading">
+                        <h1>Talk to us</h1>
+                        <p>
+                            Leave your details below and we’ll contact you to discuss purchasing
+                            Big Eyes.
+                        </p>
+                    </div>
+                    <div className="grid">
+                        <div className="first">
+                            <div className="item">
+                                <input type="text" placeholder="Enter First Name" />
+                            </div>
+                            <div className="item">
+                                <input type="text" placeholder="Enter Last Name" />
+                            </div>
+                        </div>
+                        <div className="second">
+                            <div className="item">
+                                <input type="email" placeholder="Enter Email" />
+                            </div>
+                            <div className="item">
+                                <input type="text" placeholder="Contact Number" />
+                            </div>
+                        </div>
+                        <div className="third">
+                            <textarea
+                                name=""
+                                placeholder="Your Message*"
+                                id=""
+                                cols="30"
+                                rows="10"
+                            ></textarea>
+                        </div>
+                        <button>Submit!</button>
+                        <p id="p">
+                            <input type="checkbox" name="" id="" for='p' />
+                            By submitting this form you agree to our Terms and Privacy Policy
+                        </p>
                     </div>
                 </div>
             </div>

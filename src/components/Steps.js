@@ -23,9 +23,7 @@ const Steps = () => {
             <div className="heading">
                 <h1>
                     How to buy
-                    <span style={{ color: "#fff", fontFamily: "inherit" }}>
-                        DogeRush!
-                    </span>
+
                 </h1>
             </div>
             <div className="container">

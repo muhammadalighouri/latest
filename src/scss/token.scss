@@ -28,7 +28,9 @@
     max-width: 1200px;
     margin: 20px auto 10px;
     padding: 10px 15px;
-
+    @include md {
+      padding: 10px 0;
+    }
     .heading {
       h1 {
         font-size: 3.5rem;
@@ -39,7 +41,6 @@
         text-align: center;
         position: relative;
         font-size: clamp(3.5rem, 6vw, 6rem);
-     
       }
 
       p {
@@ -50,10 +51,10 @@
         font-size: 18px;
 
         line-height: 1.2;
-@include md {
-    font-size: 16px;
-    width: 100%;
-  }
+        @include md {
+          font-size: 16px;
+          width: 100%;
+        }
       }
     }
 
@@ -106,12 +107,12 @@
 
           p {
             color: #ffffff;
-        
+
             font-size: 18px;
             font-weight: 500;
             line-height: 24px;
             margin: 0px 0px 10px 0px;
-            @include md{
+            @include md {
               font-size: 16px;
             }
           }

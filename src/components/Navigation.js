@@ -118,30 +118,7 @@ const Navigation = () => {
                     );
                   })}
 
-                  <li className="nav__links">
-                    <a
-                      href="https://discord.gg/3DUsna54
-"
-                      target="_blank"
-                    >
-                      <YouTube />
-                    </a>
-                    <a href="https://twitter.com/blkstarlabz " target="_blank">
-                      <Instagram />
-                    </a>
-                    <a
-                      href="https://www.instagram.com/blkstarlabz/"
-                      target="_blank"
-                    >
-                      <Telegram />
-                    </a>
-                    <a
-                      href="https://www.instagram.com/blkstarlabz/"
-                      target="_blank"
-                    >
-                      <FaTiktok />
-                    </a>
-                  </li>
+
                 </ul>
               </nav>
               <div className="nav__btns">

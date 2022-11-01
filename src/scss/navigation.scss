@@ -45,7 +45,7 @@ header {
 
         .logo {
           justify-self: start;
-display: none;
+          display: none;
           a {
             display: flex;
             img {
@@ -77,6 +77,16 @@ display: none;
               display: flex;
               gap: 5px;
               justify-content: center;
+              a.tiktok {
+                svg {
+                  width: 20px !important;
+                  height: 20px !important;
+              
+                }
+              }
+              svg {
+                width: 30px;
+              }
             }
 
             > li {
@@ -134,14 +144,11 @@ display: none;
           align-items: center;
           gap: 15px;
           margin: 10px 0;
-svg{
-  width: 30px;
-  // height: 30px;
-  fill: white;
-}
-
-         
-         
+          svg {
+            width: 30px;
+            // height: 30px;
+            fill: white;
+          }
         }
       }
     }

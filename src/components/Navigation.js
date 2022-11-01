@@ -100,57 +100,57 @@ const Navigation = () => {
       <header
         style={{
           top: !target ? "0" : "-100px",
-          background: navColor ? '#04111d' : ''
+          background: navColor ? "#04111d" : "",
         }}
         className={navColor ? "nav__active" : ""}
       >
         <div className="outer">
           <div className="container">
             <div className="nav__grid">
-
               <nav style={{ right: navToggler ? 0 : "-100%" }}>
                 <ul>
                   {nav.map((ite, ind) => {
                     return (
                       <li key={ind} className="list-item">
-                        <a href={ite.path} >{ite.name}</a>
+                        <a href={ite.path}>{ite.name}</a>
                       </li>
                     );
                   })}
 
-
+                  <li className="nav__links">
+                    {" "}
+                    <a
+                      href="https://discord.gg/3DUsna54
+"
+                      target="_blank"
+                    >
+                      <YouTube />
+                    </a>
+                    <a href="https://twitter.com/blkstarlabz " target="_blank">
+                      <Instagram />
+                    </a>
+                    <a
+                      href="https://www.instagram.com/blkstarlabz/"
+                      target="_blank"
+                    >
+                      <Telegram />
+                    </a>
+                    <a
+                      href="https://www.instagram.com/blkstarlabz/"
+                      target="_blank"
+                      className="tiktok"
+                    >
+                      <FaTiktok />
+                    </a>
+                  </li>
                 </ul>
               </nav>
               <div className="nav__btns">
-                <a
-                  href="https://discord.gg/3DUsna54
-"
-                  target="_blank"
-                >
-                  <YouTube />
-                </a>
-                <a href="https://twitter.com/blkstarlabz " target="_blank">
-                  <Instagram />
-                </a>
-                <a
-                  href="https://www.instagram.com/blkstarlabz/"
-                  target="_blank"
-                >
-                  <Telegram />
-                </a>
-                <a
-                  href="https://www.instagram.com/blkstarlabz/"
-                  target="_blank"
-                >
-                  <FaTiktok />
-                </a>
 
                 <a
                   href={"https://discord.com/invite/DcrwzT9WnD"}
                   target={"_blank"}
-                >
-
-                </a>
+                ></a>
                 <div onClick={() => barBtn()}>
                   <span
                     style={{

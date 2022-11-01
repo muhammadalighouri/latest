@@ -53,6 +53,9 @@
   overflow: hidden;
   // background: #120d328a;
   height: 100vh;
+  @include md{
+    height: 80vh;
+  }
   &::after {
     position: absolute;
     content: "";

@@ -24,6 +24,11 @@ export const nav = [
     path: "#team",
     ref: "nav3",
   },
+  {
+    name: "Tokenomics",
+    path: "#tokenomics",
+    ref: "nav3",
+  },
 
 ];
 

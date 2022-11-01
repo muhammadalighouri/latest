@@ -80,37 +80,23 @@ const Token = ({ ease }) => {
   return (
     <section className="token" id="tokenomics">
       <div className="container">
-        <div className="heading" style={{ overflow: "hidden" }}>
-          <h1 data-aos="fade-down" class="aos-init aos-animate">
-            Tokenomics
-          </h1>
-          <p
-            data-aos="fade-up"
-            data-aos-duration="2000"
-            data-aos-easing="ease-out"
-            class="aos-init aos-animate"
-          >
-            A fully community-driven NFT project with charitable benefactions to
-            important movements chosen by the community itself!
-          </p>
-        </div>
+
         <div className="grid">
-          <div className="itemll">
-            <ul>
-              {data.map((item, i) => {
-                return (
-                  <li key={i}>
-                    <p> {item.name}</p>
-                    <div className="line">
-                      <div
-                        className="wid"
-                        style={{ width: `${item.percent}%` }}
-                      ></div>
-                    </div>
-                  </li>
-                );
-              })}
-            </ul>
+          <div className="itemll start">
+            <h2 data-aos="fade-down" class="aos-init aos-animate">
+              Tokenomics
+            </h2>
+            <p>
+              <span>
+                Contract code fully audited by Solidity Finance and shown to be
+                100% secure. Team fully verified by CoinSniper to ensure
+                anti-rug and complete project security.
+              </span>
+              <span>
+                You can buy direct using USDT, ETH or BNB. After the public sale
+                ends, you'll claim your purchased Big Eyes using the claim page.
+              </span>
+            </p>
           </div>
           <div className="itemll mid-" ref={ite}>
             <Chart />

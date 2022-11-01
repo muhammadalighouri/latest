@@ -6,6 +6,9 @@
   position: relative;
   z-index: 5;
   margin-top: 90px;
+  @include md {
+    padding: 50px 0;
+  }
   &::before {
     content: "";
     background: url(../../public/images/background/land-bg.4e7c74f0.jpg) center
@@ -49,6 +52,10 @@
     background: linear-gradient(180deg, #2196f333 0%, #03a9f41a 100%);
     border: 1px solid #0085ff2e;
     border-radius: 32px;
+    @include md {
+      padding: 50px 10px;
+      border: 0;
+    }
     > .heading {
       margin-bottom: 80px;
       h1 {
@@ -75,6 +82,10 @@
       padding: 20px 30px;
       border-radius: 32px;
       align-items: center;
+      @include md {
+        padding: 30px 20px;
+        grid-template-columns: 1fr;
+      }
       .start {
         h2 {
           font-size: 2rem;
@@ -91,9 +102,15 @@
       }
       .end {
         text-align: end;
+        @include md {
+          text-align: center;
+        }
         figure {
           width: 80%;
           margin-left: auto;
+            @include md {
+                margin: auto;
+              }
           img {
             width: 100%;
             height: 100%;
@@ -105,6 +122,9 @@
       background: linear-gradient(180deg, #2196f333 0%, #03a9f41a 100%);
       padding: 20px 30px;
       border-radius: 32px;
+      @include md {
+        padding: 30px 20px;
+      }
       > h2 {
         font-size: 2rem;
         margin: 10px 0;
@@ -113,6 +133,9 @@
       > p {
         margin-bottom: 30px;
         width: 80%;
+          @include md {
+              width: 100%;
+            }
         span {
           display: block;
           margin-bottom: 5px;
@@ -132,7 +155,9 @@
           border: 1px solid #0085ff2e;
           transition: 0.3s all;
           cursor: pointer;
-
+          @include md {
+            padding: 25px 20px;
+          }
           &:hover {
             box-shadow: 0 0 5px #0085ffa1;
           }
@@ -175,6 +200,10 @@
       border-radius: 32px;
       align-items: center;
       margin-top: 50px;
+      @include md {
+        padding: 30px 20px;
+        grid-template-columns: 1fr;
+      }
       .start {
         h2 {
           font-size: 2rem;
@@ -193,11 +222,15 @@
 
       .end {
         text-align: end;
-
+        @include md {
+          text-align: center;
+        }
         figure {
           width: 80%;
           margin-left: auto;
-
+          @include md {
+            margin: auto;
+          }
           img {
             width: 100%;
             height: 300px;
@@ -212,6 +245,10 @@
       margin-bottom: 50px;
       width: 90%;
       //   margin: auto;
+      @include md {
+        padding: 40px 0px;
+        width: 100%;
+      }
       .heading {
         margin-bottom: 30px;
 
@@ -237,7 +274,9 @@
           display: grid;
           grid-template-columns: 1fr 1fr;
           grid-gap: 1rem;
-
+          @include md {
+            grid-template-columns: 1fr;
+          }
           input {
             display: block;
             width: 100%;
@@ -260,6 +299,17 @@
           display: grid;
           grid-template-columns: 1fr 1.5fr 1.5fr;
           grid-gap: 1rem;
+          .css-b62m3t-container {
+            position: relative;
+            box-sizing: border-box;
+            @include md {
+              height: 60px !important;
+            }
+          }
+          @include md {
+            grid-template-columns: 1fr;
+          }
+
           > div {
             > div {
               height: 100%;
@@ -287,38 +337,47 @@
         }
 
         .third {
-         display: grid
-         ;
-         grid-template-columns: 2fr 2fr;
-         grid-gap: 1.5rem;
-          button {
-              color: #000000;
-              padding: 16px 24px;
-              border-radius: 10px;
-              font-size: 18px;
-              font-weight: 600;
-              border: none;
-              cursor: pointer;
-              position: relative;
-              background: #0085ff;
-              overflow: hidden;
-              z-index: 111;
-              transition: all 0.3s;
-              width: auto;
-              pointer-events: auto;
-              color: #eee;
-              width: fit-content;
-              margin-top: 10px;
-          text-transform: uppercase;
-              width: 150px;
-          
-              &:hover {
-                box-shadow: 0px 0px 10px #1277c7;
-              }
+          display: grid;
+          grid-template-columns: 2fr 2fr;
+          grid-gap: 1.5rem;
+          .css-b62m3t-container {
+            position: relative;
+            box-sizing: border-box;
+
+            @include md {
+              height: 60px !important;
             }
+          }
+          @include md {
+            grid-template-columns: 1fr;
+          }
+          button {
+            color: #000000;
+            padding: 16px 24px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            background: #0085ff;
+            overflow: hidden;
+            z-index: 111;
+            transition: all 0.3s;
+            width: auto;
+            pointer-events: auto;
+            color: #eee;
+            width: fit-content;
+            margin-top: 10px;
+            text-transform: uppercase;
+            width: 150px;
+            z-index: 0;
+            &:hover {
+              box-shadow: 0px 0px 10px #1277c7;
+            }
+          }
         }
 
-       
         > p {
           display: flex;
           align-items: center;
@@ -333,6 +392,9 @@
       padding: 40px 30px;
       border-radius: 32px;
       margin-top: 50px;
+      @include md {
+        padding: 40px 0px;
+      }
       .heading {
         text-align: center;
 
@@ -355,13 +417,16 @@
           line-height: 1.4;
 
           @include md {
-            width: 90%;
+            width: 100%;
+            font-size: 16px;
+            line-height: 1.3;
           }
         }
 
         .btn__container {
           display: flex;
           justify-content: center;
+          flex-wrap: wrap;
           gap: 10px;
           button {
             height: 45px;
@@ -375,9 +440,9 @@
             transition: 0.3s all;
             padding: 0px 40px;
             font-size: 20px !important;
-              &:hover {
-                  box-shadow: 0px 0px 10px #1277c7;
-                }
+            &:hover {
+              box-shadow: 0px 0px 10px #1277c7;
+            }
           }
         }
       }
@@ -388,6 +453,10 @@
       margin-top: 50px;
 
       width: 80%;
+      @include md {
+        padding: 40px 0px;
+        width: 100%;
+      }
       .heading {
         margin-bottom: 30px;
 
@@ -451,6 +520,9 @@
           display: grid;
           grid-template-columns: 1fr 1fr;
           grid-gap: 1rem;
+          @include md {
+            grid-template-columns: 1fr;
+          }
           .item {
             display: flex;
             input {
@@ -604,10 +676,8 @@
   box-sizing: border-box;
   display: none;
 }
-.css-4ljt47-MenuList >div:hover {
-
+.css-4ljt47-MenuList > div:hover {
   background: #0085ff !important;
-  
 }
 .css-4ljt47-MenuList {
   max-height: 300px;

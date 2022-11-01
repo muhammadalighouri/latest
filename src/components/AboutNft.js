@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "../scss/aboutnft.scss";
 import Marquee from "react-fast-marquee";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 const AboutNft = () => {
   useEffect(() => {
     AOS.init({
@@ -42,7 +42,7 @@ const AboutNft = () => {
       </div> */}
       <section id="about" className="about">
         <div className="container">
-          <div className="about__grid">
+          <div className="about__grid first">
             <div
               className="img aos-init aos-animate"
               data-aos="zoom-out-up"
@@ -88,7 +88,7 @@ const AboutNft = () => {
                 </a>
                 <Link
                   style={{ display: "inline-block" }}
-                  to='/mint'
+                  to="/mint"
                   class="item-desc aos-init aos-animate"
                   data-aos="notific-right"
                 >
@@ -138,7 +138,7 @@ const AboutNft = () => {
                 </a>
                 <Link
                   style={{ display: "inline-block" }}
-                  to='/mint'
+                  to="/mint"
                   class="item-desc aos-init aos-animate"
                   data-aos="notific-right"
                 >
@@ -163,9 +163,7 @@ const AboutNft = () => {
                 <h1>PLAY TO EARN ?</h1>
               </div>
               <p>
-                <span>
-                  Here’s what makes this game more enticing. Real money!
-                </span>
+                Here’s what makes this game more enticing. Real money!
                 <span>
                   You might have spent hours on end playing a game that only
                   took money from you in order to progress. But now you have
@@ -195,7 +193,7 @@ const AboutNft = () => {
                 </a>
                 <Link
                   style={{ display: "inline-block" }}
-                  to='/mint'
+                  to="/mint"
                   class="item-desc aos-init aos-animate"
                   data-aos="notific-right"
                 >

@@ -16,6 +16,10 @@
     align-items: center;
     width: 100%;
     padding: 0 10px;
+    @include md{
+      display: flex;
+      justify-content: space-between;
+    }
     .icon {
       position: relative;
 
@@ -75,22 +79,18 @@
       font-size: 2.5rem;
       position: relative;
       z-index: 4;
+      @include md{
+        text-align: end;
+      }
 
       img {
         height: 100%;
-        width: 303px;
+        width: 100%;
         margin-top: 20px;
         max-width: 300px;
 
         @include md {
-          position: fixed;
-          top: 12%;
-          left: 50%;
-          z-index: 10;
-          width: 100%;
-          height: auto;
-          max-width: 300px;
-          transform: translateX(-50%);
+          width: 70%;
         }
       }
     }

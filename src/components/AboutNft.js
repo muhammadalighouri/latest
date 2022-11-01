@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "../scss/aboutnft.scss";
 import Marquee from "react-fast-marquee";
+import { Link } from 'react-router-dom'
 const AboutNft = () => {
   useEffect(() => {
     AOS.init({
@@ -85,15 +86,14 @@ const AboutNft = () => {
                 >
                   <button>Join Community</button>
                 </a>
-                <a
+                <Link
                   style={{ display: "inline-block" }}
-                  href="https://twitter.com/ElrondHeart"
-                  target={"_blank"}
+                  to='/mint'
                   class="item-desc aos-init aos-animate"
                   data-aos="notific-right"
                 >
                   <button>Buy Now</button>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -136,15 +136,14 @@ const AboutNft = () => {
                 >
                   <button>Join Community</button>
                 </a>
-                <a
+                <Link
                   style={{ display: "inline-block" }}
-                  href="https://twitter.com/ElrondHeart"
-                  target={"_blank"}
+                  to='/mint'
                   class="item-desc aos-init aos-animate"
                   data-aos="notific-right"
                 >
                   <button>Buy Now</button>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -194,14 +193,14 @@ const AboutNft = () => {
                 >
                   <button>Join Community</button>
                 </a>
-                <a
+                <Link
                   style={{ display: "inline-block" }}
-                  href="https://twitter.com/ElrondHeart"
+                  to='/mint'
                   class="item-desc aos-init aos-animate"
                   data-aos="notific-right"
                 >
                   <button>Buy Now</button>
-                </a>
+                </Link>
               </div>
             </div>
           </div>

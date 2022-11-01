@@ -79,7 +79,7 @@ const Mint = () => {
             <Steps MintGrid={MintGrid} />
             {/* <Talk /> */}
             {/* <Holder/> */}
-            <Marchendise />
+            {/* <Marchendise /> */}
             <Footer />
         </>
     );

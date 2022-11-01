@@ -102,8 +102,8 @@ const Steps = ({ MintGrid }) => {
                     <div className="heading">
                         <h1>Talk to us</h1>
                         <p>
-                            Leave your details below and we’ll contact you to discuss purchasing
-                            Big Eyes.
+                            Leave your details below and we’ll contact you to discuss
+                            purchasing Big Eyes.
                         </p>
                     </div>
                     <div className="grid">
@@ -134,9 +134,35 @@ const Steps = ({ MintGrid }) => {
                         </div>
                         <button>Submit!</button>
                         <p id="p">
-                            <input type="checkbox" name="" id="" for='p' />
+                            <input type="checkbox" name="" id="" for="p" />
                             By submitting this form you agree to our Terms and Privacy Policy
                         </p>
+                    </div>
+                </div>
+                <div className="fifth">
+                    <div className="heading" style={{ overflow: "hidden" }}>
+                        <h1 data-aos="fade-down" class="aos-init aos-animate">
+                            100% Secure
+                        </h1>
+                        <p
+                            data-aos="fade-up"
+                            data-aos-duration="2000"
+                            data-aos-easing="ease-out"
+                            class="aos-init aos-animate"
+                        >
+                            RobotEra building a sandbox-like planet-rebuilding metaverse. You
+                            will become a robot, managing your own land and participating in
+                            the creationof the world. It can also acquire resources from the
+                            land, create robot companions. Here, create everything you can
+                            imagine and start a new era with other robots.
+                        </p>
+                        <div className="btn__container">
+                            <button>Audit</button>
+                            <button>Read Whitepaper</button>
+
+                            <button>KYC</button>
+
+                        </div>
                     </div>
                 </div>
             </div>

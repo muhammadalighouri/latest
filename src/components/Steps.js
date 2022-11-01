@@ -1,4 +1,6 @@
 import React from "react";
+import { CgCopyright } from "react-icons/cg";
+import { MdOutlineContentCopy } from 'react-icons/md'
 import "../scss/steps.scss";
 
 const Step1 = () => {
@@ -148,9 +150,9 @@ const SendMessage = () => {
 };
 const TokenInfo = () => {
     return (
-        <div className="fourth">
+        <div className="six">
             <div className="heading">
-                <h1>Talk to us</h1>
+                <h1>Contract</h1>
                 <p>
                     Leave your details below and we’ll contact you to discuss purchasing
                     Big Eyes.
@@ -159,34 +161,24 @@ const TokenInfo = () => {
             <div className="grid">
                 <div className="first">
                     <div className="item">
-                        <input type="text" placeholder="Enter First Name" />
-                    </div>
-                    <div className="item">
-                        <input type="text" placeholder="Enter Last Name" />
+                        <input type="text" value={'0xc8De43Bfe33FF496Fa14c270D9CB29Bda196B9B5'} placeholder="Address" />
+                        <button>
+                            Copy <MdOutlineContentCopy />
+                        </button>
                     </div>
                 </div>
                 <div className="second">
                     <div className="item">
-                        <input type="email" placeholder="Enter Email" />
+                        <input type="email" value={'18'} placeholder="Token" />
+                        <button>Copy <MdOutlineContentCopy /> </button>
                     </div>
                     <div className="item">
-                        <input type="text" placeholder="Contact Number" />
+                        <input type="text" value={'BIG'} placeholder="Token Symbol" />
+                        <button>Copy <MdOutlineContentCopy /></button>
                     </div>
                 </div>
-                <div className="third">
-                    <textarea
-                        name=""
-                        placeholder="Your Message*"
-                        id=""
-                        cols="30"
-                        rows="10"
-                    ></textarea>
-                </div>
+
                 <button>Submit!</button>
-                <p id="p">
-                    <input type="checkbox" name="" id="" for="p" />
-                    By submitting this form you agree to our Terms and Privacy Policy
-                </p>
             </div>
         </div>
     );
@@ -233,6 +225,7 @@ const Steps = ({ MintGrid }) => {
                 <Step2 />
                 <Step3 />
                 <SendMessage />
+                <TokenInfo />
                 <Whitepaper />
             </div>
         </section>

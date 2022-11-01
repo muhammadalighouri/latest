@@ -1,6 +1,35 @@
 import React from "react";
 import "../scss/steps.scss";
-const Steps = ({ MintGrid }) => {
+
+const Step1 = () => {
+    return (
+        <div className="first">
+            <div className="start">
+                <h2>Step 1/3</h2>
+                <p>
+                    <span>
+                        {" "}
+                        To begin, make sure you have a MetaMask wallet installed on your
+                        browser, or use one of the wallets supported by Wallet Connect (we
+                        recommend Trust Wallet).
+                    </span>{" "}
+                    <span>
+                        Purchasing on a desktop browser will give you a smoother purchasing
+                        experience. For this we recommend Metamask. If you are purchasing on
+                        mobile, we recommend using Trust Wallet and connecting through the
+                        in built browser
+                    </span>
+                </p>
+            </div>
+            <div className="end">
+                <figure>
+                    <img src="/images/Dog Run/side.png" alt="" />
+                </figure>
+            </div>
+        </div>
+    );
+};
+const Step2 = () => {
     const info = [
         {
             name: "Gamming NFTs",
@@ -19,6 +48,179 @@ const Steps = ({ MintGrid }) => {
         },
     ];
     return (
+        <div className="second">
+            <h2>Step 2/3</h2>
+            <p>
+                <span>
+                    Once you have your preferred wallet provider ready, click “Connect
+                    Wallet” and select the appropriate option. For mobile wallet apps you
+                    will need to select “Wallet Connect”.{" "}
+                </span>{" "}
+            </p>
+            <div className="grid">
+                {info.map((item, ind) => {
+                    return (
+                        <div className="item">
+                            <div className="top">
+                                <img src={item.img} alt="" />
+                                <span>{item.name}</span>
+                            </div>
+                            <p>{item.desc}</p>
+                        </div>
+                    );
+                })}
+            </div>
+        </div>
+    );
+};
+const Step3 = () => {
+    return (
+        <div className="third">
+            <div className="start">
+                <h2>Step 3/3</h2>
+                <p>
+                    <span>
+                        {" "}
+                        To begin, make sure you have a MetaMask wallet installed on your
+                        browser, or use one of the wallets supported by Wallet Connect (we
+                        recommend Trust Wallet).
+                    </span>{" "}
+                    <span>
+                        Purchasing on a desktop browser will give you a smoother purchasing
+                        experience. For this we recommend Metamask. If you are purchasing on
+                        mobile, we recommend using Trust Wallet and connecting through the
+                        in built browser
+                    </span>
+                </p>
+            </div>
+            <div className="end">
+                <figure>
+                    <img src="/images/Dog Run/front.png" alt="" />
+                </figure>
+            </div>
+        </div>
+    );
+};
+const SendMessage = () => {
+    return (
+        <div className="fourth">
+            <div className="heading">
+                <h1>Talk to us</h1>
+                <p>
+                    Leave your details below and we’ll contact you to discuss purchasing
+                    Big Eyes.
+                </p>
+            </div>
+            <div className="grid">
+                <div className="first">
+                    <div className="item">
+                        <input type="text" placeholder="Enter First Name" />
+                    </div>
+                    <div className="item">
+                        <input type="text" placeholder="Enter Last Name" />
+                    </div>
+                </div>
+                <div className="second">
+                    <div className="item">
+                        <input type="email" placeholder="Enter Email" />
+                    </div>
+                    <div className="item">
+                        <input type="text" placeholder="Contact Number" />
+                    </div>
+                </div>
+                <div className="third">
+                    <textarea
+                        name=""
+                        placeholder="Your Message*"
+                        id=""
+                        cols="30"
+                        rows="10"
+                    ></textarea>
+                </div>
+                <button>Submit!</button>
+                <p id="p">
+                    <input type="checkbox" name="" id="" for="p" />
+                    By submitting this form you agree to our Terms and Privacy Policy
+                </p>
+            </div>
+        </div>
+    );
+};
+const TokenInfo = () => {
+    return (
+        <div className="fourth">
+            <div className="heading">
+                <h1>Talk to us</h1>
+                <p>
+                    Leave your details below and we’ll contact you to discuss purchasing
+                    Big Eyes.
+                </p>
+            </div>
+            <div className="grid">
+                <div className="first">
+                    <div className="item">
+                        <input type="text" placeholder="Enter First Name" />
+                    </div>
+                    <div className="item">
+                        <input type="text" placeholder="Enter Last Name" />
+                    </div>
+                </div>
+                <div className="second">
+                    <div className="item">
+                        <input type="email" placeholder="Enter Email" />
+                    </div>
+                    <div className="item">
+                        <input type="text" placeholder="Contact Number" />
+                    </div>
+                </div>
+                <div className="third">
+                    <textarea
+                        name=""
+                        placeholder="Your Message*"
+                        id=""
+                        cols="30"
+                        rows="10"
+                    ></textarea>
+                </div>
+                <button>Submit!</button>
+                <p id="p">
+                    <input type="checkbox" name="" id="" for="p" />
+                    By submitting this form you agree to our Terms and Privacy Policy
+                </p>
+            </div>
+        </div>
+    );
+};
+const Whitepaper = () => {
+    return (
+        <div className="fifth">
+            <div className="heading" style={{ overflow: "hidden" }}>
+                <h1 data-aos="fade-down" class="aos-init aos-animate">
+                    100% Secure
+                </h1>
+                <p
+                    data-aos="fade-up"
+                    data-aos-duration="2000"
+                    data-aos-easing="ease-out"
+                    class="aos-init aos-animate"
+                >
+                    RobotEra building a sandbox-like planet-rebuilding metaverse. You will
+                    become a robot, managing your own land and participating in the
+                    creationof the world. It can also acquire resources from the land,
+                    create robot companions. Here, create everything you can imagine and
+                    start a new era with other robots.
+                </p>
+                <div className="btn__container">
+                    <button>Audit</button>
+                    <button> Whitepaper</button>
+                    <button>KYC</button>
+                </div>
+            </div>
+        </div>
+    );
+};
+const Steps = ({ MintGrid }) => {
+    return (
         <section className="steps">
             <span></span>
 
@@ -27,142 +229,11 @@ const Steps = ({ MintGrid }) => {
                 <div className="heading">
                     <h1>How to buy</h1>
                 </div>
-                <div className="first">
-                    <div className="start">
-                        <h2>Step 1/3</h2>
-                        <p>
-                            <span>
-                                {" "}
-                                To begin, make sure you have a MetaMask wallet installed on your
-                                browser, or use one of the wallets supported by Wallet Connect
-                                (we recommend Trust Wallet).
-                            </span>{" "}
-                            <span>
-                                Purchasing on a desktop browser will give you a smoother
-                                purchasing experience. For this we recommend Metamask. If you
-                                are purchasing on mobile, we recommend using Trust Wallet and
-                                connecting through the in built browser
-                            </span>
-                        </p>
-                    </div>
-                    <div className="end">
-                        <figure>
-                            <img src="/images/Dog Run/side.png" alt="" />
-                        </figure>
-                    </div>
-                </div>
-                <div className="second">
-                    <h2>Step 2/3</h2>
-                    <p>
-                        <span>
-                            Once you have your preferred wallet provider ready, click “Connect
-                            Wallet” and select the appropriate option. For mobile wallet apps
-                            you will need to select “Wallet Connect”.{" "}
-                        </span>{" "}
-                    </p>
-                    <div className="grid">
-                        {info.map((item, ind) => {
-                            return (
-                                <div className="item">
-                                    <div className="top">
-                                        <img src={item.img} alt="" />
-                                        <span>{item.name}</span>
-                                    </div>
-                                    <p>{item.desc}</p>
-                                </div>
-                            );
-                        })}
-                    </div>
-                </div>
-                <div className="third">
-                    <div className="start">
-                        <h2>Step 3/3</h2>
-                        <p>
-                            <span>
-                                {" "}
-                                To begin, make sure you have a MetaMask wallet installed on your
-                                browser, or use one of the wallets supported by Wallet Connect
-                                (we recommend Trust Wallet).
-                            </span>{" "}
-                            <span>
-                                Purchasing on a desktop browser will give you a smoother
-                                purchasing experience. For this we recommend Metamask. If you
-                                are purchasing on mobile, we recommend using Trust Wallet and
-                                connecting through the in built browser
-                            </span>
-                        </p>
-                    </div>
-                    <div className="end">
-                        <figure>
-                            <img src="/images/Dog Run/front.png" alt="" />
-                        </figure>
-                    </div>
-                </div>
-                <div className="fourth">
-                    <div className="heading">
-                        <h1>Talk to us</h1>
-                        <p>
-                            Leave your details below and we’ll contact you to discuss
-                            purchasing Big Eyes.
-                        </p>
-                    </div>
-                    <div className="grid">
-                        <div className="first">
-                            <div className="item">
-                                <input type="text" placeholder="Enter First Name" />
-                            </div>
-                            <div className="item">
-                                <input type="text" placeholder="Enter Last Name" />
-                            </div>
-                        </div>
-                        <div className="second">
-                            <div className="item">
-                                <input type="email" placeholder="Enter Email" />
-                            </div>
-                            <div className="item">
-                                <input type="text" placeholder="Contact Number" />
-                            </div>
-                        </div>
-                        <div className="third">
-                            <textarea
-                                name=""
-                                placeholder="Your Message*"
-                                id=""
-                                cols="30"
-                                rows="10"
-                            ></textarea>
-                        </div>
-                        <button>Submit!</button>
-                        <p id="p">
-                            <input type="checkbox" name="" id="" for="p" />
-                            By submitting this form you agree to our Terms and Privacy Policy
-                        </p>
-                    </div>
-                </div>
-                <div className="fifth">
-                    <div className="heading" style={{ overflow: "hidden" }}>
-                        <h1 data-aos="fade-down" class="aos-init aos-animate">
-                            100% Secure
-                        </h1>
-                        <p
-                            data-aos="fade-up"
-                            data-aos-duration="2000"
-                            data-aos-easing="ease-out"
-                            class="aos-init aos-animate"
-                        >
-                            RobotEra building a sandbox-like planet-rebuilding metaverse. You
-                            will become a robot, managing your own land and participating in
-                            the creationof the world. It can also acquire resources from the
-                            land, create robot companions. Here, create everything you can
-                            imagine and start a new era with other robots.
-                        </p>
-                        <div className="btn__container">
-                            <button>Audit</button>
-                            <button> Whitepaper</button>
-                            <button>KYC</button>
-                        </div>
-                    </div>
-                </div>
+                <Step1 />
+                <Step2 />
+                <Step3 />
+                <SendMessage />
+                <Whitepaper />
             </div>
         </section>
     );

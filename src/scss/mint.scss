@@ -75,12 +75,12 @@
       align-items: center;
       justify-content: center;
       transition: ease-out 0.8s all;
-
       grid-gap: 1rem;
       @include lg {
         display: flex;
         flex-direction: column-reverse;
         padding: 20px 0px;
+        gap: 3rem;
       }
 
       > .img {

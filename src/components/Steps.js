@@ -158,10 +158,8 @@ const Steps = ({ MintGrid }) => {
                         </p>
                         <div className="btn__container">
                             <button>Audit</button>
-                            <button>Read Whitepaper</button>
-
+                            <button> Whitepaper</button>
                             <button>KYC</button>
-
                         </div>
                     </div>
                 </div>

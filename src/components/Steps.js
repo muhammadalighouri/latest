@@ -148,15 +148,10 @@ const SendMessage = () => {
                     <Select placeholder='Select a time to contact' options={options} />
                 </div>
                 <div className="third">
-                    <textarea
-                        name=""
-                        placeholder="Your Message*"
-                        id=""
-                        cols="30"
-                        rows="10"
-                    ></textarea>
+                    <Select placeholder='Enter Investment Budget' options={options} />
+                    <button>Submit!</button>
                 </div>
-                <button>Submit!</button>
+
                 <p id="p">
                     <input type="checkbox" name="" id="" for="p" />
                     By submitting this form you agree to our Terms and Privacy Policy
@@ -217,7 +212,7 @@ const TokenInfo = () => {
                     </div>
                 </div>
 
-                <button>Submit!</button>
+
             </div>
         </div>
     );

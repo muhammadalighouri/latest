@@ -107,11 +107,7 @@ const Navigation = () => {
         <div className="outer">
           <div className="container">
             <div className="nav__grid">
-              <div className="logo">
-                <Link to='/'>
-                  <img src="/images/logo/01-05.png" alt="" />
-                </Link>
-              </div>
+
               <nav style={{ right: navToggler ? 0 : "-100%" }}>
                 <ul>
                   {nav.map((ite, ind) => {
@@ -176,10 +172,7 @@ const Navigation = () => {
                   href={"https://discord.com/invite/DcrwzT9WnD"}
                   target={"_blank"}
                 >
-                  <div className="btn">
-                    {/* <FaDiscord /> */}
-                    WHITEPAPER!
-                  </div>
+
                 </a>
                 <div onClick={() => barBtn()}>
                   <span

@@ -15,65 +15,62 @@ footer {
     padding: 45px 15px 35px;
 
     >.grid {
-      display: flex;
-      justify-content: space-between;
-
+      display: grid
+      ;
       align-items: center;
+      justify-content: center;
+     
 
-      @include md {
-        justify-content: center;
-
-        flex-direction: column;
-        gap: 1rem;
-
-      }
-
-      .logo {
-        // padding: 10px 0;
-        text-align: center;
-        // margin-bottom: 20px;
-        cursor: pointer;
-
-        img {
-          height: 80px;
-          @include sm6 {
-            height: unset;
-            width: 50%;
+  
+      >.nav__btns {
+          justify-self: center;
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          margin: 10px 0;
+      
+          a:nth-child(1) {
+            svg {
+              width: 30px;
+            }
           }
+      
+          a:nth-child(2) {
+            svg {
+              width: 25px;
+            }
+          }
+      
+          a:nth-child(3) {
+            svg {
+              width: 25px;
+            }
+          }
+      
+          a:nth-child(4) {
+            svg {
+              width: 25px;
+            }
+          }
+      
+          a:nth-child(4) {}
+      
+          a:nth-child(5) {
+         
+          }
+      
+      
+      
         }
-      }
-
 
       p {
 
-        // text-align: center;
-        // color: #000000cc;
-        // font-weight: 100;
-        // font-size: 18px;
-        // margin-top: 13px;
-        >div {
-          color: hsla(0, 0%, 100%, 0.5);
-          line-height: 25px;
-          text-align: right;
-
-          @include md {
-            text-align: center;
-          }
-        }
-
-        h6 {
-          font-family: 'Exo 2';
-          color: #fff;
-          font-size: 20px;
-          line-height: 25px;
-          font-weight: 400;
-          text-align: right;
-          margin-top: 4px;
-
-          @include md {
-            text-align: center;
-          }
-        }
+        text-align: center;
+        color: #fff;
+        font-weight: 100;
+        font-size: 18px;
+       
+     
       }
     }
   }

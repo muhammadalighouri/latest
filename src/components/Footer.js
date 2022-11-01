@@ -1,26 +1,44 @@
 import React from "react";
 import "../scss/footer.scss";
-import { AiFillYoutube } from "react-icons/ai";
 import { FaDiscord } from "react-icons/fa";
-import { AiFillInstagram } from "react-icons/ai";
+import { FaTelegramPlane } from "react-icons/fa";
 import { AiOutlineTwitter } from "react-icons/ai";
-import { FiGlobe } from "react-icons/fi";
+import { FaRedditAlien } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { Instagram, Telegram, YouTube } from "@material-ui/icons";
 const Footer = () => {
   return (
     <footer>
       <div className="container">
         <div className="grid">
-          <div className="logo">
-            <Link to='/'>
-              <img src="/images/logo/01-05.png" alt="" />
-            </Link>
+          <div className="nav__btns">
+            <a
+              href="https://discord.gg/3DUsna54
+"
+              target="_blank"
+            >
+              <YouTube />
+            </a>
+            <a href="https://twitter.com/blkstarlabz " target="_blank">
+              <Instagram />
+            </a>
+            <a
+              href="https://www.instagram.com/blkstarlabz/"
+              target="_blank"
+            >
+              <Telegram />
+            </a>
+            <a
+              href="https://www.instagram.com/blkstarlabz/"
+              target="_blank"
+            >
+              <FaTiktok />
+            </a>
 
           </div>
-          <p>
-            <h6> www.dogerush.com</h6>
-            <div>All rights Reserved</div>
-          </p>
+          <p>Copyright © 2022, DogeRush | All Rights Reserved.</p>
         </div>
       </div>
     </footer>

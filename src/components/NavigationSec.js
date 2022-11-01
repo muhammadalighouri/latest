@@ -45,9 +45,10 @@ const NavigationSec = ({ text }) => {
                 <div className={`nav__top ${navToggler ? "nav___active" : null}`}>
                     <div className="div">
                         <ul>
-                            <li><Link to={'/'}>DogeRush!</Link></li>
-                            <li><Link to={'/home'}>Home</Link></li>
-                            <li><Link to={'/mint'}>Buy</Link></li>
+                            <li><Link to={'/'}>Home</Link></li>
+                            <li><Link to={'/home'}>Buy Now</Link></li>
+                            <li><Link to={'/mint'}>Whitepaper</Link></li>
+                            <li><Link to={'/mint'}>Telegram</Link></li>
                         </ul>
                         <div className="icons">
                             <a href="" target={"_blank"}>
@@ -66,7 +67,6 @@ const NavigationSec = ({ text }) => {
                     </div>
                 </div>
 
-                <button>{text}</button>
             </div>
         </div>
     )

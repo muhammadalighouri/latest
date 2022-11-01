@@ -33,7 +33,7 @@ header {
 
       .nav__grid {
         display: grid;
-        grid-template-columns: 70px 3fr 1.6fr;
+        grid-template-columns: 3fr 1.6fr;
         align-items: center;
         @include mobile {
           padding: 18px 0px;
@@ -45,7 +45,7 @@ header {
 
         .logo {
           justify-self: start;
-
+display: none;
           a {
             display: flex;
             img {

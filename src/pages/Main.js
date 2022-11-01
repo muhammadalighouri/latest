@@ -31,15 +31,15 @@ const Main = () => {
                 <div className="container">
                     <div className="grid">
                         <div className="btns__container">
-                            <button onClick={() => navigate("/home")}>ENTER HOME!</button>
-                            <button onClick={() => navigate("/home")}>Buy Now!</button>
-                            <button>Discord</button>
+                            <button onClick={() => navigate("/home")}>HOME</button>
+                            <button onClick={() => navigate("/mint")}>Buy Now</button>
+                            <button>Whitepaper</button>
                             <button>Telegram</button>
                         </div>
                     </div>
                 </div>
                 <p className="bottom">
-                    All rights reserved 2022 © DogeRush Inc.
+                    Copyright © 2022, DogeRush | All Rights Reserved.
                 </p>
             </section>
         </>

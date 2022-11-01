@@ -36,7 +36,7 @@ const MintGrid = () => {
                                 <div className="middle">
                                     <div className="start">
                                         <div className="logo">
-                                            <img src="/images/ethereum.png" alt="" />
+                                            <img src="/images/1027.png" alt="" />
                                         </div>
                                         ETH
                                     </div>
@@ -60,12 +60,9 @@ const MintGrid = () => {
                                 <div className="middle">
                                     <div className="start">
                                         <div className="logo">
-                                            <img
-                                                src="https://img.raydium.io/icon/So11111111111111111111111111111111111111112.png"
-                                                alt=""
-                                            />
+                                            <img src="/images/01-05.png" alt="" />
                                         </div>
-                                        ETH
+                                        DR
                                     </div>
                                     <div className="end">
                                         <button>Max</button>

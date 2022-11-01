@@ -8,8 +8,8 @@
   margin-top: 90px;
   &::before {
     content: "";
-    background: url(../../public/images/background/land-bg.4e7c74f0.jpg)
-       center center;
+    background: url(../../public/images/background/land-bg.4e7c74f0.jpg) center
+      center;
     position: absolute;
     top: 0%;
     left: 0%;
@@ -18,7 +18,7 @@
     z-index: -1;
     background-size: contain;
     filter: hue-rotate(317deg) brightness(1);
-    opacity: .8;
+    opacity: 0.8;
   }
   &::after {
     position: absolute;
@@ -211,7 +211,7 @@
       border-radius: 32px;
       margin-bottom: 50px;
       width: 90%;
-    //   margin: auto;
+      //   margin: auto;
       .heading {
         margin-bottom: 30px;
 
@@ -258,23 +258,30 @@
 
         .second {
           display: grid;
-          grid-template-columns: 1fr 1fr;
+          grid-template-columns: 1fr 1.5fr 1.5fr;
           grid-gap: 1rem;
+          > div {
+            > div {
+              height: 100%;
+              background: #0b3348 !important;
+            }
+          }
+          .item {
+            > input {
+              display: block;
+              width: 100%;
+              min-width: 100%;
+              border: 1px solid #034981;
+              border-radius: 5px;
+              background-color: #0b3348 !important;
+              outline: 0;
+              color: #fff;
+              padding: 20px 15px;
 
-          input {
-            display: block;
-            width: 100%;
-            min-width: 100%;
-            border: 1px solid #034981;
-            border-radius: 5px;
-            background-color: #0b3348 !important;
-            outline: 0;
-            color: #fff;
-            padding: 20px 15px;
-
-            &:focus {
-              border: 1px solid #0084ffe7;
-              box-shadow: 0 0 5px #0085ff2e;
+              &:focus {
+                border: 1px solid #0084ffe7;
+                box-shadow: 0 0 5px #0085ff2e;
+              }
             }
           }
         }
@@ -342,12 +349,12 @@
         text-align: center;
 
         h1 {
-            font-weight: 700;
-                line-height: 1;
-                text-transform: uppercase;
-                text-align: center;
-                position: relative;
-                font-size: clamp(4rem, 4vw, 4rem);
+          font-weight: 700;
+          line-height: 1;
+          text-transform: uppercase;
+          text-align: center;
+          position: relative;
+          font-size: clamp(4rem, 4vw, 4rem);
         }
 
         p {
@@ -385,10 +392,9 @@
       }
     }
     > .six {
-  
       padding: 40px 40px;
       border-radius: 32px;
-      margin-bottom: 100px;
+      margin-top: 50px;
 
       width: 80%;
       .heading {
@@ -424,7 +430,7 @@
               width: 100%;
               border: 1px solid #034981;
               border-radius: 5px;
-          
+
               outline: 0;
               color: #fff;
               padding: 20px 15px;
@@ -435,17 +441,17 @@
               }
             }
             button {
-            width: 200px;
-                background: #034981;
-                border: 0;
-                margin-left: 10px;
-                border-radius: 6px;
-                border: 1px solid #034981;
-                cursor: pointer;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 5px;
+              width: 200px;
+              background: #034981;
+              border: 0;
+              margin-left: 10px;
+              border-radius: 6px;
+              border: 1px solid #034981;
+              cursor: pointer;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 5px;
             }
           }
         }
@@ -462,7 +468,7 @@
 
               border: 1px solid #034981;
               border-radius: 5px;
-        
+
               outline: 0;
               color: #fff;
               padding: 20px 15px;
@@ -473,22 +479,20 @@
               }
             }
             button {
-            width: 200px;
-                background: #034981;
-                border: 0;
-                margin-left: 10px;
-                border-radius: 6px;
-                border: 1px solid #034981;
-                cursor: pointer;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 5px;
+              width: 200px;
+              background: #034981;
+              border: 0;
+              margin-left: 10px;
+              border-radius: 6px;
+              border: 1px solid #034981;
+              cursor: pointer;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 5px;
             }
           }
         }
-
-       
 
         > button {
           color: #000000;
@@ -523,33 +527,93 @@
           color: #ccc;
           padding: 10px;
         }
-        .item{
-            position: relative;
-            input{
-                color: #ccc !important;
-                background-color: #0b3348 !important;
-            }
-            button{
-                    width: 121px !important;
-                        background: #03498185;
-                        border: 0;
-                        margin-left: 10px;
-                        border-radius: 9px;
-                        border: 1px solid #034981;
-                        cursor: pointer;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        gap: 5px;
-                        font-size: 20px;
-                        position: absolute;
-                        top: 6px;
-                        right: 7px;
-                        height: 79%;
-                        text-transform: uppercase;
-            }
+        .item {
+          position: relative;
+          input {
+            color: #ccc !important;
+            background-color: #0b3348 !important;
+          }
+          button {
+            width: 121px !important;
+            background: #03498185;
+            border: 0;
+            margin-left: 10px;
+            border-radius: 9px;
+            border: 1px solid #034981;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            font-size: 20px;
+            position: absolute;
+            top: 6px;
+            right: 7px;
+            height: 79%;
+            text-transform: uppercase;
+          }
         }
       }
     }
   }
+}
+.css-1s2u09g-control {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #0b3247 !important;
+  border-color: #034981 !important;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  cursor: default;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  min-height: 38px;
+  outline: 0 !important;
+  position: relative;
+  -webkit-transition: all 100ms;
+  transition: all 100ms;
+  box-sizing: border-box;
+  height: 100%;
+}
+.css-1s2u09g-control {
+  height: 100% !important;
+  background: #0b3247 !important;
+}
+.css-qc6sy-singleValue {
+  color: #676c6f !important;
+  grid-area: 1/1/2/3;
+  margin-left: 2px;
+  margin-right: 2px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+.css-1okebmr-indicatorSeparator {
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  background-color: #034981 !important;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  width: 1px;
+  box-sizing: border-box;
+  display: none;
+}
+.css-2613qy-menu{
+  height: 400px !important;
+  background: red !important;
 }

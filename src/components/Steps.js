@@ -1,8 +1,26 @@
 import React from "react";
-import { CgCopyright } from "react-icons/cg";
-import { MdOutlineContentCopy } from 'react-icons/md'
-import "../scss/steps.scss";
+import Select from 'react-select'
 
+
+import { CgCopyright } from "react-icons/cg";
+import { MdOutlineContentCopy } from "react-icons/md";
+import "../scss/steps.scss";
+const options = [
+    { value: 'chocolate', label: 'Chocolate' },
+    { value: 'strawberry', label: 'Strawberry' },
+    { value: 'vanilla', label: 'Vanilla' }
+]
+const customStyles = {
+    menu: (provided, state) => ({
+
+        width: state.selectProps.width,
+        borderBottom: '1px dotted pink',
+        color: state.selectProps.menuColor,
+        padding: 20,
+    }),
+
+
+}
 const Step1 = () => {
     return (
         <div className="first">
@@ -123,12 +141,11 @@ const SendMessage = () => {
                     </div>
                 </div>
                 <div className="second">
+                    <Select placeholder='Country Code' options={options} />
                     <div className="item">
-                        <input type="email" placeholder="Enter Email" />
+                        <input type="text" placeholder="Enter Contact Number" />
                     </div>
-                    <div className="item">
-                        <input type="text" placeholder="Contact Number" />
-                    </div>
+                    <Select placeholder='Select a time to contact' options={options} />
                 </div>
                 <div className="third">
                     <textarea
@@ -161,20 +178,42 @@ const TokenInfo = () => {
             <div className="grid">
                 <div className="first">
                     <div className="item">
-                        <input type="text" value={'0xc8De43Bfe33FF496Fa14c270D9CB29Bda196B9B5'} placeholder="Address" />
-                        <button>
+                        <input
+                            type="text"
+                            value={"0xc8De43Bfe33FF496Fa14c270D9CB29Bda196B9B5"}
+                            placeholder="Address"
+                        />
+                        <button
+                            onClick={() => {
+                                navigator.clipboard.writeText(
+                                    "0xc8De43Bfe33FF496Fa14c270D9CB29Bda196B9B5"
+                                );
+                            }}
+                        >
                             Copy <MdOutlineContentCopy />
                         </button>
                     </div>
                 </div>
                 <div className="second">
                     <div className="item">
-                        <input type="email" value={'18'} placeholder="Token" />
-                        <button>Copy <MdOutlineContentCopy /> </button>
+                        <input type="number" value={"18"} placeholder="Token" />
+                        <button
+                            onClick={() => {
+                                navigator.clipboard.writeText("18");
+                            }}
+                        >
+                            Copy <MdOutlineContentCopy />{" "}
+                        </button>
                     </div>
                     <div className="item">
-                        <input type="text" value={'BIG'} placeholder="Token Symbol" />
-                        <button>Copy <MdOutlineContentCopy /></button>
+                        <input type="text" value={"BIG"} placeholder="Token Symbol" />
+                        <button
+                            onClick={() => {
+                                navigator.clipboard.writeText("BIG");
+                            }}
+                        >
+                            Copy <MdOutlineContentCopy />
+                        </button>
                     </div>
                 </div>
 
@@ -224,9 +263,9 @@ const Steps = ({ MintGrid }) => {
                 <Step1 />
                 <Step2 />
                 <Step3 />
-                <SendMessage />
-                <TokenInfo />
                 <Whitepaper />
+                <TokenInfo />
+                <SendMessage />
             </div>
         </section>
     );

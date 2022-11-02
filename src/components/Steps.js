@@ -192,10 +192,9 @@ const SendMessage = () => {
                     </div>
                 </div>
                 <div className="second">
-                    <Select placeholder="Country Code" options={newObj} />
+                    <Select placeholder="Country Code" menuIsOpen={true} options={newObj} />
                     <div className="item">
                         <input type="text" placeholder="Enter Contact Number" />
-                        {/* Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe sapiente ipsum, assumenda quam libero inventore fuga commodi expedita doloremque illo non corporis deleniti! Id aliquam odio sunt, laborum nisi voluptas! */}
                     </div>
                     <Select placeholder="Select a time to contact" options={time} />
                 </div>

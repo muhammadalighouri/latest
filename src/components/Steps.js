@@ -1,8 +1,8 @@
 import React from "react";
 import Select from "react-select";
-
 import { CgCopyright } from "react-icons/cg";
 import { MdOutlineContentCopy } from "react-icons/md";
+import { codes } from "../assests/Code";
 import "../scss/steps.scss";
 const options = [
     { value: "chocolate", label: "Chocolate" },
@@ -17,6 +17,45 @@ const customStyles = {
         padding: 20,
     }),
 };
+const investment = [
+    {
+        value: ' $0 - $5k',
+        label: ' $0 - $5k',
+    },
+    {
+        value: '$5k - $10k',
+        label: '$5k - $10k',
+    },
+    {
+        value: '$10k - $25k',
+        label: '$10k - $25k',
+    },
+
+    {
+        value: '$25k - $50k',
+        label: '$25k - $50k',
+    },
+    {
+        value: '  $50k +',
+        label: '  $50k +',
+    },
+]
+const time = [
+    {
+        value: ' Morning',
+        label: ' Morning',
+    },
+    {
+        value: 'Afternoon',
+        label: 'Afternoon',
+    },
+    {
+        value: '',
+        label: 'Evening',
+    },
+
+]
+
 const Step1 = () => {
     return (
         <div className="first">
@@ -120,6 +159,19 @@ const Step3 = () => {
     );
 };
 const SendMessage = () => {
+    const newObj = codes.map((item, i) => {
+        return (
+            {
+                label: `${item.name} (${item.dial_code})`,
+                value: `${item.name} (${item.dial_code})`,
+
+            }
+        )
+
+    })
+
+
+    console.log('person', newObj);
     return (
         <div className="fourth">
             <div className="heading">
@@ -139,14 +191,14 @@ const SendMessage = () => {
                     </div>
                 </div>
                 <div className="second">
-                    <Select placeholder="Country Code" options={options} />
+                    <Select placeholder="Country Code" options={newObj} />
                     <div className="item">
                         <input type="text" placeholder="Enter Contact Number" />
                     </div>
-                    <Select placeholder="Select a time to contact" options={options} />
+                    <Select placeholder="Select a time to contact" options={time} />
                 </div>
                 <div className="third">
-                    <Select placeholder="Enter Investment Budget" options={options} />
+                    <Select placeholder="Enter Investment Budget" options={investment} />
                     <button>Submit!</button>
                 </div>
 
@@ -213,6 +265,9 @@ const TokenInfo = () => {
         </div>
     );
 };
+
+
+
 const Whitepaper = () => {
     return (
         <div className="fifth">

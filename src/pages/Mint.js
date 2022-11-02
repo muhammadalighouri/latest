@@ -23,7 +23,7 @@ const MintGrid = () => {
                     <div data-aos="fade-up" className="aos-init aos-animate details">
                         <h2>Doge Rush Beta-Sale</h2>
                         <p>1 USDT = 200 Doge Rush</p>
-                        <p style={{ margin: '0 0 25px  0' }}>USDT Raised: $0,0 / $2,500,000</p>
+
 
                         <div>
                             <div className="payment__header">
@@ -90,7 +90,7 @@ const MintGrid = () => {
                     </div>
                     <div className="img">
                         <img src="/images/Dog Run/front.png" alt="" />
-                        <p>USDT Raised: $9,299,227.83 / $10,700,000.00</p>
+                        <p>USDT Raised: $0,0 / $2,500,000</p>
                         <div className="dots">
                             <span></span>
                             <span></span>

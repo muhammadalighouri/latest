@@ -81,11 +81,11 @@ header {
                 svg {
                   width: 20px !important;
                   height: 20px !important;
-              
                 }
               }
               svg {
                 width: 30px;
+                height: 30px;
               }
             }
 
@@ -109,7 +109,7 @@ header {
                 transition: 0.3s all;
               }
               &:hover::before {
-                width: 80%;
+                width: 60%;
               }
               > a {
                 transition: 0.2s all;
@@ -129,9 +129,10 @@ header {
                 font-family: "Barlow-medium";
 
                 @include lg {
-                  font-size: clamp(3em, 11vw, 4em);
+                  font-size: clamp(3em, 8vw, 4em);
                   font-weight: 900;
                   line-height: 1;
+                  font-family: unset;
                 }
               }
             }
@@ -256,10 +257,11 @@ header {
   transition: 0.3s all;
   z-index: 1001;
   transform: scale(0);
-
+  border-radius: 100px;
+  overflow: hidden;
   > svg {
     width: 50px;
-    background: #fff;
+    background: #05243d;
     height: 50px;
     place-content: center;
     pointer-events: auto;
@@ -268,8 +270,9 @@ header {
     align-items: center;
     color: #fff;
     border: 1px solid #dbd9e01f;
-    padding: 13px;
-    fill: black;
+    padding: 15px;
+    fill: #fff;
+    font-weight: 900;
   }
 }
 

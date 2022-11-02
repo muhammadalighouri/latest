@@ -41,7 +41,7 @@ const Roadmap = () => {
             data-aos-easing="ease-out"
             class="aos-init aos-animate"
           >
-            The Roadmap you all have been waiting for!
+            Doge Rush roadmap is a high-level breakdown of the actions we’ve taken, the milestones we’ve unlocked, and the goals we’re striving to achieve our vision for the Doge Rush Game and the $DR token.
           </p>
         </div>
         <div className="container">

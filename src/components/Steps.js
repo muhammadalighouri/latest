@@ -1,26 +1,22 @@
 import React from "react";
-import Select from 'react-select'
-
+import Select from "react-select";
 
 import { CgCopyright } from "react-icons/cg";
 import { MdOutlineContentCopy } from "react-icons/md";
 import "../scss/steps.scss";
 const options = [
-    { value: 'chocolate', label: 'Chocolate' },
-    { value: 'strawberry', label: 'Strawberry' },
-    { value: 'vanilla', label: 'Vanilla' }
-]
+    { value: "chocolate", label: "Chocolate" },
+    { value: "strawberry", label: "Strawberry" },
+    { value: "vanilla", label: "Vanilla" },
+];
 const customStyles = {
     menu: (provided, state) => ({
-
         width: state.selectProps.width,
-        borderBottom: '1px dotted pink',
+        borderBottom: "1px dotted pink",
         color: state.selectProps.menuColor,
         padding: 20,
     }),
-
-
-}
+};
 const Step1 = () => {
     return (
         <div className="first">
@@ -37,7 +33,7 @@ const Step1 = () => {
                         Purchasing on a desktop browser will give you a smoother purchasing
                         experience. For this we recommend Metamask. If you are purchasing on
                         mobile, we recommend using Trust Wallet and connecting through the
-                        in built browser
+                        in built browser.
                     </span>
                 </p>
             </div>
@@ -52,18 +48,18 @@ const Step1 = () => {
 const Step2 = () => {
     const info = [
         {
-            name: "Gamming NFTs",
-            desc: "Latin professor at Hampden-Sydney her College in Virginia, looked up one of the more obscure.",
+            name: "Buy with ETH",
+            desc: "Once you have enough ETH in your wallet (if you don't have ETH or USDT, choose option 1 to buy ETH first), you can now exchange your ETH for DR. Enter the amount of DR you wish to buy (minimum 1,000) and click Exchange ETH. Your wallet provider will ask you to confirm the transaction and will also show you the gas cost.",
             img: "https://bithu.uigaint.com/wp-content/uploads/2022/06/aboutus_card_icon1-min.png",
         },
         {
-            name: "Play & Earn",
-            desc: "Latin professor at Hampden-Sydney her College in Virginia, looked up one of the more obscure.",
+            name: "Buy with USDT",
+            desc: "Before you start trading, make sure you have at least $30 USDT in your wallet. Enter the amount of DR you wish to purchase (minimum 1,000). Click Exchange USDT. You will then be asked to approve the purchase twice. The first approval is for the USDT contract and the second approval is for the transaction amount. Please make sure you go through two approval steps to complete the transaction.",
             img: "https://bithu.uigaint.com/wp-content/uploads/2022/06/aboutus_card_icon2-min.png",
         },
         {
-            name: "Buy ETH or BNB",
-            desc: "Latin professor at Hampden-Sydney her College in Virginia, looked up one of the more obscure.",
+            name: "Buy ETH",
+            desc: "If you don’t have enough ETH in your wallet to make a purchase, you can use our onramping partner, Transak, in order to buy ETH directly using your card or via a bank transfer. Simply choose your purchase method, go through their simple KYC flow and you’ll be able to make a purchase directly in the widget.",
             img: "https://bithu.uigaint.com/wp-content/uploads/2022/06/aboutus_card_icon3-min.png",
         },
     ];
@@ -71,11 +67,8 @@ const Step2 = () => {
         <div className="second">
             <h2>Step 2/3</h2>
             <p>
-                <span>
-                    Once you have your preferred wallet provider ready, click “Connect
-                    Wallet” and select the appropriate option. For mobile wallet apps you
-                    will need to select “Wallet Connect”.{" "}
-                </span>{" "}
+                <span>Once you have your preferred wallet provider ready, click “Connect Wallet” and select the appropriate option. For mobile wallet apps you will need to select “Wallet Connect”.</span>
+                <span>You will then have 3 options:</span>
             </p>
             <div className="grid">
                 {info.map((item, ind) => {
@@ -100,17 +93,11 @@ const Step3 = () => {
                 <h2>Step 3/3</h2>
                 <p>
                     <span>
-                        {" "}
-                        To begin, make sure you have a MetaMask wallet installed on your
-                        browser, or use one of the wallets supported by Wallet Connect (we
-                        recommend Trust Wallet).
+                        After the pre-sale is over, you will be able to claim your DR tokens.
+                        We'll post the details closer, but you'll need to visit the main site{" "}
+                        <a href="https://dogerush.io/buy" style={{ color: '#0fdaf4' }} target={'_blank'}>https://dogerush.io/buy</a> and
+                        click the 'Claim' button.
                     </span>{" "}
-                    <span>
-                        Purchasing on a desktop browser will give you a smoother purchasing
-                        experience. For this we recommend Metamask. If you are purchasing on
-                        mobile, we recommend using Trust Wallet and connecting through the
-                        in built browser
-                    </span>
                 </p>
             </div>
             <div className="end">
@@ -141,14 +128,14 @@ const SendMessage = () => {
                     </div>
                 </div>
                 <div className="second">
-                    <Select placeholder='Country Code' options={options} />
+                    <Select placeholder="Country Code" options={options} />
                     <div className="item">
                         <input type="text" placeholder="Enter Contact Number" />
                     </div>
-                    <Select placeholder='Select a time to contact' options={options} />
+                    <Select placeholder="Select a time to contact" options={options} />
                 </div>
                 <div className="third">
-                    <Select placeholder='Enter Investment Budget' options={options} />
+                    <Select placeholder="Enter Investment Budget" options={options} />
                     <button>Submit!</button>
                 </div>
 
@@ -211,8 +198,6 @@ const TokenInfo = () => {
                         </button>
                     </div>
                 </div>
-
-
             </div>
         </div>
     );

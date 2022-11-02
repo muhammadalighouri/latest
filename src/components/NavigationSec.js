@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { FaDiscord } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa";
 import { AiOutlineTwitter } from "react-icons/ai";
-import { FaRedditAlien } from "react-icons/fa";
+import { FaRedditAlien, FaTiktok } from "react-icons/fa";
 import { links } from "../assests/data";
 import { FaInstagram } from "react-icons/fa";
 import {
@@ -70,18 +70,35 @@ const NavigationSec = ({ text }) => {
                             </li>
                         </ul>
                         <div className="icons">
-                            <a href="" target={"_blank"}>
+                            <a
+                                href="https://www.youtube.com/channel/UCwj4YrAKFltipzbrp_0YR3A/featured
+"
+                                target="_blank"
+                            >
                                 <YouTube />
                             </a>
-                            <a href="" target={"_blank"}>
+                            <a href="https://www.instagram.com/dogerush/" target="_blank">
                                 <Instagram />
                             </a>
-                            <a href="" target={"_blank"}>
+                            <a
+                                href="https://t.me/dogerushchat"
+                                target="_blank"
+                            >
                                 <Telegram />
                             </a>
-                            <a href="" target={"_blank"}>
-                                <Twitter />
+                            <a
+                                href="https://www.tiktok.com/@dogerushofficial"
+                                target="_blank"
+                            >
+                                <FaTiktok />
                             </a>
+                            <a
+                                href="https://twitter.com/dogerushcoin "
+                                target="_blank"
+                            >
+                                <AiOutlineTwitter />
+                            </a>
+
                         </div>
                     </div>
                 </div>

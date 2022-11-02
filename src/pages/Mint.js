@@ -110,6 +110,7 @@ const MintGrid = () => {
     );
 };
 const Mint = () => {
+    window.scrollTo(0, 0)
     return (
         <>
             <NavigationSec text="CONNECT WALLET" />

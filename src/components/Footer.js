@@ -15,26 +15,32 @@ const Footer = () => {
         <div className="grid">
           <div className="nav__btns">
             <a
-              href="https://discord.gg/3DUsna54
+              href="https://www.youtube.com/channel/UCwj4YrAKFltipzbrp_0YR3A/featured
 "
               target="_blank"
             >
               <YouTube />
             </a>
-            <a href="https://twitter.com/blkstarlabz " target="_blank">
+            <a href="https://www.instagram.com/dogerush/" target="_blank">
               <Instagram />
             </a>
             <a
-              href="https://www.instagram.com/blkstarlabz/"
+              href="https://t.me/dogerushchat"
               target="_blank"
             >
               <Telegram />
             </a>
             <a
-              href="https://www.instagram.com/blkstarlabz/"
+              href="https://www.tiktok.com/@dogerushofficial"
               target="_blank"
             >
               <FaTiktok />
+            </a>
+            <a
+              href="https://twitter.com/dogerushcoin "
+              target="_blank"
+            >
+              <AiOutlineTwitter />
             </a>
 
           </div>

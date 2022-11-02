@@ -12,6 +12,7 @@ import Marchendise from "../components/Marchendise";
 import Partners from "../components/Partners";
 import Token from "../components/Token";
 const Home = () => {
+    window.scrollTo(0, 0)
     return (
         <>
             <Navigation />

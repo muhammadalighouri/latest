@@ -15,6 +15,7 @@ const customStyles = {
         borderBottom: "1px dotted pink",
         color: state.selectProps.menuColor,
         padding: 20,
+        background: 'red'
     }),
 };
 const investment = [

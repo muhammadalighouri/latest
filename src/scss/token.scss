@@ -60,10 +60,10 @@
 
     .grid {
       display: grid;
-        grid-template-columns: 1.5fr 1fr 1.2fr;
-        /* place-items: center; */
-        align-items: center;
-        grid-column-gap: 2rem;
+      grid-template-columns: 1.5fr 1fr 1.2fr;
+      /* place-items: center; */
+      align-items: center;
+      grid-column-gap: 2rem;
       @include lg {
         max-width: 600px;
         margin: auto;
@@ -83,8 +83,43 @@
           span {
             margin-bottom: 10px;
             display: block;
-            opacity: .8;
+            opacity: 0.8;
+            line-height: 1.2;
           }
+        }
+        .btns {
+          display: flex;
+          gap: 10px;
+          .btn {
+            max-width: 50px;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+              min-height: 50px;
+            }
+          }
+        }
+        .normal__btn{
+            display: flex;
+            padding: 20px 0;
+              gap: 30px;
+              button{
+                    display: flex;
+                      gap: 5px;
+                      align-items: center;
+                      background: transparent;
+                      border: 0;
+                      color: #32a4d7;
+                      cursor: pointer;
+                      font-size: 16px !important;
+                      font-weight: 100 !important;
+                      font-family: 'Play-Regular' !important;
+                  svg{
+                    fill: #32a4d7;
+                    width: 14px;
+                  }
+              }
         }
       }
       .itemll {
@@ -110,7 +145,7 @@
 
         &:nth-child(3) {
           p {
-            text-align: end;
+        
           }
         }
 
@@ -121,12 +156,11 @@
           gap: 1rem;
 
           p {
-            color: #ffffff;
-
-            font-size: 18px;
-            font-weight: 500;
-            line-height: 24px;
-            margin: 0px 0px 10px 0px;
+              color: #ffffff;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+                margin: 0px 0px 10px 0px;
             @include md {
               font-size: 16px;
             }

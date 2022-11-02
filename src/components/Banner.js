@@ -9,6 +9,7 @@ import { BannerImages } from "../assests/data";
 import { gsap } from "gsap";
 import { TimelineLite, Power4 } from "gsap/gsap-core";
 import { useNavigate } from "react-router-dom";
+import { BsArrowRight } from "react-icons/bs";
 const Banner = ({ timeline, ease }) => {
   useEffect(() => {
     AOS.init({});
@@ -35,9 +36,7 @@ const Banner = ({ timeline, ease }) => {
             <div className="text__container">
               <h2><img src="/images/logo/01-03.png" alt="" /></h2>
               <p>
-                OWN YOUR PIECE OF LAND IN THE MOST ANTICIPATED BYOVERSE OPEN
-                WORLD GAME. YOUR LAND WILL GROW RESOURCES NECESSARY FOR PLAYERS
-                TO ROAM THE WORLD AND FIND IT'S TREASURES
+                An NFT P2E Game, Where Elon Musk Meets Doge Coin.
               </p>
             </div>
             <div className="btn__container">
@@ -50,6 +49,7 @@ const Banner = ({ timeline, ease }) => {
                 </button>
               </div>
             </div>
+
           </div>
         </div>
       </section>

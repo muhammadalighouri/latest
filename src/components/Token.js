@@ -9,6 +9,7 @@ import { Parallax, Background } from "react-parallax";
 import { gsap } from "gsap";
 import { TimelineLite, Power3 } from "gsap/gsap-core";
 import { ScrollTrigger } from "gsap/all";
+import { BsArrowRight } from "react-icons/bs";
 gsap.registerPlugin(ScrollTrigger);
 // const data = [2, 15, 3, 10, 12, 8, 4, 40];
 const data = [
@@ -77,10 +78,38 @@ const Token = ({ ease }) => {
       },
     });
   }, []);
+
+  const tokens = [
+    {
+      name: "ETH Token",
+      img: "/images/icon/chainlink.png",
+      details: "",
+    },
+    {
+      name: "ETH Token",
+      img: "/images/icon/bitcoin.png",
+      details: "",
+    },
+    {
+      name: "ETH Token",
+      img: "/images/icon/filecoin.png",
+      details: "",
+    },
+    {
+      name: "ETH Token",
+      img: "/images/icon/tether.png",
+      details: "",
+    },
+    {
+      name: "ETH Token",
+      img: "/images/icon/dogecoin.png",
+      details: "",
+    },
+    // '/images/icon/ppc.png',
+  ];
   return (
     <section className="token" id="tokenomics">
       <div className="container">
-
         <div className="grid">
           <div className="itemll start">
             <h2 data-aos="fade-down" class="aos-init aos-animate">
@@ -97,6 +126,25 @@ const Token = ({ ease }) => {
                 ends, you'll claim your purchased Big Eyes using the claim page.
               </span>
             </p>
+            <div className="btns">
+              {
+                tokens.map((item, i) => {
+                  return (
+                    <div className="btn">
+                      <img src={item.img} alt="" />
+                    </div>
+                  )
+                })
+              }
+            </div>
+            <div className="normal__btn">
+              <button>
+                Etherscan <BsArrowRight />
+              </button>
+              <button>
+                Liquidity Lock <BsArrowRight />
+              </button>
+            </div>
           </div>
           <div className="itemll mid-" ref={ite}>
             <Chart />

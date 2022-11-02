@@ -74,17 +74,7 @@ export const roadmap = [
     date: "2022",
     img: "/images/roadmap/1.png",
   },
-  {
-    id: "01",
-    points: [
-      "Launch discord and twitter",
-      "Building community and establishing whitelist ",
-      "Explore collaborations/partnerships ",
-      "Launch Finished Website.",
-    ],
-    date: "2022",
-    img: "/images/roadmap/1.png",
-  },
+
   {
     id: "01",
     points: [

@@ -67,7 +67,11 @@ const Step2 = () => {
         <div className="second">
             <h2>Step 2/3</h2>
             <p>
-                <span>Once you have your preferred wallet provider ready, click “Connect Wallet” and select the appropriate option. For mobile wallet apps you will need to select “Wallet Connect”.</span>
+                <span>
+                    Once you have your preferred wallet provider ready, click “Connect
+                    Wallet” and select the appropriate option. For mobile wallet apps you
+                    will need to select “Wallet Connect”.
+                </span>
                 <span>You will then have 3 options:</span>
             </p>
             <div className="grid">
@@ -93,10 +97,17 @@ const Step3 = () => {
                 <h2>Step 3/3</h2>
                 <p>
                     <span>
-                        After the pre-sale is over, you will be able to claim your DR tokens.
-                        We'll post the details closer, but you'll need to visit the main site{" "}
-                        <a href="https://dogerush.io/buy" style={{ color: '#0fdaf4' }} target={'_blank'}>https://dogerush.io/buy</a> and
-                        click the 'Claim' button.
+                        After the pre-sale is over, you will be able to claim your DR
+                        tokens. We'll post the details closer, but you'll need to visit the
+                        main site{" "}
+                        <a
+                            href="https://dogerush.io/buy"
+                            style={{ color: "#0fdaf4" }}
+                            target={"_blank"}
+                        >
+                            https://dogerush.io/buy
+                        </a>{" "}
+                        and click the 'Claim' button.
                     </span>{" "}
                 </p>
             </div>
@@ -115,7 +126,7 @@ const SendMessage = () => {
                 <h1>Talk to us</h1>
                 <p>
                     Leave your details below and we’ll contact you to discuss purchasing
-                    Big Eyes.
+                    Doge Rush.
                 </p>
             </div>
             <div className="grid">
@@ -151,10 +162,10 @@ const TokenInfo = () => {
     return (
         <div className="six">
             <div className="heading">
-                <h1>Contract</h1>
+                <h1>Doge Rush Contract</h1>
                 <p>
-                    Leave your details below and we’ll contact you to discuss purchasing
-                    Big Eyes.
+                    Use the contract information below to add the Doge Rush token to your
+                    wallet.
                 </p>
             </div>
             <div className="grid">
@@ -207,7 +218,7 @@ const Whitepaper = () => {
         <div className="fifth">
             <div className="heading" style={{ overflow: "hidden" }}>
                 <h1 data-aos="fade-down" class="aos-init aos-animate">
-                    100% Secure
+                    100% Secure
                 </h1>
                 <p
                     data-aos="fade-up"
@@ -215,11 +226,9 @@ const Whitepaper = () => {
                     data-aos-easing="ease-out"
                     class="aos-init aos-animate"
                 >
-                    RobotEra building a sandbox-like planet-rebuilding metaverse. You will
-                    become a robot, managing your own land and participating in the
-                    creationof the world. It can also acquire resources from the land,
-                    create robot companions. Here, create everything you can imagine and
-                    start a new era with other robots.
+                    Contract fully audited by Solidity Finance and shown to be 100%
+                    secure. Team fully verified by CoinSniper to ensure anti-rug and
+                    complete project security.
                 </p>
                 <div className="btn__container">
                     <button>Audit</button>

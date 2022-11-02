@@ -21,8 +21,9 @@ const MintGrid = () => {
             <div className="container">
                 <div className="about__grid">
                     <div data-aos="fade-up" className="aos-init aos-animate details">
-                        <h2>Stage 6 has started!</h2>
-                        <p>1 USDT = 3589.74 Big Eyes</p>
+                        <h2>Doge Rush Beta-Sale</h2>
+                        <p>1 USDT = 200 Doge Rush</p>
+                        <p style={{ margin: '0 0 25px  0' }}>USDT Raised: $0,0 / $2,500,000</p>
 
                         <div>
                             <div className="payment__header">

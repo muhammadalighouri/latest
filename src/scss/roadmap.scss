@@ -28,14 +28,14 @@
 
     p {
       text-align: center;
-      width: 70%;
+      width: 60%;
       margin-bottom: 80px;
       margin: 15px auto 30px;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 100;
       letter-spacing: 1px;
       line-height: 1.2;
-
+      opacity: 0.9 !important;
       @include md {
         font-size: 16px;
         width: 80%;
@@ -54,28 +54,29 @@
     position: relative;
     z-index: 3;
     .roadmap__grid {
-      padding: 20px 30px;
+      padding: 120px 30px;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-row-gap: 2rem;
       grid-column-gap: 8rem;
       margin-top: 50px;
-@include md{
-  grid-template-columns: 1fr ;
-  padding: 0;
-}
+      @include md {
+        grid-template-columns: 1fr;
+        padding: 0;
+      }
       &::before {
         content: "";
-          position: absolute;
-          top: 0%;
-          left: 0%;
-          width: 100%;
-          height: 100%;
-          background: url(http://localhost:3000/static/media/roadmap-tree.296ce3fe-removebg-preview.3d834a37e0dc1e6b76fb.png) no-repeat top center;
-          background-size: contain;
-          @include md{
-            content: unset;
-          }
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background: url(http://localhost:3000/static/media/roadmap-tree.296ce3fe-removebg-preview.3d834a37e0dc1e6b76fb.png)
+          no-repeat top center;
+        background-size: contain;
+        @include md {
+          content: unset;
+        }
       }
 
       .item {
@@ -87,43 +88,41 @@
         // background: linear-gradient(180deg, #2196f333 0%, #03a9f41a 100%);
         width: 100%;
         height: max-content;
-       
-        @include md{
+
+        @include md {
           padding: 15px;
         }
-     @include -md{
-      &:nth-child(even) {
-          justify-self: start;
-          margin-top: 100px;
-        }
-        &:nth-child(odd) {
+        @include -md {
+          &:nth-child(even) {
+            justify-self: start;
+            margin-top: 100px;
+          }
+          &:nth-child(odd) {
             justify-self: end;
-        
+
             h2 {
               text-align: end;
             }
-        
+
             ul {
               li {
                 text-align: end;
               }
             }
           }
-     }
-
-      
+        }
 
         h2 {
-            line-height: 30px;
-              letter-spacing: 0.02em;
-              text-transform: uppercase;
-              color: #0096b8;
-              font-style: normal;
-              position: relative;
-              font-size: 2rem;
-              font-weight: 800;
-              margin-bottom: 10px;
-              text-shadow: 0px 0px 1px #1277c7;
+          line-height: 30px;
+          letter-spacing: 0.02em;
+          text-transform: uppercase;
+          color: #0096b8;
+          font-style: normal;
+          position: relative;
+          font-size: 2rem;
+          font-weight: 800;
+          margin-bottom: 10px;
+          text-shadow: 0px 0px 1px #1277c7;
 
           &:before {
             content: "";
@@ -181,27 +180,27 @@
           }
         }
       }
-    @include -md{
+      @include -md {
         .no2 {
-            transform: translateY(75px);
-          }
-        
-          .no1 {
-            transform: translateY(25px) translateX(-24px);
-          }
-        
-          .no3 {
-            transform: translateY(-5px) translateX(-24px);
-          }
-        
-          .no4 {
-            transform: translateY(40px);
-          }
-        
-          .no5 {
-            transform: translateY(8px) translateX(-24px);
-          }
-    }
+          transform: translateY(-32px);
+        }
+
+        .no1 {
+          transform: translateY(-80px) translateX(-24px);
+        }
+
+        .no3 {
+          transform: translateY(-120px) translateX(-24px);
+        }
+
+        .no4 {
+          transform: translateY(-80px);
+        }
+
+        .no5 {
+          transform: translateY(8px) translateX(-24px);
+        }
+      }
     }
   }
 }

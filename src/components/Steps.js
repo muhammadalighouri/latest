@@ -90,17 +90,17 @@ const Step2 = () => {
         {
             name: "Buy with ETH",
             desc: "Once you have enough ETH in your wallet (if you don't have ETH or USDT, choose option 1 to buy ETH first), you can now exchange your ETH for DR. Enter the amount of DR you wish to buy (minimum 1,000) and click Exchange ETH. Your wallet provider will ask you to confirm the transaction and will also show you the gas cost.",
-            img: "https://bithu.uigaint.com/wp-content/uploads/2022/06/aboutus_card_icon1-min.png",
+            img: "/images/icon/8193886.png",
         },
         {
             name: "Buy with USDT",
             desc: "Before you start trading, make sure you have at least $30 USDT in your wallet. Enter the amount of DR you wish to purchase (minimum 1,000). Click Exchange USDT. You will then be asked to approve the purchase twice. The first approval is for the USDT contract and the second approval is for the transaction amount. Please make sure you go through two approval steps to complete the transaction.",
-            img: "https://bithu.uigaint.com/wp-content/uploads/2022/06/aboutus_card_icon2-min.png",
+            img: "/images/icon/8193873.png",
         },
         {
             name: "Buy ETH",
             desc: "If you don’t have enough ETH in your wallet to make a purchase, you can use our onramping partner, Transak, in order to buy ETH directly using your card or via a bank transfer. Simply choose your purchase method, go through their simple KYC flow and you’ll be able to make a purchase directly in the widget.",
-            img: "https://bithu.uigaint.com/wp-content/uploads/2022/06/aboutus_card_icon3-min.png",
+            img: "/images/icon/8193886.png",
         },
     ];
     return (

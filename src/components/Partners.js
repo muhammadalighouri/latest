@@ -8,7 +8,7 @@ const Partners = () => {
             <section className="partners">
                 <div className="heading">
                     <h1 data-aos="fade-down" className="aos-init aos-animate">
-                        Our Partners
+                        Featured In
                     </h1>
                 </div>
                 <div className="container">

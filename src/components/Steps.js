@@ -217,14 +217,11 @@ const Whitepaper = () => {
     return (
         <div className="fifth">
             <div className="heading" style={{ overflow: "hidden" }}>
-                <h1 data-aos="fade-down" class="aos-init aos-animate">
+                <h1 >
                     100% Secure
                 </h1>
                 <p
-                    data-aos="fade-up"
-                    data-aos-duration="2000"
-                    data-aos-easing="ease-out"
-                    class="aos-init aos-animate"
+
                 >
                     Contract fully audited by Solidity Finance and shown to be 100%
                     secure. Team fully verified by CoinSniper to ensure anti-rug and

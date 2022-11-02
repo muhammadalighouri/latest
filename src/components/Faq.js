@@ -75,6 +75,7 @@ const Faq = () => {
           <h1 data-aos="fade-down" className="aos-init aos-animate">
             FAQs
           </h1>
+          <p>Wanna know more? Look no further</p>
         </div>
         <div className="container">
           <div className="accordian__grid">

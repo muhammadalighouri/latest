@@ -29,7 +29,6 @@ export const nav = [
     path: "#tokenomics",
     ref: "nav3",
   },
-
 ];
 
 export const roadmap = [
@@ -40,7 +39,6 @@ export const roadmap = [
       "Building community and establishing whitelist ",
       "Explore collaborations/partnerships ",
       "Launch Finished Website.",
-
     ],
     date: "2022",
     img: "/images/roadmap/1.png",
@@ -52,7 +50,6 @@ export const roadmap = [
       "Building community and establishing whitelist ",
       "Explore collaborations/partnerships ",
       "Launch Finished Website.",
-
     ],
     date: "2022",
     img: "/images/roadmap/1.png",
@@ -64,7 +61,6 @@ export const roadmap = [
       "Building community and establishing whitelist ",
       "Explore collaborations/partnerships ",
       "Launch Finished Website.",
-
     ],
     date: "2022",
     img: "/images/roadmap/1.png",
@@ -76,7 +72,6 @@ export const roadmap = [
       "Building community and establishing whitelist ",
       "Explore collaborations/partnerships ",
       "Launch Finished Website.",
-
     ],
     date: "2022",
     img: "/images/roadmap/1.png",
@@ -88,12 +83,10 @@ export const roadmap = [
       "Building community and establishing whitelist ",
       "Explore collaborations/partnerships ",
       "Launch Finished Website.",
-
     ],
     date: "2022",
     img: "/images/roadmap/1.png",
   },
-
 ];
 
 export const Nfts = [
@@ -110,51 +103,51 @@ export const Nfts = [
 ];
 
 export const FAQ = [
-
-
   {
-    q: " What Are The Benefits?",
+    q: " What is Doge Rush?",
     ans: [
-      "Every Cai$hen NFT holder is automatically Entered into the Weekly Draws For some Amazing Nodes/NFT Node Projects. Breaking the price barrier for easy entry into some Amazing projects.",
+      "Doge Rush is An NFT Play to Earn Game, Where Elon Musk Meets DogeCoin.",
     ],
   },
   {
-    q: "How Many NFTs Are Avaliable?",
-    ans: ["Our First Collection will consist of 5000 NFTs."],
+    q: "Is there a coin/token for this project?",
+    ans: ["Yes. The token for this project is called $DR."],
   },
   {
-    q: "When Does Minting Begin?   ",
-    ans: [" TBA Please Check in on Discord for a Date."],
-  },
-  {
-    q: "  Will There Be Whitelist?   ",
+    q: "Under which network is Doge Rush?  ",
     ans: [
-      " Yes. We have come up with a New Design For Whitelist. There will be 2 Tiers…. Gold Whitelist and Silver Whitelist. Please check in Discord for Benefits and how to obtain.",
+      "Doge Rush is built on the ERC-20 and will also be tradeable as a BEP-20 cryptocurrency.",
     ],
   },
   {
-    q: "How Will Minting Work?  ",
+    q: "  How much is the total supply of $DR?",
+    ans: [" $DR has a total supply of 2 billion tokens."],
+  },
+  {
+    q: "Is Doge Rush audited?  ",
     ans: [
-      " We will Be listed on Joepegs and Campfire.exchange for our Live Mint. the entire collection will be revealed from initial mint.",
+      " Yes, Doge Rush is audited by Solidity Finance. Solidity Finance has Conducted 1500+ smart contract audits covering all major project types and protocols, securing a total of over $50 billion U.S. dollars in on-chain value. Solidity Finance is well-reputed in the community and is trusted as a top smart contract auditing company for the review of solidity code, no matter how complex.",
+      "You can view our smart contract audit here: dogerush.io/audit",
     ],
   },
   {
-    q: "Will there Be Special 1/1? And any Benefits? ",
-    ans: [
-      " Yes. we will have 5 special 1/1 NFTs. They will hold the Same power as a regular NFT with some special added Bonuses to minting a 1/1. Please check discord for more information.",
-    ],
+    q: "Is Doge Rush using any tax?  ",
+    ans: [" No, no buy tax, no sell tax, no fees."],
+  },
+  {
+    q: "Where to Buy Doge Rush?  ",
+    ans: [" As of writing, you can buy $DR from DogeRush.io/Buy"],
   },
 ];
 
 export const team = [
-
   {
     name: "Manoj Aryal",
     position: "Co-Founder - Content writer and community manager",
     path: "/images/team/photos/Manoj Aryal.png",
     insta: "https://www.instagram.com/the_traveling_diary_tour/?hl=en",
-    linkedin: 'https://www.linkedin.com/in/manoj-aryal-0a42ba221/',
-    twitter: 'https://twitter.com/manojaryal25',
+    linkedin: "https://www.linkedin.com/in/manoj-aryal-0a42ba221/",
+    twitter: "https://twitter.com/manojaryal25",
     desc: "Content writer and community manager with more than six years of experience in helping companies build loyal communities and communicate knowledge through the power of words.",
   },
   {
@@ -162,8 +155,8 @@ export const team = [
     position: "Co-Founder - Head of Marketing",
     path: "/images/team/photos/Ripon Das.png",
     insta: false,
-    linkedin: 'https://www.linkedin.com/in/ripon-das-59b62022a/',
-    twitter: 'https://twitter.com/riponk',
+    linkedin: "https://www.linkedin.com/in/ripon-das-59b62022a/",
+    twitter: "https://twitter.com/riponk",
     desc: "Digital marketing professional with over 13 years of experience facilitating communications between brands and customers.",
   },
   {
@@ -171,22 +164,20 @@ export const team = [
     position: "Business advisor",
     path: "/images/team/photos/Dr. Kumar Abhishek.png",
     insta: false,
-    linkedin: 'https://www.linkedin.com/in/dr-kumar-abhishek-aa4a5714/',
+    linkedin: "https://www.linkedin.com/in/dr-kumar-abhishek-aa4a5714/",
     twitter: false,
     desc: "With over 30+ years of experience in various business domains (Finance, Manufacturing, IT, Banking) and having transformed many companies to improve the business and customer experience, the passion for digitalization is still his first love. Dr.Abhishek Kumar has authored books on Professional Ethics, Materials & Logistics Management, Industrial Economics, and Principles of Management and co - authored a book on quantitative analysis.He was a visiting faculty to various management and IT institutions in Pune, India.He has earned two master's degrees in IT and Management and holds multiple industry certifications like PMP, TOGAF, IT4IT, ITIL, and SIAM, apart from Doctorate in Finance.",
   },
-
 
   {
     name: "Harshal Rukhaiyar",
     position: "Collaborator ",
     path: "/images/team/photos/Harshal Rukhaiyar .png",
     insta: false,
-    linkedin: 'https://www.linkedin.com/in/harshal-rukhaiyar/',
+    linkedin: "https://www.linkedin.com/in/harshal-rukhaiyar/",
     twitter: false,
     desc: "Passionate about finding tangible solutions to global issues, Harshal has consulting experience in IT recruitment in Finland as the owner of HVR consulting. He is the lead for Google DSC at Kenyon College, USA, bridging the gap between learning and project building using google technologies. And the Co-founder of HADEN Tech Hub, which empowers education in deprived regions. He has expertise in quantitative and qualitative approaches to problem-solving through his experiences.",
   },
-
 ];
 export const collection = [
   {
@@ -309,7 +300,6 @@ export const collection = [
     ],
   },
 
-
   {
     name: "minions 1",
     id: 10,
@@ -390,21 +380,20 @@ export const collection = [
   },
 ];
 export const Partners_1 = [
-  '/images/partners/partner-1.png',
-  '/images/partners/partner-2.png',
-  '/images/partners/partner-3.png',
-  '/images/partners/partner-4.png',
-  '/images/partners/partner-5.png',
-  '/images/partners/partner-6.png',
-]
+  "/images/partners/partner-1.png",
+  "/images/partners/partner-2.png",
+  "/images/partners/partner-3.png",
+  "/images/partners/partner-4.png",
+  "/images/partners/partner-5.png",
+  "/images/partners/partner-6.png",
+];
 export const partners = [
-  'https://ryber.io/assets/images/partners/logo-ow.png',
-  'https://ryber.io/assets/images/partners/logo-tidex.png',
-  'https://ryber.io/assets/images/partners/logo-profit.png',
-  'https://ryber.io/assets/images/partners/logo-dfg.png',
-  'https://ryber.io/assets/images/partners/logo-btcu.png',
-  'https://ryber.io/assets/images/partners/logo-emiratex.png',
+  "https://ryber.io/assets/images/partners/logo-ow.png",
+  "https://ryber.io/assets/images/partners/logo-tidex.png",
+  "https://ryber.io/assets/images/partners/logo-profit.png",
+  "https://ryber.io/assets/images/partners/logo-dfg.png",
+  "https://ryber.io/assets/images/partners/logo-btcu.png",
+  "https://ryber.io/assets/images/partners/logo-emiratex.png",
   "https://ryber.io/assets/images/partners/logo-emiratex.png",
   "https://ryber.io/assets/images/partners/logo-dax.png",
-
-]
+];

@@ -66,13 +66,13 @@
 }
       &::before {
         content: "";
-        position: absolute;
-        top: 0%;
-        left: 0%;
-        width: 100%;
-        height: 100%;
-        background: url(../../public/images/roadmap-tree.296ce3fe-removebg-preview.png)
-          no-repeat top center;
+          position: absolute;
+          top: 0%;
+          left: 0%;
+          width: 100%;
+          height: 100%;
+          background: url(http://localhost:3000/static/media/roadmap-tree.296ce3fe-removebg-preview.3d834a37e0dc1e6b76fb.png) no-repeat top center;
+          background-size: contain;
           @include md{
             content: unset;
           }
@@ -183,23 +183,23 @@
       }
     @include -md{
         .no2 {
-            transform: translateY(40px);
+            transform: translateY(75px);
           }
         
           .no1 {
-            transform: translateY(10px);
+            transform: translateY(25px) translateX(-24px);
           }
         
           .no3 {
-            transform: translateY(-20px);
+            transform: translateY(-5px) translateX(-24px);
           }
         
           .no4 {
-            transform: translateY(5px);
+            transform: translateY(40px);
           }
         
           .no5 {
-            transform: translateY(-50px);
+            transform: translateY(8px) translateX(-24px);
           }
     }
     }

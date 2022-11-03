@@ -15,7 +15,7 @@ import {
 } from "@material-ui/icons";
 import { nav } from "../assests/data";
 import "../scss/navsec.scss";
-const NavigationSec = ({ text }) => {
+const NavigationSec = ({ text, style }) => {
     const [navToggler, setNavToggler] = useState(false);
     function barBtn() {
         setNavToggler(!navToggler);
@@ -28,6 +28,7 @@ const NavigationSec = ({ text }) => {
                     <div onClick={() => barBtn()}>
                         <span
                             style={{
+                                ...style,
                                 transform: navToggler
                                     ? "translateY(15px) rotate(45deg)"
                                     : "unset",
@@ -67,6 +68,12 @@ const NavigationSec = ({ text }) => {
                             </li>
                             <li>
                                 <Link to={"/mint"}>Telegram</Link>
+                            </li>
+                            <li>
+                                <Link to={"/privacy-policy"}>Privacy Policy</Link>
+                            </li>
+                            <li>
+                                <Link to={"/terms"}>Terms and Conditions</Link>
                             </li>
                         </ul>
                         <div className="icons">

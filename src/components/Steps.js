@@ -3,6 +3,7 @@ import Select from "react-select";
 import { CgCopyright } from "react-icons/cg";
 import { MdOutlineContentCopy } from "react-icons/md";
 import { codes } from "../assests/Code";
+import { Link } from "react-router-dom";
 import "../scss/steps.scss";
 const options = [
     { value: "chocolate", label: "Chocolate" },
@@ -223,7 +224,7 @@ const SendMessage = () => {
 
                 <p id="p">
                     <input type="checkbox" name="" id="" for="p" />
-                    By submitting this form you agree to our Terms and Privacy Policy
+                    By submitting this form you agree to our <Link to={'/terms'}>Terms</Link> and <Link to='/privacy-policy'>Privacy Policy</Link>
                 </p>
             </div>
         </div>

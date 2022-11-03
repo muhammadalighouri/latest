@@ -90,7 +90,7 @@ const Step2 = () => {
         {
             name: "Buy with ETH",
             desc: "Once you have enough ETH in your wallet (if you don't have ETH or USDT, choose option 1 to buy ETH first), you can now exchange your ETH for DR. Enter the amount of DR you wish to buy (minimum 1,000) and click Exchange ETH. Your wallet provider will ask you to confirm the transaction and will also show you the gas cost.",
-            img: "/images/icon/5675486.png",
+            img: "/images/icon/7147157.png",
         },
         {
             name: "Buy with USDT",

@@ -56,6 +56,9 @@
       padding: 50px 10px;
       border: 0;
     }
+    h2{
+      text-transform: uppercase !important;
+    }
     > .heading {
       margin-bottom: 80px;
       h1 {
@@ -256,7 +259,7 @@
         h1 {
           font-size: 3rem;
           margin: 10px 0;
-          text-transform: capitalize;
+          text-transform: uppercase;
         }
 
         p {
@@ -471,7 +474,7 @@
         h1 {
           font-size: 3rem;
           margin: 10px 0;
-          text-transform: capitalize;
+          text-transform: uppercase;
         }
 
         p {

@@ -51,6 +51,10 @@ font-family: 'VT323', monospace; */
   font-family: "Barlow-medium";
   src: url(./font/BarlowCondensed-Medium.ttf);
 }
+@font-face {
+  font-family: "RFDewiExpanded";
+  src: url(./font/RFDewiExpanded-Regular.ttf);
+}
 h1,
 h2 {
   font-family: "Play-Bold" !important;

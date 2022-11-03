@@ -55,7 +55,7 @@ const NavigationSec = ({ text, style }) => {
                     <div className="div">
                         <ul>
                             <li>
-                                <Link to={"/"}>DogeRush</Link>
+                                <Link to={"/"}>Doge Rush</Link>
                             </li>
                             <li>
                                 <Link to={"/home"}>Home</Link>

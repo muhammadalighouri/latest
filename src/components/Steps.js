@@ -118,7 +118,10 @@ const Step2 = () => {
                     <p>
                         Visit&nbsp;
                         <a
-                            style={{ color: "#0fdaf4" }}
+                            style={{
+                                color: "rgb(15, 218, 244)",
+                                display: "inline-block",
+                            }}
                             target={"_blank"}
                             href="https://www.moonpay.com/buy"
                         >
@@ -128,7 +131,10 @@ const Step2 = () => {
                         wallet. You will then be able to use this ETH to purchase Doge Rush.
                         Visit&nbsp;
                         <a
-                            style={{ color: "#0fdaf4" }}
+                            style={{
+                                color: "rgb(15, 218, 244)",
+                                display: "inline-block",
+                            }}
                             target={"_blank"}
                             href="https://www.moonpay.com/buy"
                         >
@@ -166,7 +172,10 @@ const Step3 = () => {
                         will need to visit the main site: {" "}
                         <a
                             href="https://dogerush.io/ "
-                            style={{ color: "#0fdaf4" }}
+                            style={{
+                                color: "rgb(15, 218, 244)",
+                                display: "inline-block",
+                            }}
                             target={"_blank"}
                         >
                             https://dogerush.io/buy
@@ -224,7 +233,9 @@ const SendMessage = () => {
 
                 <p id="p">
                     <input type="checkbox" name="" id="" for="p" />
-                    By submitting this form you agree to our <Link to={'/terms'}>Terms</Link> and <Link to='/privacy-policy'>Privacy Policy</Link>
+                    By submitting this form you agree to our{" "}
+                    <Link to={"/terms"}>Terms</Link> and{" "}
+                    <Link to="/privacy-policy">Privacy Policy</Link>
                 </p>
             </div>
         </div>
@@ -245,13 +256,13 @@ const TokenInfo = () => {
                     <div className="item">
                         <input
                             type="text"
-                            value={"0xc8De43Bfe33FF496Fa14c270D9CB29Bda196B9B5"}
+                            value={"0x2d6e9d6b362354a5Ca7b03581Aa2aAc81bb530Db"}
                             placeholder="Address"
                         />
                         <button
                             onClick={() => {
                                 navigator.clipboard.writeText(
-                                    "0xc8De43Bfe33FF496Fa14c270D9CB29Bda196B9B5"
+                                    "0x2d6e9d6b362354a5Ca7b03581Aa2aAc81bb530Db"
                                 );
                             }}
                         >
@@ -271,10 +282,10 @@ const TokenInfo = () => {
                         </button>
                     </div>
                     <div className="item">
-                        <input type="text" value={"BIG"} placeholder="Token Symbol" />
+                        <input type="text" value={"DR"} placeholder="Token Symbol" />
                         <button
                             onClick={() => {
-                                navigator.clipboard.writeText("BIG");
+                                navigator.clipboard.writeText("DR");
                             }}
                         >
                             Copy <MdOutlineContentCopy />

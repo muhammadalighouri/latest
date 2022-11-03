@@ -88,7 +88,7 @@ const AboutNft = () => {
                 </a>
                 <Link
                   style={{ display: "inline-block" }}
-                  to="/mint"
+                  to="/buy"
                   class="item-desc aos-init aos-animate"
                   data-aos="notific-right"
                 >
@@ -138,7 +138,7 @@ const AboutNft = () => {
                 </a>
                 <Link
                   style={{ display: "inline-block" }}
-                  to="/mint"
+                  to="/buy"
                   class="item-desc aos-init aos-animate"
                   data-aos="notific-right"
                 >
@@ -193,7 +193,7 @@ const AboutNft = () => {
                 </a>
                 <Link
                   style={{ display: "inline-block" }}
-                  to="/mint"
+                  to="/buy"
                   class="item-desc aos-init aos-animate"
                   data-aos="notific-right"
                 >

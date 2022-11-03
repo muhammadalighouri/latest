@@ -32,7 +32,7 @@ const Main = () => {
                     <div className="grid">
                         <div className="btns__container">
                             <button onClick={() => navigate("/home")}>HOME</button>
-                            <button onClick={() => navigate("/mint")}>Buy Now</button>
+                            <button onClick={() => navigate("/buy")}>Buy Now</button>
                             <button>Whitepaper</button>
                             <button>Telegram</button>
                         </div>

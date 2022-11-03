@@ -2,9 +2,12 @@ import React from "react";
 import Select from "react-select";
 import { CgCopyright } from "react-icons/cg";
 import { MdOutlineContentCopy } from "react-icons/md";
-import { codes } from "../assests/Code";
+
 import { Link } from "react-router-dom";
 import "../scss/steps.scss";
+import Whitepaper from "./Whitepaper";
+import TokenInfo from "./TokenInfo";
+import SendMessage from "./SendMessage";
 const options = [
     { value: "chocolate", label: "Chocolate" },
     { value: "strawberry", label: "Strawberry" },
@@ -19,43 +22,7 @@ const customStyles = {
         background: "red",
     }),
 };
-const investment = [
-    {
-        value: " $0 - $5k",
-        label: " $0 - $5k",
-    },
-    {
-        value: "$5k - $10k",
-        label: "$5k - $10k",
-    },
-    {
-        value: "$10k - $25k",
-        label: "$10k - $25k",
-    },
 
-    {
-        value: "$25k - $50k",
-        label: "$25k - $50k",
-    },
-    {
-        value: "  $50k +",
-        label: "  $50k +",
-    },
-];
-const time = [
-    {
-        value: " Morning",
-        label: " Morning",
-    },
-    {
-        value: "Afternoon",
-        label: "Afternoon",
-    },
-    {
-        value: "",
-        label: "Evening",
-    },
-];
 
 const Step1 = () => {
     return (
@@ -193,130 +160,10 @@ const Step3 = () => {
         </div>
     );
 };
-const SendMessage = () => {
-    const newObj = codes.map((item, i) => {
-        return {
-            label: `${item.name} (${item.dial_code})`,
-            value: `${item.name} (${item.dial_code})`,
-        };
-    });
 
-    console.log("person", newObj);
-    return (
-        <div className="fourth">
-            <div className="heading">
-                <h1>Talk to us</h1>
-                <p>
-                    Leave your details below and we’ll contact you to discuss purchasing
-                    Doge Rush.
-                </p>
-            </div>
-            <div className="grid">
-                <div className="first">
-                    <div className="item">
-                        <input type="text" placeholder="Enter First Name" />
-                    </div>
-                    <div className="item">
-                        <input type="text" placeholder="Enter Last Name" />
-                    </div>
-                </div>
-                <div className="second">
-                    <Select placeholder="Country Code" options={newObj} />
-                    <div className="item">
-                        <input type="text" placeholder="Enter Contact Number" />
-                    </div>
-                    <Select placeholder="Select a time to contact" options={time} />
-                </div>
-                <div className="third">
-                    <Select placeholder="Enter Investment Budget" options={investment} />
-                    <button>Submit!</button>
-                </div>
 
-                <p id="p">
-                    <input type="checkbox" name="" id="" for="p" />
-                    By submitting this form you agree to our{" "}
-                    <Link to={"/terms"}>Terms</Link> and{" "}
-                    <Link to="/privacy-policy">Privacy Policy</Link>
-                </p>
-            </div>
-        </div>
-    );
-};
-const TokenInfo = () => {
-    return (
-        <div className="six">
-            <div className="heading">
-                <h1>Doge Rush Contract</h1>
-                <p>
-                    Use the contract information below to add the Doge Rush token to your
-                    wallet.
-                </p>
-            </div>
-            <div className="grid">
-                <div className="first">
-                    <div className="item">
-                        <input
-                            type="text"
-                            value={"0x2d6e9d6b362354a5Ca7b03581Aa2aAc81bb530Db"}
-                            placeholder="Address"
-                        />
-                        <button
-                            onClick={() => {
-                                navigator.clipboard.writeText(
-                                    "0x2d6e9d6b362354a5Ca7b03581Aa2aAc81bb530Db"
-                                );
-                            }}
-                        >
-                            Copy <MdOutlineContentCopy />
-                        </button>
-                    </div>
-                </div>
-                <div className="second">
-                    <div className="item">
-                        <input type="number" value={"18"} placeholder="Token" />
-                        <button
-                            onClick={() => {
-                                navigator.clipboard.writeText("18");
-                            }}
-                        >
-                            Copy <MdOutlineContentCopy />{" "}
-                        </button>
-                    </div>
-                    <div className="item">
-                        <input type="text" value={"DR"} placeholder="Token Symbol" />
-                        <button
-                            onClick={() => {
-                                navigator.clipboard.writeText("DR");
-                            }}
-                        >
-                            Copy <MdOutlineContentCopy />
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
-};
 
-const Whitepaper = () => {
-    return (
-        <div className="fifth">
-            <div className="heading" style={{ overflow: "hidden" }}>
-                <h1>100% Secure</h1>
-                <p>
-                    Contract fully audited by Solidity Finance and shown to be 100%
-                    secure. Team fully verified by CoinSniper to ensure anti-rug and
-                    complete project security.
-                </p>
-                <div className="btn__container">
-                    <button>Audit</button>
-                    <button> Whitepaper</button>
-                    <button>KYC</button>
-                </div>
-            </div>
-        </div>
-    );
-};
+
 const Steps = ({ MintGrid }) => {
     return (
         <section className="steps">

@@ -61,13 +61,13 @@ const NavigationSec = ({ text, style }) => {
                                 <Link to={"/home"}>Home</Link>
                             </li>
                             <li>
-                                <Link to={"/mint"}>Buy Now</Link>
+                                <Link to={"/buy"}>Buy Now</Link>
                             </li>
                             <li>
-                                <Link to={"/mint"}>Whitepaper</Link>
+                                <Link to={"/buy"}>Whitepaper</Link>
                             </li>
                             <li>
-                                <Link to={"/mint"}>Telegram</Link>
+                                <Link to={"/buy"}>Telegram</Link>
                             </li>
                             <li>
                                 <Link to={"/privacy-policy"}>Privacy Policy</Link>

@@ -41,7 +41,7 @@ const Banner = ({ timeline, ease }) => {
             </div>
             <div className="btn__container">
               <div>
-                <button onClick={() => navigate("/mint")}>
+                <button onClick={() => navigate("/buy")}>
                   <span>Buy Now</span>
                 </button>
                 <button>

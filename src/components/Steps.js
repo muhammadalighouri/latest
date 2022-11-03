@@ -15,47 +15,46 @@ const customStyles = {
         borderBottom: "1px dotted pink",
         color: state.selectProps.menuColor,
         padding: 20,
-        background: 'red'
+        background: "red",
     }),
 };
 const investment = [
     {
-        value: ' $0 - $5k',
-        label: ' $0 - $5k',
+        value: " $0 - $5k",
+        label: " $0 - $5k",
     },
     {
-        value: '$5k - $10k',
-        label: '$5k - $10k',
+        value: "$5k - $10k",
+        label: "$5k - $10k",
     },
     {
-        value: '$10k - $25k',
-        label: '$10k - $25k',
+        value: "$10k - $25k",
+        label: "$10k - $25k",
     },
 
     {
-        value: '$25k - $50k',
-        label: '$25k - $50k',
+        value: "$25k - $50k",
+        label: "$25k - $50k",
     },
     {
-        value: '  $50k +',
-        label: '  $50k +',
+        value: "  $50k +",
+        label: "  $50k +",
     },
-]
+];
 const time = [
     {
-        value: ' Morning',
-        label: ' Morning',
+        value: " Morning",
+        label: " Morning",
     },
     {
-        value: 'Afternoon',
-        label: 'Afternoon',
+        value: "Afternoon",
+        label: "Afternoon",
     },
     {
-        value: '',
-        label: 'Evening',
+        value: "",
+        label: "Evening",
     },
-
-]
+];
 
 const Step1 = () => {
     return (
@@ -88,11 +87,6 @@ const Step1 = () => {
 const Step2 = () => {
     const info = [
         {
-            name: "Buy with ETH",
-            desc: "Once you have enough ETH in your wallet (if you don't have ETH or USDT, choose option 1 to buy ETH first), you can now exchange your ETH for DR. Enter the amount of DR you wish to buy (minimum 1,000) and click Exchange ETH. Your wallet provider will ask you to confirm the transaction and will also show you the gas cost.",
-            img: "/images/icon/7147157.png",
-        },
-        {
             name: "Buy with USDT",
             desc: "Before you start trading, make sure you have at least $30 USDT in your wallet. Enter the amount of DR you wish to purchase (minimum 1,000). Click Exchange USDT. You will then be asked to approve the purchase twice. The first approval is for the USDT contract and the second approval is for the transaction amount. Please make sure you go through two approval steps to complete the transaction.",
             img: "/images/icon/8193873.png",
@@ -115,6 +109,34 @@ const Step2 = () => {
                 <span>You will then have 3 options:</span>
             </p>
             <div className="grid">
+                <div className="item">
+                    <div className="top">
+                        <img src="/images/icon/7147157.png" alt="" />
+                        <span>Buy ETH with card</span>
+                    </div>
+                    <p>
+                        Visit
+                        <a
+                            style={{ color: "#0fdaf4" }}
+                            target={"_blank"}
+                            href="https://www.moonpay.com/buy"
+                        >
+                            https://www.moonpay.com/buy
+                        </a>
+                        this will allow you to purchase ETH that will be sent to your
+                        wallet. You will then be able to use this ETH to purchase Doge Rush.
+                        Visit
+                        <a
+                            style={{ color: "#0fdaf4" }}
+                            target={"_blank"}
+                            href="https://www.moonpay.com/buy"
+                        >
+                            https://www.moonpay.com/buy
+                        </a>
+                        to begin and follow the on screen steps. We recommend purchasing a
+                        minimum of $20 worth of ETH to cover the minimum Doge Rush purchase.
+                    </p>
+                </div>
                 {info.map((item, ind) => {
                     return (
                         <div className="item">
@@ -161,18 +183,13 @@ const Step3 = () => {
 };
 const SendMessage = () => {
     const newObj = codes.map((item, i) => {
-        return (
-            {
-                label: `${item.name} (${item.dial_code})`,
-                value: `${item.name} (${item.dial_code})`,
+        return {
+            label: `${item.name} (${item.dial_code})`,
+            value: `${item.name} (${item.dial_code})`,
+        };
+    });
 
-            }
-        )
-
-    })
-
-
-    console.log('person', newObj);
+    console.log("person", newObj);
     return (
         <div className="fourth">
             <div className="heading">
@@ -267,18 +284,12 @@ const TokenInfo = () => {
     );
 };
 
-
-
 const Whitepaper = () => {
     return (
         <div className="fifth">
             <div className="heading" style={{ overflow: "hidden" }}>
-                <h1 >
-                    100% Secure
-                </h1>
-                <p
-
-                >
+                <h1>100% Secure</h1>
+                <p>
                     Contract fully audited by Solidity Finance and shown to be 100%
                     secure. Team fully verified by CoinSniper to ensure anti-rug and
                     complete project security.

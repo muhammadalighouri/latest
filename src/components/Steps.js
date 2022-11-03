@@ -87,13 +87,13 @@ const Step1 = () => {
 const Step2 = () => {
     const info = [
         {
-            name: "Buy with USDT",
-            desc: "Before you start trading, make sure you have at least $30 USDT in your wallet. Enter the amount of DR you wish to purchase (minimum 1,000). Click Exchange USDT. You will then be asked to approve the purchase twice. The first approval is for the USDT contract and the second approval is for the transaction amount. Please make sure you go through two approval steps to complete the transaction.",
+            name: "Buy with ETH",
+            desc: "Once you have sufficient ETH in your wallet (if you do not have ETH, USDT, please read option 1 first), you can now swap your ETH for Doge Rush. Type in the amount of Doge Rush you wish to purchase ($15 minimum) and then click “Buy with ETH” or “Buy with USDT”. Your wallet provider will ask you to confirm the transaction and will also show you the cost of gas.",
             img: "/images/icon/8193873.png",
         },
         {
-            name: "Buy ETH",
-            desc: "If you don’t have enough ETH in your wallet to make a purchase, you can use our onramping partner, Transak, in order to buy ETH directly using your card or via a bank transfer. Simply choose your purchase method, go through their simple KYC flow and you’ll be able to make a purchase directly in the widget.",
+            name: "Buy with USDT",
+            desc: "Please ensure you have at least $20 of USDT in your wallet before commencing the transaction. Type in the amount of Doge Rush you wish to purchase ($15 minimum). Click “Convert USDT”. You will then be asked to approve the purchase TWICE. The first approval is for the USDT contract and the second is for the transaction amount. Please ensure you go through both approval steps in order to complete the transaction.",
             img: "/images/icon/8193886.png",
         },
     ];
@@ -115,7 +115,7 @@ const Step2 = () => {
                         <span>Buy ETH with card</span>
                     </div>
                     <p>
-                        Visit
+                        Visit&nbsp;
                         <a
                             style={{ color: "#0fdaf4" }}
                             target={"_blank"}
@@ -123,9 +123,9 @@ const Step2 = () => {
                         >
                             https://www.moonpay.com/buy
                         </a>
-                        this will allow you to purchase ETH that will be sent to your
+                        &nbsp; this will allow you to purchase ETH that will be sent to your
                         wallet. You will then be able to use this ETH to purchase Doge Rush.
-                        Visit
+                        Visit&nbsp;
                         <a
                             style={{ color: "#0fdaf4" }}
                             target={"_blank"}
@@ -133,8 +133,9 @@ const Step2 = () => {
                         >
                             https://www.moonpay.com/buy
                         </a>
-                        to begin and follow the on screen steps. We recommend purchasing a
-                        minimum of $20 worth of ETH to cover the minimum Doge Rush purchase.
+                        &nbsp; to begin and follow the on screen steps. We recommend
+                        purchasing a minimum of $20 worth of ETH to cover the minimum Doge
+                        Rush purchase.
                     </p>
                 </div>
                 {info.map((item, ind) => {
@@ -159,17 +160,17 @@ const Step3 = () => {
                 <h2>Step 3/3</h2>
                 <p>
                     <span>
-                        After the pre-sale is over, you will be able to claim your DR
-                        tokens. We'll post the details closer, but you'll need to visit the
-                        main site{" "}
+                        Once the presale has concluded, you will be able to claim your Doge
+                        Rush tokens. We will release details closer to the time, however you
+                        will need to visit the main site: {" "}
                         <a
-                            href="https://dogerush.io/buy"
+                            href="https://dogerush.io/ "
                             style={{ color: "#0fdaf4" }}
                             target={"_blank"}
                         >
                             https://dogerush.io/buy
                         </a>{" "}
-                        and click the 'Claim' button.
+                        and click on the ‘claim’ button.
                     </span>{" "}
                 </p>
             </div>

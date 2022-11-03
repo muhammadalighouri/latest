@@ -1,13 +1,15 @@
 import React from "react";
+import Footer from "../components/Footer";
 import NavigationSec from "../components/NavigationSec";
 import "../scss/conditions.scss";
 const Privacy = () => {
+    window.scroll(0, 0);
     return (
         <>
             <NavigationSec style={{ position: 'relative' }} />
             <section className="privacy">
                 <div className="container">
-                    <h2>Privacy Policy and Cookies Policy</h2>
+                    <h1>Privacy Policy and Cookies Policy</h1>
                     <p>
                         <span>
                             We at the Doge Rush, are committed to protecting any data that we
@@ -85,6 +87,7 @@ const Privacy = () => {
                     </p>
                 </div>
             </section>
+            <Footer />
         </>
     );
 };

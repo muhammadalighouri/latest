@@ -1,11 +1,13 @@
 import React from "react";
+import Footer from "../components/Footer";
 import NavigationSec from "../components/NavigationSec";
 import "../scss/conditions.scss";
 const Terms = () => {
+    window.scroll(0, 0);
     return (
         <>
             <NavigationSec style={{ position: "relative" }} />
-            <section className="privacy">
+            <section className="terms">
                 <div className="container">
                     <h1>Terms of Use</h1>
                     <p>
@@ -32,14 +34,16 @@ const Terms = () => {
                             useful to all of our readers. However, there are certain instances
                             where we edit or delete the comment(s). This includes:
                         </span>
-                        <span>
-                            Comments that are posted solely for the purpose of promotion.
-                        </span>
-                        <span>Comments that are spam or have a spammy nature.</span>
-                        <span>Comments which use vulgar language or swear words.</span>
-                        <span>
-                            Comments which attack / harass another person individually.
-                        </span>
+                        <ul>
+                            <li>
+                                Comments that are posted solely for the purpose of promotion.
+                            </li>
+                            <li>Comments that are spam or have a spammy nature.</li>
+                            <li>Comments which use vulgar language or swear words.</li>
+                            <li>
+                                Comments which attack / harass another person individually.
+                            </li>
+                        </ul>
                         <span>
                             We recommend everyone to follow our comment policy rules to help
                             you keep the blog a constructive place for discussion. We reserve
@@ -167,6 +171,7 @@ const Terms = () => {
                     </p>
                 </div>
             </section>
+            <Footer />
         </>
     );
 };

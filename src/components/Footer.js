@@ -24,26 +24,21 @@ const Footer = () => {
             <a href="https://www.instagram.com/dogerush/" target="_blank">
               <Instagram />
             </a>
-            <a
-              href="https://t.me/dogerushchat"
-              target="_blank"
-            >
+            <a href="https://t.me/dogerushchat" target="_blank">
               <Telegram />
             </a>
-            <a
-              href="https://www.tiktok.com/@dogerushofficial"
-              target="_blank"
-            >
+            <a href="https://www.tiktok.com/@dogerushofficial" target="_blank">
               <FaTiktok />
             </a>
-            <a
-              href="https://twitter.com/dogerushcoin "
-              target="_blank"
-            >
+            <a href="https://twitter.com/dogerushcoin " target="_blank">
               <AiOutlineTwitter />
             </a>
-
           </div>
+          <p style={{ marginBottom: '5px' }}>
+            {" "}
+            <Link to={"/terms"}>Terms and Conditions</Link>&nbsp;|&nbsp;
+            <Link to={"/privacy-policy"}>Privacy Policy</Link>
+          </p>
           <p>Copyright © 2022, DogeRush | All Rights Reserved.</p>
         </div>
       </div>

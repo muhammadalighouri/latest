@@ -55,6 +55,7 @@
   margin-bottom: 70px;
   @include md {
     padding: 60px 0;
+    justify-content: center;
   }
   > .container {
     margin: auto;
@@ -156,10 +157,10 @@
 
         > p {
           color: #c9d2d7;
-            font-weight: 400;
-            font-size: 16px;
-            margin: 8px 0 20px;
-            text-align: center;
+          font-weight: 400;
+          font-size: 16px;
+          margin: 8px 0 20px;
+          text-align: center;
         }
         > div {
           background: linear-gradient(180deg, #2196f333 0%, #03a9f41a 100%);

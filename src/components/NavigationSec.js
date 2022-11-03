@@ -22,13 +22,13 @@ const NavigationSec = ({ text, style }) => {
     }
     const navigate = useNavigate();
     return (
-        <div className="header">
+        <div className="header" style={style}>
             <div className="container">
                 <div className="icon">
                     <div onClick={() => barBtn()}>
                         <span
                             style={{
-                                ...style,
+
                                 transform: navToggler
                                     ? "translateY(15px) rotate(45deg)"
                                     : "unset",

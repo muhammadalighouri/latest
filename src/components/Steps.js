@@ -90,12 +90,13 @@ const Step2 = () => {
         {
             name: "Buy with ETH",
             desc: "Once you have sufficient ETH in your wallet (if you do not have ETH, USDT, please read option 1 first), you can now swap your ETH for Doge Rush. Type in the amount of Doge Rush you wish to purchase ($15 minimum) and then click “Buy with ETH” or “Buy with USDT”. Your wallet provider will ask you to confirm the transaction and will also show you the cost of gas.",
-            img: "/images/icon/8193873.png",
+            img: "/images/icon/8193886.png",
         },
         {
             name: "Buy with USDT",
             desc: "Please ensure you have at least $20 of USDT in your wallet before commencing the transaction. Type in the amount of Doge Rush you wish to purchase ($15 minimum). Click “Convert USDT”. You will then be asked to approve the purchase TWICE. The first approval is for the USDT contract and the second is for the transaction amount. Please ensure you go through both approval steps in order to complete the transaction.",
-            img: "/images/icon/8193886.png",
+
+            img: "/images/icon/8193873.png",
         },
     ];
     return (

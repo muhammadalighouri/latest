@@ -34,9 +34,8 @@ const Footer = () => {
               <AiOutlineTwitter />
             </a>
           </div>
-          <p style={{ marginBottom: '5px' }}>
-            {" "}
-            <Link to={"/terms"}>Terms and Conditions</Link>&nbsp;|&nbsp;
+          <p style={{ marginBottom: "5px" }}>
+            Home | <Link to={"/terms"}>Terms and Conditions</Link>&nbsp;|&nbsp;
             <Link to={"/privacy-policy"}>Privacy Policy</Link>
           </p>
           <p>Copyright © 2022, DogeRush | All Rights Reserved.</p>

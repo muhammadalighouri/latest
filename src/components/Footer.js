@@ -13,32 +13,38 @@ const Footer = () => {
     <footer>
       <div className="container">
         <div className="grid">
-          <div className="nav__btns">
-            <a
-              href="https://www.youtube.com/channel/UCwj4YrAKFltipzbrp_0YR3A/featured
-"
-              target="_blank"
-            >
-              <YouTube />
-            </a>
-            <a href="https://www.instagram.com/dogerush/" target="_blank">
-              <Instagram />
-            </a>
-            <a href="https://t.me/dogerushchat" target="_blank">
-              <Telegram />
-            </a>
-            <a href="https://www.tiktok.com/@dogerushofficial" target="_blank">
-              <FaTiktok />
-            </a>
-            <a href="https://twitter.com/dogerushcoin " target="_blank">
-              <AiOutlineTwitter />
-            </a>
-          </div>
-          <p style={{ marginBottom: "5px" }}>
-            Home | <Link to={"/terms"}>Terms and Conditions</Link>&nbsp;|&nbsp;
-            <Link to={"/privacy-policy"}>Privacy Policy</Link>
-          </p>
           <p>Copyright © 2022, DogeRush | All Rights Reserved.</p>
+          <div>
+            <div className="nav__btns">
+              <a
+                href="https://www.youtube.com/channel/UCwj4YrAKFltipzbrp_0YR3A/featured
+"
+                target="_blank"
+              >
+                <YouTube />
+              </a>
+              <a href="https://www.instagram.com/dogerush/" target="_blank">
+                <Instagram />
+              </a>
+              <a href="https://t.me/dogerushchat" target="_blank">
+                <Telegram />
+              </a>
+              <a
+                href="https://www.tiktok.com/@dogerushofficial"
+                target="_blank"
+              >
+                <FaTiktok />
+              </a>
+              <a href="https://twitter.com/dogerushcoin " target="_blank">
+                <AiOutlineTwitter />
+              </a>
+            </div>
+            <p style={{ marginBottom: "5px" }}>
+              <Link to={"/home"}>Home</Link> |{" "}
+              <Link to={"/terms"}>Terms and Conditions</Link>&nbsp;|&nbsp;
+              <Link to={"/privacy-policy"}>Privacy Policy</Link>
+            </p>
+          </div>
         </div>
       </div>
     </footer>

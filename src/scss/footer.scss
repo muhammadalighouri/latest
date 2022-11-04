@@ -2,80 +2,74 @@
 @import "./media.scss";
 
 footer {
-  // background: #1a144a;
-  position: relative;
-  -webkit-user-select: none;
-  user-select: none;
-  // background: linear-gradient(#130a2a 0%, #1c0b47 100%);
-  border-top: 1px solid #e0e0e000;
-
-  >.container {
+    position: relative;
+      user-select: none;
+      background: #081827;
+  > .container {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 45px 15px 35px;
+      margin: 0 auto;
+      padding: 30px 0px;
 
-    >.grid {
-      display: grid
-      ;
+    > .grid {
+      display: flex;
       align-items: center;
-      justify-content: center;
-     
+      justify-content: space-between;
 
-  
-      >.nav__btns {
+      p {
+      text-align: center;
+        color: #fff;
+        font-weight: 100;
+        font-size: 18px;
+        display: flex;
+        gap: 8px;
+      }
+
+      > div {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        flex-direction: row-reverse;
+        > .nav__btns {
           justify-self: center;
           display: flex;
           align-items: center;
           gap: 15px;
           margin: 10px 0;
-      
+
           a:nth-child(1) {
             svg {
               width: 30px;
-                height: 30px;
+              height: 30px;
             }
           }
-      
+
           a:nth-child(2) {
             svg {
               width: 25px;
             }
           }
-      
+
           a:nth-child(3) {
             svg {
-            width: 27px;
+              width: 27px;
               height: 28px;
             }
           }
-      
+
           a:nth-child(4) {
             svg {
               width: 25px;
-                height: 21px;
+              height: 21px;
             }
           }
-      
+
           a:nth-child(5) {
             svg {
               width: 35px;
               height: 24px;
             }
           }
-      
-      
-      
-      
         }
-
-      p {
-
-        text-align: center;
-        color: #fff;
-        font-weight: 100;
-        font-size: 16px;
-       
-     opacity: .9;
       }
     }
   }

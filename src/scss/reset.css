@@ -84,7 +84,7 @@ button{
   font-weight: 500 !important;
 }
 body {
-  background: #000 !important;
+  background: #04111d !important;
   overflow-x: hidden;
 }
 .bottom__bg,
@@ -92,7 +92,7 @@ body {
   position: relative;
 }
 .bottom__bg::before {
-  content: "";
+  /* content: ""; */
   position: absolute;
   bottom: 0;
   left: 0;
@@ -106,7 +106,7 @@ body {
 }
 .bottom__bg::after {
   position: absolute;
-  content: "";
+  /* content: ""; */
   left: 0;
   top: 0%;
   width: 100%;
@@ -117,7 +117,7 @@ body {
 }
 
 .top__bg::before {
-  content: "";
+  /* content: ""; */
   background: url(../../public/images/background/land-bg.4e7c74f0.jpg) no-repeat
     center center;
   position: absolute;

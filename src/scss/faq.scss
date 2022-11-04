@@ -127,20 +127,12 @@
           }
 
           >div {
-            margin-bottom: 18px;
-            border-radius: 0;
-            background: #141b22;
             box-shadow: 0 2px 5px #0000001a !important;
-            height: fit-content;
-
-            margin-bottom: 18px;
-            border-radius: 0;
-            /* background: #141b22; */
-            /* box-shadow: 0 2px 5px #0000001a !important; */
-            height: -moz-fit-content;
-            height: fit-content;
-            background: linear-gradient(180deg, #2196f333 0%, #03a9f41a 100%);
-            border-radius: 12px;
+              margin-bottom: 18px;
+              height: fit-content;
+              border-radius: 0;
+              background: #2196f333;
+              border: 1px solid #0085ff73;
 
             p {
               // font-size: 18px !important;

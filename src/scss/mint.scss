@@ -23,18 +23,18 @@
       no-repeat center top;
     background-size: cover;
     z-index: -1;
-    filter: brightness(0.5) blur(0px);
+    filter: brightness(0.7) blur(0px);
   }
   &::after {
-    position: absolute;
-    content: "";
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background: linear-gradient(0deg, #000, transparent);
-    z-index: 1;
-    right: 0;
-    height: 20%;
+      position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background: linear-gradient(0deg, #04111d, transparent);
+        z-index: 1;
+        right: 0;
+        height: 20%;
   }
 
   > .container {
@@ -142,14 +142,12 @@
         }
         h2 {
           font-weight: 500;
-          line-height: 40px;
-          margin-block: 0px;
-          font-size: 50px;
-          color: white;
-          text-align: center;
-          font-family: "Barlow-medium" !important;
-          text-transform: uppercase;
-          margin-bottom: 15px;
+            line-height: 40px;
+            margin-block: 0px;
+            font-size: 2rem;
+            color: white;
+            text-align: center;
+            margin-bottom: 10px;
           @include md {
             line-height: 0.9;
           }

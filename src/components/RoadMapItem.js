@@ -14,7 +14,7 @@ function RoadMapItem(props) {
                 <ul>
                     {
                         item.list.map((li, idx) => (
-                            <li key={idx}>{li.text}</li>
+                            <li key={idx}>{li}</li>
                         ))
                     }
                 </ul>

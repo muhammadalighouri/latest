@@ -37,11 +37,11 @@
         margin-bottom: 0rem;
         line-height: 1;
         display: block;
-        font-weight: 100;
         text-transform: uppercase;
         text-shadow: 1px 2px 11px #00000026;
         text-align: center;
         color: #fff;
+        font-family: 'Chakra Petch' !important;
       }
 
       p {
@@ -83,15 +83,15 @@
       grid-gap: 1rem;
 
       .item {
-          position: relative;
-            margin: 0 auto;
-            cursor: pointer;
-            border-radius: 0;
-            overflow: hidden;
-            width: 270px;
-            background: #2196f333;
-            box-shadow: 0 5px 7px #00000010;
-            border: 1px solid #0085ff73;
+            position: relative;
+              margin: 0 auto;
+              cursor: pointer;
+              border-radius: 0;
+              overflow: hidden;
+              width: 270px;
+              background: #03a9f41a;
+              box-shadow: 0 5px 7px #00000010;
+              border: 1px solid #0085ff42;
         @include md {
           max-width: 300px;
         }

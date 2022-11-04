@@ -40,8 +40,8 @@ const Footer = () => {
               </a>
             </div>
             <p style={{ marginBottom: "5px" }}>
-              <Link to={"/home"}>Home</Link> |{" "}
-              <Link to={"/terms"}>Terms and Conditions</Link>&nbsp;|&nbsp;
+              <Link to={"/home"}>Home</Link>{" "}
+              <Link to={"/terms"}>Terms and Conditions</Link>
               <Link to={"/privacy-policy"}>Privacy Policy</Link>
             </p>
           </div>

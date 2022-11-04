@@ -2,13 +2,14 @@
 @import "./media.scss";
 
 .about {
-  padding: 90px 10px;
-  position: relative;
-  z-index: 2;
-  overflow: hidden;
-@include md{
-  padding: 90px 10px;
-}
+    padding: 90px 10px;
+      position: relative;
+      z-index: 2;
+      overflow: hidden;
+      background: #03a9f41a;
+  @include md {
+    padding: 90px 10px;
+  }
   &::before {
     // content: "";
     background: url(../../public/images/background/main-bg.f222c948.png)
@@ -25,15 +26,15 @@
   }
 
   &::after {
-      position: absolute;
-        content: "";
-        left: 0;
-        top: 0;
-        width: 100%;
-        background: linear-gradient(0deg, transparent, #04111d);
-        z-index: -1;
-        right: 0;
-        height: 20%;
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(0deg, transparent, #04111d);
+    z-index: -1;
+    right: 0;
+    height: 20%;
   }
 
   .container {
@@ -43,27 +44,26 @@
     grid-gap: 4rem;
 
     .about__grid {
-        background: linear-gradient(180deg, #2196f333 0%, #03a9f41a 100%);
-          // border-radius: 32px;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          z-index: 10;
-          position: relative;
-          overflow: hidden;
-          padding: 40px 30px;
-          width: 100%;
-          /* gap: 100px; */
-          margin-bottom: 0;
-          height: auto;
-          display: grid;
-          grid-template-columns: 1.1fr 1fr;
-          grid-gap: 2rem;
-          transition: ease-out .8s all;
-          border: 1px solid #0085ff73;
-      &:hover{
-        
-          // box-shadow: 0px 0px 5px #08528dc9;
+      background: linear-gradient(180deg, #2196f333 0%, #03a9f41a 100%);
+      // border-radius: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 10;
+      position: relative;
+      overflow: hidden;
+      padding: 40px 30px;
+      width: 100%;
+      /* gap: 100px; */
+      margin-bottom: 0;
+      height: auto;
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      grid-gap: 2rem;
+      transition: ease-out 0.8s all;
+      border: 1px solid #0085ff73;
+      &:hover {
+        // box-shadow: 0px 0px 5px #08528dc9;
       }
 
       @include lg {
@@ -73,7 +73,7 @@
       }
 
       .img {
-      width: 100%;
+        width: 100%;
         border-radius: 0px;
         display: flex;
         position: relative;
@@ -81,12 +81,12 @@
         height: 100%;
 
         img {
-            width: 100%;
-              height: 100%;
-              object-fit: cover;
-              border: 1px solid #0085ff;
-              box-shadow: 0px 0px 5px #0085ff;
-              border-radius: 0px;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border: 1px solid #0085ff;
+          box-shadow: 0px 0px 5px #0085ff;
+          border-radius: 0px;
         }
       }
     }
@@ -140,19 +140,17 @@
 
         h1 {
           position: relative;
-            display: block;
-            line-height: 1;
-            padding: 0;
-            margin: auto;
-            text-align: start;
-            font-size: 3rem;
-            margin-bottom: 10px;
-            font-style: normal;
-            font-weight: 400;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            color: #fff;
-            /* text-shadow: 0px 0px 5px #1277c7; */
+          display: block;
+          line-height: 1;
+          padding: 0;
+          margin: auto;
+          text-align: start;
+          font-size: 3rem;
+          margin-bottom: 10px;
+          font-style: normal;
+          font-weight: 600;
+          text-transform: uppercase;
+          color: #fff;
         }
       }
 
@@ -173,7 +171,7 @@
           font-weight: 300;
           // color: #c2c3c5;
           margin-bottom: 8px;
-          @include md{
+          @include md {
             font-size: 16px;
           }
         }
@@ -188,7 +186,7 @@
             button {
               color: #000000;
               padding: 16px 24px;
-              border-radius: 15px;
+              border-radius: 4px;
               font-size: 18px;
               font-weight: 600;
               border: none;
@@ -210,7 +208,7 @@
             button {
               color: #00fab3;
               padding: 16px 24px;
-              border-radius: 15px;
+              border-radius: 4px;
               font-size: 18px;
               font-weight: 100;
               border: none;

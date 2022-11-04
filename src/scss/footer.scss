@@ -2,26 +2,28 @@
 @import "./media.scss";
 
 footer {
-    position: relative;
-      user-select: none;
-      background: #081827;
+  position: relative;
+  user-select: none;
+  background: #081827;
   > .container {
     max-width: 1200px;
-      margin: 0 auto;
-      padding: 30px 0px;
+    margin: 0 auto;
+    padding: 12px 0px 8px;
 
     > .grid {
       display: flex;
       align-items: center;
       justify-content: space-between;
-
+      @include md {
+        flex-direction: column-reverse;
+      }
       p {
-      text-align: center;
+        text-align: center;
         color: #fff;
-        font-weight: 100;
+        font-weight: 500;
         font-size: 18px;
         display: flex;
-        gap: 8px;
+        gap: 15px;
       }
 
       > div {
@@ -29,6 +31,9 @@ footer {
         align-items: center;
         gap: 1rem;
         flex-direction: row-reverse;
+        @include md {
+          flex-direction: column;
+        }
         > .nav__btns {
           justify-self: center;
           display: flex;

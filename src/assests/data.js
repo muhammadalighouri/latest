@@ -35,15 +35,7 @@ export const roadmap = [
   {
     id: "01",
     points: [
-      "Full Security audit",
-      "Develop game concept ",
-      "Verification of all socials ",
-      "Pre-sale website live",
-      "Pre-sale live",
-      "10,000+ Telegram members",
-      "YouTube campaign",
-      "Massive PR Marketing campaigns",
-      "Sponsorships on crypto websites",
+
     ],
     date: "2022",
     img: "/images/roadmap/1.png",
@@ -51,12 +43,7 @@ export const roadmap = [
   {
     id: "01",
     points: [
-      "Launch on Uniswap",
-      "CMC & CG listing",
-      "Tier 1 CEX listings",
-      "Demo gameplay",
-      "Influencer marketing",
-      "Global game launch",
+
     ],
     date: "2022",
     img: "/images/roadmap/1.png",
@@ -64,12 +51,7 @@ export const roadmap = [
   {
     id: "01",
     points: [
-      "Doge Rush NFT drop",
-      "Third-Party Audits (Certik as the main one) ",
-      "Large focus on the CEX partnerships ",
-      "P2E leaderboard and giveaways",
-      "influencers marketing push",
-      "YouTube shoutouts from known influencers",
+
     ],
     date: "2022",
     img: "/images/roadmap/1.png",
@@ -78,10 +60,7 @@ export const roadmap = [
   {
     id: "01",
     points: [
-      "Doge Rush aims to be on all main exchanges",
-      "Partnerships with top-tier gaming studios ",
-      "Expanding Doge Rush",
-      "Launch of Doge Rush AR Game",
+
     ],
     date: "2022",
     img: "/images/roadmap/1.png",

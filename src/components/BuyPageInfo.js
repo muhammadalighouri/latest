@@ -172,7 +172,7 @@ const BuyPageInfo = ({ MintGrid }) => {
             <div className="container">
                 <MintGrid />
                 <div className="heading">
-                    <h1>How to buy</h1>
+                    <h1>How to buy?</h1>
                 </div>
                 <Step1 />
                 <Step2 />

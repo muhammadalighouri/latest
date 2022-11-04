@@ -1,7 +1,7 @@
 import React from "react";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
-import Roadmap from "../components/Roadmap";
+// import Roadmap from "../components/Roadmap";
 import Teams from "../components/Teams";
 import Faq from "../components/Faq";
 import Collection from "../components/Collection";
@@ -11,7 +11,8 @@ import Banner from "../components/Banner";
 import Marchendise from "../components/Marchendise";
 import Partners from "../components/Partners";
 import Token from "../components/Token";
-// import RoadMap from "../components/RoadMapNew";
+import RoadMap from "../components/RoadMapNew";
+import RoadMapOne from "../components/RoadMapOne";
 const Home = () => {
     const dataRoadmap = [
         {
@@ -214,17 +215,17 @@ const Home = () => {
             <Banner />
             <AboutNft />
             <div className="top__bg">
-                {/* <RoadMap data={dataRoadmap} /> */}
-                <Roadmap />
+                {/* <RoadMap  /> */}
+                <RoadMapOne data={dataRoadmap} />
+                {/* <Roadmap /> */}
                 <Token />
                 <Teams />
             </div>
-            <Partners />
 
-            <div className="bottom__bg">
-                <Faq />
-                <Footer />
-            </div>
+            <Partners />
+            <Faq />
+
+            <Footer />
         </>
     );
 };

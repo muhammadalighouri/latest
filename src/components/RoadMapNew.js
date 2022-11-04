@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './styles.scss'
+import '../scss/box.scss'
 import RoadMapItem from "./RoadMapItem";
 
-RoadMap.propTypes = {
+RoadMapNew.propTypes = {
     data: PropTypes.array,
 };
 
-function RoadMap(props) {
+function RoadMapNew(props) {
 
     const { data } = props;
 
@@ -23,12 +24,7 @@ function RoadMap(props) {
             <div className="overlay"></div>
             <div className="container">
                 <div className="row">
-                    <div className="col-md-12">
-                        <div className="tf-title mb-30" data-aos="fade-up" data-aos-duration="800">
-                            <p className="h8 sub-title">{dataBlock.subtitle}</p>
-                            <h4 className="title">{dataBlock.title}</h4>
-                        </div>
-                    </div>
+
                     <div className="col-md-12">
                         <div className="roadmap scrol">
 
@@ -45,4 +41,4 @@ function RoadMap(props) {
     );
 }
 
-export default RoadMap;
+export default RoadMapNew;

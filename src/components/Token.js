@@ -107,6 +107,29 @@ const Token = ({ ease }) => {
     },
     // '/images/icon/ppc.png',
   ];
+
+  const tokenInfo = [
+    {
+      name: "Token Supply",
+      value: "5000",
+      img: '/images/icon/cryptocurrency.png',
+    },
+    {
+      name: "Token Name",
+      value: "DR",
+      img: '/images/icon/altcoin.png',
+    },
+    {
+      name: "Token Symbol",
+      value: "$$$$",
+      img: '/images/icon/ethereum.png',
+    },
+    {
+      name: "Taxes",
+      value: "1200",
+      img: '/images/icon/bank.png',
+    },
+  ];
   return (
     <section className="token" id="tokenomics">
       <div className="container">
@@ -126,7 +149,7 @@ const Token = ({ ease }) => {
                 ends, you'll claim your purchased Big Eyes using the claim page.
               </span>
             </p>
-            <div className="btns">
+            {/* <div className="btns">
               {
                 tokens.map((item, i) => {
                   return (
@@ -136,7 +159,24 @@ const Token = ({ ease }) => {
                   )
                 })
               }
-            </div>
+            </div> */}
+            <ul className="tokenInfo">
+              {tokenInfo.map((item, ind) => {
+                return (
+                  <li>
+                    {" "}
+                    <img
+                      style={{ width: "40px" }}
+                      src={item.img}
+                      alt=""
+                    />{" "}
+                    <div>
+                      <h4>{item.name}</h4> <span>{item.value}</span>
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
             <div className="normal__btn">
               <button>
                 Etherscan <BsArrowRight />

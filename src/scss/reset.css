@@ -35,6 +35,8 @@ font-family: 'VT323', monospace; */
   padding: 0;
   box-sizing: border-box;
   font-family: "Play-Regular";
+  font-family: 'Rajdhani',
+    sans-serif;
   text-decoration: none;
   color: #fff;
 }

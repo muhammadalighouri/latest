@@ -126,7 +126,7 @@ header {
                 padding: 6px 12px;
                 font-weight: 500;
                 text-transform: uppercase;
-                font-family: "Barlow-medium";
+             
 
                 @include lg {
                   font-size: clamp(3em, 8vw, 4em);

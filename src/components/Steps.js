@@ -146,7 +146,7 @@ const Step3 = () => {
                             }}
                             target={"_blank"}
                         >
-                            https://dogerush.io/buy
+                            https://dogerush.io/
                         </a>{" "}
                         and click on the ‘claim’ button.
                     </span>{" "}

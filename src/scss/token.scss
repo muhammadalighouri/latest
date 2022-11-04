@@ -100,26 +100,54 @@
             }
           }
         }
-        .normal__btn{
+        ul.tokenInfo {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          padding: 20px 0;
+          grid-gap: 1.4rem 1rem;
+          width: max-content;
+          li {
+            border-left: 0px solid #d1e7ff82;
+            padding-left: 0;
+            border-radius: 0;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 10px;
+            align-items: center;
+            h4 {
+              font-weight: 600;
+              text-transform: uppercase;
+              font-size: 16px;
+              opacity: .9;
+            }
+            span {
+              text-align: start;
+              margin-top: 2px;
+              font-size: 16px;
+              opacity: .7;
+            }
+          }
+        }
+        .normal__btn {
+          display: flex;
+          padding: 20px 0;
+          gap: 30px;
+          button {
             display: flex;
-            padding: 20px 0;
-              gap: 30px;
-              button{
-                    display: flex;
-                      gap: 5px;
-                      align-items: center;
-                      background: transparent;
-                      border: 0;
-                      color: #32a4d7;
-                      cursor: pointer;
-                      font-size: 16px !important;
-                      font-weight: 100 !important;
-                      font-family: 'Play-Regular' !important;
-                  svg{
-                    fill: #32a4d7;
-                    width: 14px;
-                  }
-              }
+            gap: 5px;
+            align-items: center;
+            background: transparent;
+            border: 0;
+            color: #32a4d7;
+            cursor: pointer;
+            font-size: 16px !important;
+            font-weight: 100 !important;
+            font-family: "Play-Regular" !important;
+            svg {
+              fill: #32a4d7;
+              width: 14px;
+            }
+          }
         }
       }
       .itemll {
@@ -145,7 +173,6 @@
 
         &:nth-child(3) {
           p {
-        
           }
         }
 
@@ -156,11 +183,11 @@
           gap: 1rem;
 
           p {
-              color: #ffffff;
-                font-size: 16px;
-                font-weight: 500;
-                line-height: 24px;
-                margin: 0px 0px 10px 0px;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            margin: 0px 0px 10px 0px;
             @include md {
               font-size: 16px;
             }

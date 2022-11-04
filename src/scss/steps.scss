@@ -56,7 +56,7 @@
       padding: 50px 10px;
       border: 0;
     }
-    h2{
+    h2 {
       text-transform: uppercase !important;
     }
     > .heading {
@@ -273,7 +273,19 @@
       .grid {
         display: grid;
         grid-gap: 1.5rem;
-
+        input::placeholder {
+          /* Chrome, Firefox, Opera, Safari 10.1+ */
+          color: #ccc !important;
+          opacity: 1;
+          /* Firefox */
+        }
+        .css-14el2xx-placeholder {
+          color: #ccc !important;
+          grid-area: 1/1/2/3;
+          margin-left: 2px;
+          margin-right: 2px;
+          box-sizing: border-box;
+        }
         .first {
           display: grid;
           grid-template-columns: 1fr 1fr;
@@ -287,7 +299,7 @@
             min-width: 100%;
             border: 1px solid #034981;
             border-radius: 5px;
-            background-color: #0b3348 !important;
+            background-color: #113c5a !important;
             outline: 0;
             color: #fff;
             padding: 20px 15px;
@@ -317,7 +329,7 @@
           > div {
             > div {
               height: 100%;
-              background: #0b3348 !important;
+              background: #113c5a !important;
             }
           }
           .item {
@@ -327,7 +339,7 @@
               min-width: 100%;
               border: 1px solid #034981;
               border-radius: 5px;
-              background-color: #0b3348 !important;
+              background-color: #113c5a !important;
               outline: 0;
               color: #fff;
               padding: 20px 15px;
@@ -355,7 +367,7 @@
           > div {
             > div {
               height: 100%;
-              background: #0b3348 !important;
+              background: #113c5a !important;
             }
           }
           @include md {
@@ -395,6 +407,98 @@
           color: #ccc;
           padding: 10px;
         }
+      }
+
+      .css-1s2u09g-control {
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        background-color: #0b3247 !important;
+        border-color: #034981 !important;
+        border-radius: 4px;
+        border-style: solid;
+        border-width: 1px;
+        cursor: default;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        min-height: 38px;
+        outline: 0 !important;
+        position: relative;
+        -webkit-transition: all 100ms;
+        transition: all 100ms;
+        box-sizing: border-box;
+        height: 100%;
+      }
+
+      .css-1s2u09g-control {
+        height: 100% !important;
+        background: transparent !important;
+      }
+
+      .css-qc6sy-singleValue {
+        color: #ccc !important;
+        grid-area: 1/1/2/3;
+        margin-left: 2px;
+        margin-right: 2px;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        box-sizing: border-box;
+      }
+
+      .css-1okebmr-indicatorSeparator {
+        -webkit-align-self: stretch;
+        -ms-flex-item-align: stretch;
+        align-self: stretch;
+        background-color: #034981 !important;
+        margin-bottom: 8px;
+        margin-top: 8px;
+        width: 1px;
+        box-sizing: border-box;
+        display: none;
+      }
+
+      .css-4ljt47-MenuList > div:hover {
+        background: #0085ff !important;
+      }
+
+      .css-4ljt47-MenuList {
+        max-height: 300px;
+        overflow-y: auto;
+        padding-bottom: 4px;
+        padding-top: 4px;
+        position: relative;
+        box-sizing: border-box;
+        /* background: #2196f3 !important; */
+        /* border: 1px solid #034981 !important; */
+        border-radius: 10px;
+      }
+
+      .css-1n7v3ny-option {
+        background-color: #066bbb !important;
+        color: inherit;
+        cursor: default;
+        display: block;
+        font-size: inherit;
+        padding: 8px 12px;
+        width: 100%;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        box-sizing: border-box;
       }
     }
     > .fifth {
@@ -605,7 +709,7 @@
           position: relative;
           input {
             color: #ccc !important;
-            background-color: #0b3348 !important;
+            background-color: #113c5a !important;
           }
           button {
             width: 121px !important;
@@ -630,90 +734,4 @@
       }
     }
   }
-}
-.css-1s2u09g-control {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #0b3247 !important;
-  border-color: #034981 !important;
-  border-radius: 4px;
-  border-style: solid;
-  border-width: 1px;
-  cursor: default;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  min-height: 38px;
-  outline: 0 !important;
-  position: relative;
-  -webkit-transition: all 100ms;
-  transition: all 100ms;
-  box-sizing: border-box;
-  height: 100%;
-}
-.css-1s2u09g-control {
-  height: 100% !important;
-  background: #0b3247 !important;
-}
-.css-qc6sy-singleValue {
-  color: #676c6f !important;
-  grid-area: 1/1/2/3;
-  margin-left: 2px;
-  margin-right: 2px;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  box-sizing: border-box;
-}
-.css-1okebmr-indicatorSeparator {
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  background-color: #034981 !important;
-  margin-bottom: 8px;
-  margin-top: 8px;
-  width: 1px;
-  box-sizing: border-box;
-  display: none;
-}
-.css-4ljt47-MenuList > div:hover {
-  background: #0085ff !important;
-}
-.css-4ljt47-MenuList {
-  max-height: 300px;
-  overflow-y: auto;
-  padding-bottom: 4px;
-  padding-top: 4px;
-  position: relative;
-  box-sizing: border-box;
-  background: #2196f3 !important;
-  border: 1px solid #034981 !important;
-  border-radius: 10px;
-}
-
-.css-1n7v3ny-option {
-  background-color: #066bbb !important;
-  color: inherit;
-  cursor: default;
-  display: block;
-  font-size: inherit;
-  padding: 8px 12px;
-  width: 100%;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  box-sizing: border-box;
 }

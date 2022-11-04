@@ -1,6 +1,30 @@
-import React from 'react'
-
+import React, { useState } from "react";
+import Select from "react-select";
+const topOption = [
+    {
+        value: "ETH",
+        label: "ETH",
+    },
+    {
+        value: "USDT",
+        label: "USDT",
+    },
+];
+const bottomOption = [
+    {
+        value: "DR",
+        label: "DR",
+    },
+    {
+        value: "other",
+        label: "other",
+    },
+];
 const MintGrid = () => {
+    const [img, setImg] = useState();
+    const [selectedOptionTop, setSelectedOptionTop] = useState();
+    const [selectedOptionBottom, setSelectedOptionBottom] = useState();
+    console.log();
     return (
         <section className="mint__grid">
             <div className="container">
@@ -8,7 +32,6 @@ const MintGrid = () => {
                     <div data-aos="fade-up" className="aos-init aos-animate details">
                         <h2>Doge Rush Beta-Sale</h2>
                         <p>1 USDT = 200 Doge Rush</p>
-
 
                         <div>
                             <div className="payment__header">
@@ -22,9 +45,22 @@ const MintGrid = () => {
                                 <div className="middle">
                                     <div className="start">
                                         <div className="logo">
-                                            <img src="/images/1027.png" alt="" />
+                                            <img
+                                                src={
+                                                    selectedOptionTop?.label == "ETH"
+                                                        ? "/images/1027.png"
+                                                        : "/images/Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB.png"
+                                                }
+                                                alt=""
+                                            />
                                         </div>
-                                        ETH
+                                        <Select
+                                            options={topOption}
+                                            // placeholder={"USTD"}
+                                            defaultValue={{ label: "USTD", value: "USTD" }}
+                                            onChange={setSelectedOptionTop}
+                                        // menuIsOpen={true}
+                                        />
                                     </div>
                                     <div className="end">
                                         <button>Max</button>
@@ -48,7 +84,12 @@ const MintGrid = () => {
                                         <div className="logo">
                                             <img src="/images/01-05.png" alt="" />
                                         </div>
-                                        DR
+                                        <Select
+                                            options={bottomOption}
+                                            defaultValue={{ label: "DR", value: "other" }}
+                                            onChange={setSelectedOptionBottom}
+
+                                        />
                                     </div>
                                     <div className="end">
                                         <button>Max</button>
@@ -59,7 +100,7 @@ const MintGrid = () => {
                             </div>
 
                             <div className="btns">
-                                <button>CONNECT WALLET!</button>
+                                <button>CONNECT WALLET</button>
                             </div>
                             <p
                                 style={{
@@ -96,4 +137,4 @@ const MintGrid = () => {
     );
 };
 
-export default MintGrid
+export default MintGrid;

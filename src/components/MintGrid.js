@@ -47,9 +47,9 @@ const MintGrid = () => {
                                         <div className="logo">
                                             <img
                                                 src={
-                                                    selectedOptionTop?.label == "ETH"
-                                                        ? "/images/1027.png"
-                                                        : "/images/Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB.png"
+                                                    selectedOptionTop?.label == "USDT"
+                                                        ? "/images/Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB.png"
+                                                        : "/images/1027.png"
                                                 }
                                                 alt=""
                                             />
@@ -57,7 +57,7 @@ const MintGrid = () => {
                                         <Select
                                             options={topOption}
                                             // placeholder={"USTD"}
-                                            defaultValue={{ label: "USTD", value: "USTD" }}
+                                            defaultValue={{ label: "ETH", value: "ETH" }}
                                             onChange={setSelectedOptionTop}
                                         // menuIsOpen={true}
                                         />

@@ -39,7 +39,7 @@ const MintGrid = () => {
                             </div>
                             <div className="payment__info">
                                 <div className="top">
-                                    <span>To</span>
+                                    <span>From</span>
                                     <span>Balance: (Wallet not connected)</span>
                                 </div>
                                 <div className="middle">
@@ -84,12 +84,15 @@ const MintGrid = () => {
                                         <div className="logo">
                                             <img src="/images/01-05.png" alt="" />
                                         </div>
-                                        <Select
-                                            options={bottomOption}
-                                            defaultValue={{ label: "DR", value: "other" }}
-                                            onChange={setSelectedOptionBottom}
-
-                                        />
+                                        <span
+                                            style={{
+                                                fontFamily: "'Barlow-medium'",
+                                                paddingLeft: "10px",
+                                            }}
+                                        >
+                                            {" "}
+                                            DR
+                                        </span>
                                     </div>
                                     <div className="end">
                                         <button>Max</button>

@@ -1,15 +1,19 @@
-import React from 'react'
+import React, { useState } from "react";
 import { codes } from "../assests/Code";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import Select from "react-select";
 const SendMessage = () => {
-    const newObj = codes.map((item, i) => {
+    const [selectedOptionBottomCountryCode, setSelectedOptionCountryCode] =
+        useState();
+    const [investment, setInvestment] = useState();
+    const [time, setTime] = useState();
+    const countryCode = codes.map((item, i) => {
         return {
             label: `${item.name} (${item.dial_code})`,
             value: `${item.name} (${item.dial_code})`,
         };
     });
-    const investment = [
+    const amount = [
         {
             value: " $0 - $5k",
             label: " $0 - $5k",
@@ -32,7 +36,7 @@ const SendMessage = () => {
             label: "  $50k +",
         },
     ];
-    const time = [
+    const differentTime = [
         {
             value: " Morning",
             label: " Morning",
@@ -46,7 +50,7 @@ const SendMessage = () => {
             label: "Evening",
         },
     ];
-    console.log("person", newObj);
+
     return (
         <div className="fourth">
             <div className="heading">
@@ -66,14 +70,26 @@ const SendMessage = () => {
                     </div>
                 </div>
                 <div className="second">
-                    <Select placeholder="Country Code" options={newObj} />
+                    <Select
+                        placeholder="Country Code"
+                        onChange={setSelectedOptionCountryCode}
+                        options={countryCode}
+                    />
                     <div className="item">
                         <input type="text" placeholder="Enter Contact Number" />
                     </div>
-                    <Select placeholder="Select a time to contact" options={time} />
+                    <Select
+                        onChange={setTime}
+                        placeholder="Select a time to contact"
+                        options={differentTime}
+                    />
                 </div>
                 <div className="third">
-                    <Select placeholder="Enter Investment Budget" options={investment} />
+                    <Select
+                        onChange={setInvestment}
+                        placeholder="Enter Investment Budget"
+                        options={amount}
+                    />
                     <button>Submit!</button>
                 </div>
 
@@ -88,4 +104,4 @@ const SendMessage = () => {
     );
 };
 
-export default SendMessage
+export default SendMessage;

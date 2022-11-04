@@ -164,7 +164,7 @@ const Step3 = () => {
 
 
 
-const Steps = ({ MintGrid }) => {
+const BuyPageInfo = ({ MintGrid }) => {
     return (
         <section className="steps">
             <span></span>
@@ -185,4 +185,4 @@ const Steps = ({ MintGrid }) => {
     );
 };
 
-export default Steps;
+export default BuyPageInfo;

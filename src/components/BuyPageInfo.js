@@ -154,7 +154,7 @@ const Step3 = () => {
             </div>
             <div className="end">
                 <figure>
-                    <img src="/images/Dog Run/front.png" alt="" />
+                    <img src="/images/ezgif.com-gif-maker.png" alt="" />
                 </figure>
             </div>
         </div>

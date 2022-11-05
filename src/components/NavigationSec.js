@@ -28,7 +28,6 @@ const NavigationSec = ({ text, style }) => {
                     <div onClick={() => barBtn()}>
                         <span
                             style={{
-
                                 transform: navToggler
                                     ? "translateY(15px) rotate(45deg)"
                                     : "unset",
@@ -49,7 +48,11 @@ const NavigationSec = ({ text, style }) => {
                     </div>
                 </div>
                 <h2>
-                    <img onClick={() => navigate('/')} src="/images/logo/01-03.png" alt="" />
+                    <img
+                        onClick={() => navigate("/")}
+                        src="/images/logo/01-03.png"
+                        alt=""
+                    />
                 </h2>
                 <div className={`nav__top ${navToggler ? "nav___active" : null}`}>
                     <div className="div">
@@ -70,6 +73,9 @@ const NavigationSec = ({ text, style }) => {
                                 <Link to={"/buy"}>Telegram</Link>
                             </li>
                             <li>
+                                <Link to={"/disclaimer"}>Disclaimer</Link>
+                            </li>
+                            <li>
                                 <Link to={"/privacy-policy"}>Privacy Policy</Link>
                             </li>
                             <li>
@@ -87,10 +93,7 @@ const NavigationSec = ({ text, style }) => {
                             <a href="https://www.instagram.com/dogerush/" target="_blank">
                                 <Instagram />
                             </a>
-                            <a
-                                href="https://t.me/dogerushchat"
-                                target="_blank"
-                            >
+                            <a href="https://t.me/dogerushchat" target="_blank">
                                 <Telegram />
                             </a>
                             <a
@@ -99,13 +102,9 @@ const NavigationSec = ({ text, style }) => {
                             >
                                 <FaTiktok />
                             </a>
-                            <a
-                                href="https://twitter.com/dogerushcoin "
-                                target="_blank"
-                            >
+                            <a href="https://twitter.com/dogerushcoin " target="_blank">
                                 <AiOutlineTwitter />
                             </a>
-
                         </div>
                     </div>
                 </div>

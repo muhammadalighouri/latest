@@ -12,43 +12,40 @@ import { ScrollTrigger } from "gsap/all";
 import { BsArrowRight } from "react-icons/bs";
 gsap.registerPlugin(ScrollTrigger);
 // const data = [2, 15, 3, 10, 12, 8, 4, 40];
+
 const data = [
   {
-    name: "Marketing and Advertising: 10%",
+    name: "Marketing ",
     percent: 10,
+    color: "57a4ff"
   },
   {
-    name: "Development: 3%",
-    percent: 3,
+    name: "Development",
+    percent: 5,
+    color: "009688"
   },
   {
-    name: "Partnerships: 15%",
+    name: "Partnerships",
+    percent: 55,
+    color: "005ece"
+  },
+  {
+    name: "Liquidity",
+    percent: 10,
+    color: "223fa8"
+  },
+  {
+    name: "Liquidity",
     percent: 15,
+    color: "ccc"
   },
   {
-    name: "Liquidity: 2%",
+    name: "Liquidity",
     percent: 2,
+    color: "15216d"
   },
 ];
 
-const data2 = [
-  {
-    name: "Accounting & Legal: 12%",
-    percent: 12,
-  },
-  {
-    name: "SMM Community Leaders: 8%",
-    percent: 8,
-  },
-  {
-    name: "Audits: 10%",
-    percent: 10,
-  },
-  {
-    name: "Distribution: 40%",
-    percent: 40,
-  },
-];
 const Token = ({ ease }) => {
   const ite = useRef(null);
   useEffect(() => {
@@ -132,35 +129,32 @@ const Token = ({ ease }) => {
   ];
   return (
     <section className="token" id="tokenomics">
+      <div className="heading">
+        <h1 data-aos="fade-down" class="aos-init aos-animate">
+          Tokenomics
+        </h1>
+      </div>
       <div className="container">
         <div className="grid">
           <div className="itemll start">
-            <h2 data-aos="fade-down" class="aos-init aos-animate">
-              Tokenomics
-            </h2>
-            <p>
-              <span>
-                Contract code fully audited by Solidity Finance and shown to be
-                100% secure. Team fully verified by CoinSniper to ensure
-                anti-rug and complete project security.
-              </span>
-              <span>
-                You can buy direct using USDT, ETH or BNB. After the public sale
-                ends, you'll claim your purchased Big Eyes using the claim page.
-              </span>
-            </p>
-            {/* <div className="btns">
-              {
-                tokens.map((item, i) => {
-                  return (
-                    <div className="btn">
-                      <img src={item.img} alt="" />
+            <h2>Token Distribution</h2>
+            <ul>
+              {data.map((item, i) => {
+                return (
+                  <li key={i}>
+
+                    <div className="line" style={{ background: `#${item.color}` }}>
+                      {/* <div
+                        className="wid"
+                        style={{ width: `${item.percent}%` }}
+                      ></div> */}
                     </div>
-                  )
-                })
-              }
-            </div> */}
-            <ul className="tokenInfo">
+                    <p> {item.name + ' ' + item.percent + '%'}</p>
+                  </li>
+                );
+              })}
+            </ul>
+            {/* <ul className="tokenInfo">
               {tokenInfo.map((item, ind) => {
                 return (
                   <li>
@@ -176,7 +170,7 @@ const Token = ({ ease }) => {
                   </li>
                 );
               })}
-            </ul>
+            </ul> */}
             <div className="normal__btn">
               <button>
                 Etherscan <BsArrowRight />
@@ -186,26 +180,11 @@ const Token = ({ ease }) => {
               </button>
             </div>
           </div>
+
           <div className="itemll mid-" ref={ite}>
             <Chart />
           </div>
-          <div className="itemll">
-            <ul>
-              {data2.map((item, i) => {
-                return (
-                  <li key={i}>
-                    <p> {item.name}</p>
-                    <div className="line">
-                      <div
-                        className="wid"
-                        style={{ width: `${item.percent}%` }}
-                      ></div>
-                    </div>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
+
         </div>
       </div>
     </section>

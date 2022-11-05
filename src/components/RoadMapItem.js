@@ -10,7 +10,7 @@ function RoadMapItem(props) {
     return (
         <div key={item.id} className={`rm-box ${item.positon}`} data-aos="zoom-in" data-aos-duration="1200">
             <div className={`corner-box ${item.style}`}>
-                <h5>{item.time}</h5>
+                <h5>PHASE {item.id}</h5>
                 <ul>
                     {
                         item.list.map((li, idx) => (

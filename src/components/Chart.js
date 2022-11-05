@@ -9,11 +9,17 @@ export const data = {
   datasets: [
     {
       label: "# of Votes",
-      data: [10, 5, 5, 80],
-      backgroundColor: ["#57a4ff", "#009688", "#005ece", "#eee"],
-
+      data: [10, 5, 5, 55, 10, 15],
+      backgroundColor: ["#57a4ff", "#009688", "#005ece", "#223fa8", '#001146', "#15216d"],
+      borderColor: '#00bcd4a1',
       borderWidth: 0,
+      // weight: '120px',
+      // offset: 20,
+      // circumference: 0,
+      cutout: 120,
+
     },
+
   ],
 };
 

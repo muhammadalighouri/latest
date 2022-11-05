@@ -90,14 +90,12 @@ const SendMessage = () => {
                         placeholder="Enter Investment Budget"
                         options={amount}
                     />
-                    <button>Submit!</button>
+                    <button>Submit</button>
                 </div>
 
                 <p id="p">
                     <input type="checkbox" name="" id="" for="p" />
-                    By submitting this form you agree to our{" "}
-                    <Link to={"/terms"}>Terms</Link> and{" "}
-                    <Link to="/privacy-policy">Privacy Policy</Link>
+                    By submitting this form you agree to our Terms and Privacy Policy
                 </p>
             </div>
         </div>

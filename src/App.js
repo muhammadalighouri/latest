@@ -8,6 +8,7 @@ import Navigation from "./components/Navigation";
 import Terms from "./pages/Terms";
 import Privacy from "./pages/Privacy";
 import BuyPage from "./pages/BuyPage";
+import Disclaimer from "./pages/Disclaimer";
 
 var Spinner = require("react-spinkit");
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Route path="/buy" element={<BuyPage />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy-policy" element={<Privacy />} />
+          <Route path="/disclaimer" element={<Disclaimer />} />
         </Routes>
       </main>
     </>

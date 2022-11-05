@@ -8,9 +8,9 @@ import { FaTiktok } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { Instagram, Telegram, YouTube } from "@material-ui/icons";
-const Footer = () => {
+const Footer = ({ stylo }) => {
   return (
-    <footer>
+    <footer style={stylo}>
       <div className="container">
         <div className="grid">
           <p>Copyright © 2022, DogeRush | All Rights Reserved.</p>
@@ -41,6 +41,7 @@ const Footer = () => {
             </div>
             <p style={{ marginBottom: "5px" }}>
               <Link to={"/home"}>Home</Link>{" "}
+              <Link to={"/disclaimer"}>Disclaimer</Link>{" "}
               <Link to={"/terms"}>Terms and Conditions</Link>
               <Link to={"/privacy-policy"}>Privacy Policy</Link>
             </p>

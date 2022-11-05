@@ -8,7 +8,7 @@
   overflow: hidden;
 
   @include md {
-    padding: 0px 0;
+  padding: 60px 10px;
   }
   .heading {
     h1 {
@@ -51,10 +51,13 @@
   }
 
   > .container {
-    max-width: 1200px;
-    margin: -66px auto 10px;
-    padding: 100px 60px;
-    position: relative;
+      max-width: 1200px;
+        margin: -66px auto 10px;
+        padding: 100px 80px;
+        position: relative;
+        @include md{
+          margin: auto;
+        }
     &::before {
       content: "";
       position: absolute;
@@ -66,6 +69,9 @@
       background-size: 100% 100%;
       z-index: -1;
       filter: hue-rotate(327deg);
+      @include md{
+        content: unset;
+      }
     }
     @include md {
       padding: 10px 0;
@@ -73,14 +79,14 @@
 
     .grid {
       display: grid;
-      grid-template-columns: 1.5fr 1.2fr;
+      grid-template-columns: 1.5fr .9fr;
       /* place-items: center; */
       align-items: center;
       grid-column-gap: 2rem;
       @include lg {
         max-width: 600px;
         margin: auto;
-        padding: 0 20px;
+        padding: 0 0px;
         grid-row-gap: 2rem;
         grid-template-columns: 1fr;
       }
@@ -214,7 +220,7 @@
       .itemll {
         &:nth-child(2) {
           position: relative;
-          padding: 50px;
+          padding: 50px 0;
           img {
             transition: 0.5s all;
             width: 100%;

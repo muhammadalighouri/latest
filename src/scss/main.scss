@@ -22,14 +22,14 @@
     }
     &::after {
       position: absolute;
-      content: "";
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      background: linear-gradient(0deg, #000, transparent);
-      z-index: 1;
-      right: 0;
-      height: 20%;
+        content: "";
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background: linear-gradient(0deg, #04111d, transparent);
+        z-index: 1;
+        right: 0;
+        height: 20%;
     }
   }
 

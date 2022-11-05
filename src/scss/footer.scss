@@ -30,9 +30,9 @@ footer {
 
       > div {
         display: flex;
-        align-items: center;
-        gap: 1rem;
-        flex-direction: row-reverse;
+          align-items: center;
+          gap: 1.3rem;
+          flex-direction: row-reverse;
         @include md {
           flex-direction: column;
         }

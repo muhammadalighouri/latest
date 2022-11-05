@@ -49,7 +49,7 @@ const NavigationSec = ({ text, style }) => {
                     </div>
                 </div>
                 <h2>
-                    <img src="/images/logo/01-03.png" alt="" />
+                    <img onClick={() => navigate('/')} src="/images/logo/01-03.png" alt="" />
                 </h2>
                 <div className={`nav__top ${navToggler ? "nav___active" : null}`}>
                     <div className="div">

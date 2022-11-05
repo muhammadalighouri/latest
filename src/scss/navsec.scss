@@ -10,7 +10,7 @@
   width: 100%;
   z-index: 100;
 
-  >.container {
+  > .container {
     max-width: 1200px;
     margin: auto;
     display: grid;
@@ -27,7 +27,7 @@
     .icon {
       position: relative;
 
-      >div {
+      > div {
         cursor: pointer;
         height: 48px;
         position: absolute;
@@ -41,7 +41,7 @@
         top: -24px;
         z-index: 4;
 
-        >span {
+        > span {
           &:nth-child(1) {
             background: #fff;
             height: 3px;
@@ -93,7 +93,7 @@
         width: 100%;
         margin-top: 20px;
         max-width: 300px;
-
+        cursor: pointer;
         @include md {
           width: 70%;
         }
@@ -135,12 +135,12 @@
       place-items: center;
 
       ul {
-          list-style: none;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            gap: 1.3rem;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1.3rem;
         li {
           font-size: 22px;
           opacity: 0.8;
@@ -155,10 +155,9 @@
         z-index: 1000000000000;
         z-index: 1000;
         transform: translateY(30px);
-align-items: center;
-justify-content: center;
+        align-items: center;
+        justify-content: center;
         a {
-
           img,
           svg {
             border-radius: 100%;
@@ -170,39 +169,39 @@ justify-content: center;
           }
         }
 
-                     a:nth-child(1) {
-                       svg {
-                         width: 30px;
-                         height: 30px;
-                       }
-                     }
-          
-                     a:nth-child(2) {
-                       svg {
-                         width: 25px;
-                       }
-                     }
-          
-                     a:nth-child(3) {
-                       svg {
-                         width: 27px;
-                         height: 28px;
-                       }
-                     }
-          
-                     a:nth-child(4) {
-                       svg {
-                         width: 25px;
-                         height: 23px;
-                       }
-                     }
-          
-                     a:nth-child(5) {
-                       svg {
-                         width: 35px;
-                         height: 27px;
-                       }
-                     }
+        a:nth-child(1) {
+          svg {
+            width: 30px;
+            height: 30px;
+          }
+        }
+
+        a:nth-child(2) {
+          svg {
+            width: 25px;
+          }
+        }
+
+        a:nth-child(3) {
+          svg {
+            width: 27px;
+            height: 28px;
+          }
+        }
+
+        a:nth-child(4) {
+          svg {
+            width: 25px;
+            height: 23px;
+          }
+        }
+
+        a:nth-child(5) {
+          svg {
+            width: 35px;
+            height: 27px;
+          }
+        }
         a.opensea {
           img {
             padding: 0;

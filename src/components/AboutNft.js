@@ -41,6 +41,7 @@ const AboutNft = () => {
         </Marquee>
       </div> */}
       <section id="about" className="about">
+        <h2>Welcome to the world of Doge Rush Where Elon Meets DogeCoin</h2>
         <div className="container">
           <div className="about__grid first">
             <div
@@ -59,21 +60,19 @@ const AboutNft = () => {
               </div>
               <p>
                 <span>
-                  Doge Rush is an endless runner video game. The game starts by
-                  tapping the touch screen, while Doge (the game's starter
-                  character) or any other NFT character. The strategy is pretty
-                  simple; you dash at a very high speed through all the levels
-                  while collecting coins along the way. If you complete all
-                  levels, you get to keep your coins transferred to your wallet.
-                  You can consequently transform your coins into real money. As
-                  you play and progress throughout the game, each level has a
-                  higher degree of difficulty than its predecessor.
+                  Doge Rush is the world's first P2E single-player mobile runner
+                  game with NFT assets, Collectible coins have been a feature in
+                  side-scrolling runners from the beginning; Sonic Dash had
+                  rings, and Super Mario had coins. What if those coins were
+                  real, bonafide currency? Doge Rush rewards you for every coin
+                  you collect with the opportunity to pile up $DR coins for
+                  in-game prizes and real-world cash.
                 </span>
                 <span>
-                  Say goodbye to working endless hours without the element of
-                  fun and earn with excitement and a little bit of reflex. Each
-                  level becomes more challenging as you play and advance through
-                  the game.
+                  In our groundbreaking P2E runner, every coin you collect
+                  in-game goes right to your wallet at the end of the level. For
+                  the first time, play a hilarious side-scrolling runner that’s
+                  worth your time—literally.
                 </span>
               </p>
               <div className="btns">
@@ -114,16 +113,24 @@ const AboutNft = () => {
               </div>
               <p>
                 <span>
-                  You play as Doge, who dash the subways and tries to escape
-                  from elon musk. The player can swipe up, down, left, or right
-                  to avoid crashing into oncoming obstacles especially moving
-                  subways, poles, tunnel walls and barriers. By swiping rapidly
-                  as speed increases, more points can be acquired. A crash
-                  results in a game over, but the player can continue running by
-                  using keys, or watching an ad. Collect coins to unlock
-                  power-ups and special gear to help you go further every time
-                  in Doge Rush. Furthermore, coins can be used to unlock
-                  different NFT characters and other tools.
+                  You play as Doge. Your mission? Escape Elon Musk while dashing
+                  through the derelict subways of a dystopian underworld. Yeah,
+                  Doge Rush has serious meme potential.
+                </span>
+                <span>
+                  Control Doge by swiping up, down, left, and right to collect
+                  coins while you evade Elon’s clutches. As you progress through
+                  the game, the pace grows faster; more obstacles get in your
+                  way. The harder the game gets, the better your opportunity to
+                  earn points, and as a result, more crypto.
+                </span>
+                <span>
+                  Doge Rush has a variety of unique characters with upgradable
+                  NFT skins, which differ in prices and est. ROI that players
+                  will get. Upgrade your character to higher levels, fuse it
+                  with another one to boost your earnings from playing, or sell
+                  it to other players via the Doge Rush marketplace. The ability
+                  of this game is insane; get into $DR before it goes viral.
                 </span>
               </p>
               <div className="btns">
@@ -160,26 +167,26 @@ const AboutNft = () => {
                 <div>
                   <span>THE STORY</span>
                 </div>
-                <h1>PLAY TO EARN ?</h1>
+                <h1>PLAY TO EARN </h1>
               </div>
               <p>
-                Here’s what makes this game more enticing. Real money!
                 <span>
-                  You might have spent hours on end playing a game that only
-                  took money from you in order to progress. But now you have
-                  Doge Rush. Not only will you be addicted to playing it for
-                  hours on end, but you will also be earning actual money with
-                  it. We all have wanted such a treat, and with Doge Rush, you
-                  have it!
+                  Play and Earn crypto in the free-to-play mode or amplify your
+                  earnings by acquiring NFTs which differ in rarity and
+                  estimated ROI.
                 </span>
                 <span>
-                  The more coins you collect in the game, the further you
-                  progress in our daily leaderboard. It will be a tough
-                  competition, but the reward of it will be ever so sweet. So
-                  play to your heart’s content and make real money.
+                  The appeal of Doge Rush extends far beyond the lulz—the stakes
+                  are high because when you do well, you can earn real money.
                 </span>
-                <span>Easy & Competitive</span>
-                <span>It won’t get boring, ever!</span>
+
+                <span>
+                  Think of all the time you sink into video games. If you were
+                  paid to play video games, you’d be making bank, right? Doge
+                  Rush gives gamers the chance to make real money. Play 2 Earn
+                  games like Doge Rush reward the time and effort you put into
+                  the game with the chance to earn $DR.
+                </span>
               </p>
               <div className="btns">
                 <a

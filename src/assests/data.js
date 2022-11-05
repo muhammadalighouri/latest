@@ -34,34 +34,26 @@ export const nav = [
 export const roadmap = [
   {
     id: "01",
-    points: [
-
-    ],
+    points: [],
     date: "2022",
     img: "/images/roadmap/1.png",
   },
   {
     id: "01",
-    points: [
-
-    ],
+    points: [],
     date: "2022",
     img: "/images/roadmap/1.png",
   },
   {
     id: "01",
-    points: [
-
-    ],
+    points: [],
     date: "2022",
     img: "/images/roadmap/1.png",
   },
 
   {
     id: "01",
-    points: [
-
-    ],
+    points: [],
     date: "2022",
     img: "/images/roadmap/1.png",
   },
@@ -82,39 +74,38 @@ export const Nfts = [
 
 export const FAQ = [
   {
-    q: " What is Doge Rush?",
+    q: "What Is Doge Rush?",
     ans: [
-      "Doge Rush is An NFT Play to Earn Game, Where Elon Musk Meets DogeCoin.",
+      "Doge Rush is a P2E, scrolling runner where players must escape the clutches of Elon Musk. Run through dystopian subways and collect $DR coins to earn real money.",
     ],
   },
   {
-    q: "Is there a coin/token for this project?",
-    ans: ["Yes. The token for this project is called $DR."],
+    q: "Is There a Coin/Token For This Project?",
+    ans: ["Yes. Doge Rush’s token, $DR can be acquired through USDT, ETH."],
   },
   {
-    q: "Under which network is Doge Rush?  ",
+    q: "What Network Hosts Doge Rush?",
     ans: [
-      "Doge Rush is built on the ERC-20 and will also be tradeable as a BEP-20 cryptocurrency.",
+      "Doge Rush is built on the ERC - 20; it will also be tradeable as a BEP- 20 cryptocurrency.",
     ],
   },
   {
-    q: "  How much is the total supply of $DR?",
-    ans: [" $DR has a total supply of 2 billion tokens."],
+    q: "What Is The Total Supply Of $DR?",
+    ans: ["The current supply of $DR is 2 billion tokens."],
   },
   {
-    q: "Is Doge Rush audited?  ",
+    q: "Is Doge Rush Audited?  ",
     ans: [
-      " Yes, Doge Rush is audited by Solidity Finance. Solidity Finance has Conducted 1500+ smart contract audits covering all major project types and protocols, securing a total of over $50 billion U.S. dollars in on-chain value. Solidity Finance is well-reputed in the community and is trusted as a top smart contract auditing company for the review of solidity code, no matter how complex.",
-      "You can view our smart contract audit here: dogerush.io/audit",
+      " Yes. Doge Rush has undergone a full audit from Solidarity Finance. Solidarity Finance is a well-established auditor that has run over 1500+ contract audits. They have covered all major project types and protocols, securing over $50 billion USD in on-chain value. You can read our Solidarity Finance Smart Contract Audit here: Dogerush.io/audit",
     ],
   },
   {
-    q: "Is Doge Rush using any tax?  ",
-    ans: [" No, no buy tax, no sell tax, no fees."],
+    q: "Does Doge Rush Levy Tax? ",
+    ans: [" No. Doge Rush has no buy tax or sell tax; no fees whatsoever."],
   },
   {
-    q: "Where to Buy Doge Rush?  ",
-    ans: [" As of writing, you can buy $DR from DogeRush.io/Buy"],
+    q: "Where To Buy Doge Rush? ",
+    ans: ["You can currently buy $DR from DogeRush.Io/Buy"],
   },
 ];
 

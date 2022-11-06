@@ -219,7 +219,7 @@ const Home = () => {
                 <RoadMapOne data={dataRoadmap} />
                 {/* <Roadmap /> */}
                 <Token />
-                <Teams />
+                {/* <Teams /> */}
             </div>
 
             <Partners />

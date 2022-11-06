@@ -11,7 +11,7 @@ const Partners = () => {
                         Featured In
                     </h1>
                 </div>
-                <div className="container">
+                {/* <div className="container">
                     <div className="grid">
                         {
                             partners.map((item, ind) => {
@@ -23,7 +23,7 @@ const Partners = () => {
                             })
                         }
                     </div>
-                </div>
+                </div> */}
             </section>
         </>
     );

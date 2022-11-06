@@ -12,38 +12,37 @@ import { ScrollTrigger } from "gsap/all";
 import { BsArrowRight } from "react-icons/bs";
 gsap.registerPlugin(ScrollTrigger);
 // const data = [2, 15, 3, 10, 12, 8, 4, 40];
-
+// Liquidity 25 %
+//   P2E 10 %
+//     Exchange pool 10 %
+//       Giveaways 5 %
 const data = [
   {
-    name: "Marketing ",
+    name: "Presale ",
+    percent: 50,
+    color: "57a4ff"
+  },
+  {
+    name: "Liquidity",
+    percent: 25,
+    color: "009688"
+  },
+  {
+    name: "P2E",
+    percent: 10,
+    color: "005ece"
+  },
+  {
+    name: "Exchange pool ",
     percent: 10,
     color: "57a4ff"
   },
   {
-    name: "Development",
+    name: "Giveaways",
     percent: 5,
     color: "009688"
   },
-  {
-    name: "Partnerships",
-    percent: 55,
-    color: "005ece"
-  },
-  {
-    name: "Liquidity",
-    percent: 10,
-    color: "223fa8"
-  },
-  {
-    name: "Liquidity",
-    percent: 15,
-    color: "ccc"
-  },
-  {
-    name: "Liquidity",
-    percent: 2,
-    color: "15216d"
-  },
+
 ];
 
 const Token = ({ ease }) => {
@@ -183,6 +182,7 @@ const Token = ({ ease }) => {
 
           <div className="itemll mid-" ref={ite}>
             <Chart />
+            {/* <img src="/images/dist.369cca71.png" alt="" /> */}
           </div>
 
         </div>

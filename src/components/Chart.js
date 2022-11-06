@@ -17,7 +17,7 @@ export const data = {
       // offset: 20,
       // circumference: 0,
       cutout: 120,
-
+      Tooltip,
     },
 
   ],

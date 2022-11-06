@@ -218,7 +218,7 @@ const Home = () => {
                 {/* <RoadMap  /> */}
                 <RoadMapOne data={dataRoadmap} />
                 {/* <Roadmap /> */}
-                <Token />
+                {/* <Token /> */}
                 {/* <Teams /> */}
             </div>
 

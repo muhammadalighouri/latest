@@ -39,7 +39,7 @@ const Main = () => {
                     </div>
                 </div>
                 <p className="bottom">
-                    Copyright © 2022, DogeRush | All Rights Reserved.
+                    Copyright © 2022, Doge Rush | All Rights Reserved.
                 </p>
             </section>
         </>

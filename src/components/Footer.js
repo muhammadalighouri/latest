@@ -13,7 +13,7 @@ const Footer = ({ stylo }) => {
     <footer style={stylo}>
       <div className="container">
         <div className="grid">
-          <p>Copyright © 2022, DogeRush | All Rights Reserved.</p>
+          <p>Copyright © 2022, Doge Rush | All Rights Reserved.</p>
           <div>
             <div className="nav__btns">
               <a

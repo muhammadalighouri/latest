@@ -41,7 +41,7 @@ const AboutNft = () => {
         </Marquee>
       </div> */}
       <section id="about" className="about">
-        <h2>Welcome to the world of Doge Rush Where Elon Meets DogeCoin</h2>
+
         <div className="container">
           <div className="about__grid first">
             <div

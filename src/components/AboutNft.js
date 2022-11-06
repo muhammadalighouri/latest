@@ -129,7 +129,10 @@ const AboutNft = () => {
                   NFT skins, which differ in prices and est. ROI that players
                   will get. Upgrade your character to higher levels, fuse it
                   with another one to boost your earnings from playing, or sell
-                  it to other players via the Doge Rush marketplace. The ability
+                  it to other players via the Doge Rush marketplace.
+                </span>
+                <span>
+                  The ability
                   of this game is insane; get into $DR before it goes viral.
                 </span>
               </p>

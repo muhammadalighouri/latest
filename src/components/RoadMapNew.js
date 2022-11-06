@@ -20,7 +20,7 @@ function RoadMapNew(props) {
     )
 
     return (
-        <section className="tf-section tf-roadmap">
+        <section className="tf-section tf-roadmap" id='roadmap'>
             <div className="overlay"></div>
             <div className="container">
                 <div className="row">

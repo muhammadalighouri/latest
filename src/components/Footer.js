@@ -39,7 +39,7 @@ const Footer = ({ stylo }) => {
                 <AiOutlineTwitter />
               </a>
             </div>
-            <p style={{ marginBottom: "5px" }}>
+            <p >
               <Link to={"/home"}>Home</Link>{" "}
               <Link to={"/disclaimer"}>Disclaimer</Link>{" "}
               <Link to={"/terms"}>Terms and Conditions</Link>

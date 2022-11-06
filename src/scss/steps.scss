@@ -507,7 +507,7 @@
       border-radius: 32px;
       margin-top: 50px;
       @include md {
-        padding: 40px 0px;
+        padding: 40px 20px;
       }
       .heading {
         text-align: center;
@@ -518,7 +518,7 @@
           text-transform: uppercase;
           text-align: center;
           position: relative;
-          font-size: clamp(3rem, 4vw, 4rem);
+          font-size: clamp(2rem, 4vw, 4rem);
         }
 
         p {
@@ -554,7 +554,7 @@
             justify-self: self-end;
             transition: 0.3s all;
             padding: 0px 40px;
-            font-size: 20px !important;
+            font-size: 18px !important;
             &:hover {
               box-shadow: 0px 0px 10px #1277c7;
             }

@@ -33,8 +33,14 @@ footer {
           align-items: center;
           gap: 1.3rem;
           flex-direction: row-reverse;
+          >p{
+            @include md{
+              margin-bottom: 5px;
+            }
+          }
         @include md {
           flex-direction: column;
+          gap: 0;
         }
         > .nav__btns {
           justify-self: center;
